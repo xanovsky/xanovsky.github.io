@@ -33,6 +33,8 @@
     <script type="text/javascript" src="js/magnific-popup.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular-route.min.js"></script>
     <script type="text/javascript" src="js/angular.js"></script>
     <!--/Javascript files-->
   </head>
@@ -51,7 +53,7 @@
             </div>
             <ul id="navigation" ng-controller="NavCtrl">
               <li ng-repeat="item in menuItems" ng-class="{ 'currentmenu': isCurrent(item) }">
-                <a ng-href="{{item.href}}">
+                <a ng-href="#/{{item.href}}">
                   <div class="icon icon-{{item.icon}}"></div>
                   <div class="text">{{item.text}}</div>
                 </a>
@@ -61,94 +63,13 @@
       </div>
     </div>
 
-    <div id="main">
-      <div id="biography" class="page home" data-pos="home">
-        <div class="pageheader">
-          <div class="headercontent">
-            <div class="section-container">
-              <div class="row">
-                <div class="col-sm-2 visible-sm"></div>
-                <div class="col-sm-8 col-md-4">
-                  <div class="biothumb">
-                    <img alt="image" src="img/personal/personal-big.jpg" class="img-responsive">
-                  </div>
-                </div>
-                <div class="clearfix visible-sm visible-xs"></div>
-                <div class="col-sm-12 col-md-7">
-                  <h3 class="title">Alexandra Silva</h3>
-                  <p>A tenured assistant professor at the <a href="http://www.ru.nl/icis/">Institute for Computing and Information Sciences</a>, <a href="http://www.ru.nl/science/">Faculty of Science</a>, <a href="http://www.ru.nl">Radboud University Nijmegen</a>, The Netherlands.</p>
-                  <p>Alexandra's main research focuses on the modular development of specification languages and algorithms for models of computations. Her work is rooted on a mathematical framework: <emph>coalgebra</emph>.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="pagecontents">
-            <div class="section color-1">
-              <div class="section-container">
-                <div class="row">
-                  <div class="col-md-5 col-md-offset-1">
-                    <div class="title text-center">
-                      <h3>Academic Positions <small>(currently held)</small></h3>
-                    </div>
-                    <ul class="ul-dates">
-                      <li>
-                        <div class="dates">
-                          <span>Present</span>
-                          <span>Sep '11</span>
-                        </div>
-                        <div class="content">
-                          <h4>Assistant Professor</h4>
-                          <p><em><a href="http://www.ru.nl">Radboud University Nijmegen</a></em></p>
-                          <p>Tenured since Sep 2012</p>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="dates">
-                          <span>Present</span>
-                          <span>Sep '11</span>
-                        </div>
-                        <div class="content">
-                          <h4>Guest Researcher</h4>
-                          <p><em><a href="http://www.cwi.nl">CWI</a></em>, The Netherlands</p>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="dates">
-                          <span>Present</span>
-                          <span>Sep '11</span>
-                        </div>
-                        <div class="content">
-                          <h4>Guest Researcher</h4>
-                          <p><a href="http://haslab.uminho.pt/content/about">HASlab</a> / <a href="http://www.inesctec.pt/ip-en/about-us">INESC TEC</a>, Braga, Portugal</p>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="col-md-5">
-                    <div class="title text-center">
-                      <h3>Education</h3>
-                    </div>
-                    <ul class="ul-card">
-                      <li>
-                        <div class="dy">
-                          <span class="degree">Ph.D.</span>
-                          <span class="year">2010</span>
-                        </div>
-                        <div class="description">
-                          <p class="waht">Ph.D. (<emph>cum laude</emph>) in Computer Science</p>
-                          <p>Degree awarded by <em><a href="http://www.ru.nl">Radboud University Nijmegen</a></em></p>
-                          <p>Research carried out at <em><a href="http://www.cwi.nl">CWI</a></em></p>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="view-animate-container">
+      <div id="main" ng-view class="view-animate" />
     </div>
+
+  <pre>$location.path() = {{main.$location.path()}}</pre>
+  <pre>$route.current.templateUrl = {{main.$route.current.templateUrl}}</pre>
+  <pre>$route.current.params = {{main.$route.current.params}}</pre>
+  <pre>$routeParams = {{main.$routeParams}}</pre>
   </body>
 </html>
