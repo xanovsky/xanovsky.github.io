@@ -49,7 +49,7 @@
           <div class="row">
             <div class="col-md-12">
               <div class="pitems">
-                <div ng-repeat="paper in papers | filter: search | filter: filterByPubType(pubTypeFilter)" class="item" ng-class="{'has-details': paper.abstract}">
+                <div ng-repeat="paper in papers | filter: filterByPubType(pubTypeFilter) | filter: search" class="item" ng-class="{'has-details': paper.abstract}">
                   <div class="pubmain">
                     <div class="pubassets">
                       <a class="pubcollapse" ng-if="paper.abstract">
