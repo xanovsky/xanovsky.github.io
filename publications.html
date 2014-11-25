@@ -35,11 +35,11 @@
               <div class="form-group pull-right">
                 <div class="input-group">
                   <label class="sr-only" for="searchInput">Search</label>
-                  <input type="text" class="form-control input-lg" id="searchInput" placeholder="Search">
+                  <input type="text" ng-model="search" class="form-control input-lg" id="searchInput" placeholder="Search">
                   <span class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true"></span>
                 </div>
               </div>
-            </div>
+            </form>
           </div>
         </div>
       </div>
@@ -49,10 +49,10 @@
           <div class="row">
             <div class="col-md-12">
               <div class="pitems">
-                <div ng-repeat="paper in papers" class="item cpaper" ng-class="{'has-details': paper.abstract}">
+                <div ng-repeat="paper in papers | filter: search" class="item" ng-class="{'has-details': paper.abstract}">
                   <div class="pubmain">
                     <div class="pubassets">
-                      <a href="#" class="pubcollapse" ng-if="paper.abstract">
+                      <a class="pubcollapse" ng-if="paper.abstract">
                         <i class="icon-expand-alt"></i>
                       </a>
                       <a ng-if="paper.conference.url" ng-href="{{paper.conference.url}}" class="toooltips" title="Conference page" target="_blank">
@@ -86,6 +86,7 @@
                         <span ng-if="paper.edited.note"><span ng-bind="paper.edited.note"></span>,</span>
                         <span ng-bind="paper.year"></span>
                       </span>
+                    </div>
                   </div>
                   <div ng-if="paper.abstract" class="pubdetails">
                     <h4>Abstract</h4>
