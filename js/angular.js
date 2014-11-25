@@ -33,22 +33,38 @@ angular.module('homepage', ['ngRoute', 'ngAnimate', 'ngSanitize'])
 
   .controller('PubsCtrl', ['$scope', '$http', function($scope, $http) {
     $scope.papers = [];
+    $scope.pubTypeFilter = 'all';
+
+    $scope.$watch(function() {
+      $scope.pubTypeFilter = $('[name=cd-dropdown]').val();
+    });
+
+    $scope.filterByPubType = function() {
+      return function(item) {
+        return $scope.pubTypeFilter === 'all' || item.hasOwnProperty($scope.pubTypeFilter);
+      };
+    };
 
     $http.get('data/papers.json').success(function(data) {
       $scope.papers = data;
     });
   }])
 
-  .directive('pubTypeDropdown', function() {
+  .directive('pubTypeDropdown', ['$timeout', '$rootScope', function($timeout, $rootScope) {
     return {
       restrict: 'A',
       link: function(scope, element) {
         element.dropdownit({
-          gutter: 0
+          gutter: 0,
+          onOptionSelect: function() {
+            $timeout(function() {
+              $rootScope.$digest();
+            });
+          }
         });
       }
     };
-  })
+  }])
 
   .directive('pubGrid', function() {
     return {
