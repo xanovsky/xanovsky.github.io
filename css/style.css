@@ -1,5 +1,37 @@
-.ng-enter, 
-.ng-leave { 
+.pop {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.pop.ng-enter,
+.pop.ng-leave {
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.pop.ng-enter {
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+}
+.pop.ng-enter-active,
+.pop.ng-leave,
+.pop.ng-leave-active {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+.pop.ng-leave-active {}
+
+.pitems .item.ng-enter, 
+.pitems .item.ng-leave { 
     -webkit-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
     -moz-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
     -ms-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
@@ -9,8 +41,8 @@
     display: block;
 } 
  
-.ng-leave.ng-leave-active,
-.ng-enter {
+.pitems .item.ng-leave.ng-leave-active,
+.pitems .item.ng-enter {
     -webkit-transform: scaleY(0);
     -moz-transform: scaleY(0);
     -ms-transform: scaleY(0);
@@ -20,8 +52,8 @@
     opacity: 0;
 }
  
-.ng-enter.ng-enter-active,
-.ng-leave {
+.pitems .item.ng-enter.ng-enter-active,
+.pitems .item.ng-leave {
     -webkit-transform: scaleY(1);
     -moz-transform: scaleY(1);
     -ms-transform: scaleY(1);

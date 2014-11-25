@@ -76,6 +76,7 @@
   }
 
 }, {
+  "year": 2014,
   "id": "OSB14a",
   "authors": ["Nuno Oliveira", "Alexandra Silva", "Luís Barbosa"],
   "title": "IMC-Reo: Interactive Markov Chains for stochastic Reo.",
@@ -89,6 +90,7 @@
   }
 
 }, {
+  "year": 2014,
   "id": "JSS14",
   "authors": ["Bart Jacobs", "Alexandra Silva", "Ana Sokolova"],
   "title": "Trace Semantics via Determinization",
@@ -99,5 +101,56 @@
   "abstract": "<p>This paper takes a fresh look at the topic of trace semantics in the theory of coalgebras. In the last few years, two approaches, somewhat incomparable at first sight, captured successfully in a coalgebraic setting trace semantics for various types of transition systems. The first development of coalgebraic trace semantics used final coalgebras in Kleisli categories and required some non-trivial assumptions, which do not always hold, even in cases where one can reasonably speak of traces (like for weighted automata). The second development stemmed from the observation that trace semantics can also arise by performing a determinization construction and used final coalgebras in Eilenberg-Moore categories. In this paper, we develop a systematic study in which the two approaches can be studied and compared. Notably, we show that the two different views on trace semantics are equivalent, in the examples where both approaches are applicable.</p>",
   "download": {
     "pdf": "http://alexandrasilva.org/files/determinization-journal.pdf"
+  }
+
+}, {
+  "year": 2014,
+  "id": "BBCRS14",
+  "authors": ["Filippo Bonchi", "Marcello Bonsangue", "Georgiana Caltais", "Jan Rutten", "Alexandra Silva"],
+  "title": "A coalgebraic view on decorated traces.",
+  "journal": {
+    "name": "Mathematical Structures in Computer Science"
+  },
+  "abstract": "<p>In concurrency theory, various semantic equivalences on transition systems are based on traces decorated with some additional observations, generally referred to as decorated traces. Using the generalized powerset construction, recently introduced by a subset of the authors, we give a coalgebraic presentation of decorated trace semantics. The latter include ready, failure, (complete) trace, possible-futures, ready trace and failure trace semantics for labeled transition systems, and ready, (maximal) failure and (maximal) trace semantics for generative probabilistic systems.  This yields a uniform notion of minimal representatives for the various decorated trace equivalences, in terms of final Moore automata. As a consequence, proofs of decorated trace equivalence can be given by coinduction, using different types of (Moore-) bisimulation (up-to context).</p>",
+  "download": {
+    "pdf": "http://alexandrasilva.org/files/new-dec-traces-mscs.pdf</url>"
+  }
+
+}, {
+  "year": 2014,
+  "id": "BMSZ14",
+  "authors": ["Filippo Bonchi", "Stefan Milius", "Alexandra Silva", "Fabio Zanasi"],
+  "title": "How to Kill Epsilons with a Dagger -- A Coalgebraic Take on Systems with Algebraic Label Structure",
+  "conference": {
+    "name": "12th International Workshop on Coalgebraic Methods in Computer Science",
+    "location": "Grenoble, France",
+    "url": "http://www.coalg.org/cmcs14",
+    "lncs": {
+      "volume": 8446,
+      "pages": "53-74"
+    }
+  },
+  "abstract": "<p>We propose an abstract framework for modeling state-based systems with internal behavior as e.g. given by silent or ǫ-transitions. Our approach employs monads with a parametrized fixpoint operator † to give a semantics to those systems and implement a sound procedure of abstraction of the internal transitions, whose labels are seen as the unit of a free monoid. More broadly, our approach extends the standard coalgebraic framework for state-based systems by taking into account the algebraic structure of the labels of their transitions. This allows to consider a wide range of other examples, including Mazurkiewicz traces for concurrent systems.</p>",
+  "download": {
+    "pdf": "http://arxiv.org/pdf/1402.4062v2.pdf"
+  }
+
+}, {
+  "year": 2014,
+  "id": "OSB14",
+  "authors": ["Nuno Oliveira", "Alexandra Silva", "Luís Barbosa"],
+  "title": "Quantitative Analysis of Reo-based Service Coordination",
+  "conference": {
+    "name": "29th Annual ACM Symposium on Applied Computing",
+    "abbreviation": "ACM SAC",
+    "location": "Gyeongju, Korea",
+    "url": "http://www.acm.org/conferences/sac/sac2014",
+    "series": "ACM Press",
+    "volume": 2,
+    "pages": "1247-1254"
+  },
+  "abstract": "<p>Quality of Service analysis of composed software systems is an active research area, with the goal of evaluating and improving performance and resource allocation in serviceoriented applications, namely, in the glue code--coordination layer--of such systems. Stochastic Reo offers constructs for service coordination and allows the specification of stochastic values for channels. But its state-of-the-art semantic models fail in several (important) ways. In this paper, we will see how Interactive Markov chains (IMC), proposed as a stochastic compositional model of concurrency, can be effectively used to serve as a compositional semantic model for Stochastic Reo. Treating IMC as a direct semantic model, gives rise to more faithful models and has obvious efficiency advantages. Moreover, tool support that exists for IMC is made available, without significant effort, to verify and reason about the coordination layer modelled as Reo connectors.</p>",
+  "download": {
+    "pdf": "http://alexandrasilva.org/files/imcreoOSB.pdf"
   }
 }]
