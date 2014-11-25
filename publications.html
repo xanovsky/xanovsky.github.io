@@ -44,31 +44,52 @@
         </div>
       </div>
 
-      <div pub-grid="true" class="section color-2" id="pub-grid">
+      <div class="section color-2" pub-grid="true">
         <div class="section-container">
           <div class="row">
             <div class="col-md-12">
               <div class="pitems">
-                <div class="item mix cpaper" data-year="2013">
+                <div ng-repeat="paper in papers" class="item cpaper" ng-class="{'has-details': paper.abstract}">
                   <div class="pubmain">
                     <div class="pubassets">
-                      <a href="#" class="pubcollapse">
+                      <a href="#" class="pubcollapse" ng-if="paper.abstract">
                         <i class="icon-expand-alt"></i>
                       </a>
-                      <a href="http://www.sciencedirect.com/science/article/pii/S1057740812000290" class="tooltips" title="External link" target="_blank">
+                      <a ng-if="paper.conference.url" ng-href="{{paper.conference.url}}" class="toooltips" title="Conference page" target="_blank">
                         <i class="icon-external-link"></i>
                       </a>
-                      <a href="http://faculty-gsb.stanford.edu/aaker/pages/documents/CultivatingAdmirationinBrands_JCP2012.pdf" class="tooltips" title="Download" target="_blank">
+                      <a ng-if="paper.edited.url" ng-href="{{paper.edited.url}}" class="toooltips" title="Journal page" target="_blank">
+                        <i class="icon-external-link"></i>
+                      </a>
+                      <a ng-if="paper.download.pdf" ng-href="{{paper.download.pdf}}" class="tooltips" title="Download PDF" target="_blank">
                         <i class="icon-cloud-download"></i>
                       </a>
                     </div>
-                    <h4 class="pubtitle">Cultivating admiration in brands: Warmth, competence, and landing in the “golden quadrant”</h4>
-                    <div class="pubauthor"><strong>Jennifer Doe</strong>,  Emily N. Garbinsky, Kathleen D. Vohs</div>
-                    <div class="pubcite"><span class="label label-warning">Conference Papers</span> Journal of Consumer Psychology, Volume 22, Issue 2, April 2012, Pages 191-194</div>
+                    <h4 class="pubtitle" ng-bind="paper.title"></h4>
+                    <div class="pubauthor">
+                      <span ng-repeat="author in paper.authors">
+                        <span ng-bind="author"></span><span ng-hide="$last">,</span>
+                      </span>
+                    </div>
+                    <div class="pubcite">
+                      <span ng-if="paper.conference">
+                        <span class="label label-warning">Conference Paper</span>
+                        In <emph ng-bind="paper.conference.name"></emph>,
+                        <span ng-bind="paper.conference.location"></span>,
+                        <span ng-bind="paper.year"></span>
+                      </span>
+                      <span ng-if="paper.edited">
+                        <span class="label label-info">Edited</span>
+                        <emph ng-bind="paper.edited.series"></emph>,
+                        <span ng-if="paper.edited.volume">vol. <emph ng-bind="paper.edited.volume"></emph>,</span>
+                        <span ng-if="paper.edited.pages">pp. <emph ng-bind="paper.edited.pages"></emph>,</span>
+                        <span ng-if="paper.edited.note"><span ng-bind="paper.edited.note"></span>,</span>
+                        <span ng-bind="paper.year"></span>
+                      </span>
                   </div>
-                  <div class="pubdetails">
+                  <div ng-if="paper.abstract" class="pubdetails">
                     <h4>Abstract</h4>
-                    <p>Although a substantial amount of research has examined the constructs of warmth and competence, far less has examined how these constructs develop and what benefits may accrue when warmth and competence are cultivated. Yet there are positive consequences, both emotional and behavioral, that are likely to occur when brands hold perceptions of both. In this paper, we shed light on when and how warmth and competence are jointly promoted in brands, and why these reputations matter.</p>
+                    <p ng-bind-html="paper.abstract"></p>
                   </div>
                 </div>
               </div>

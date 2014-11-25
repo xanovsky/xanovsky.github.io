@@ -1,4 +1,4 @@
-angular.module('homepage', ['ngRoute', 'ngAnimate'])
+angular.module('homepage', ['ngRoute', 'ngAnimate', 'ngSanitize'])
   .config(['$routeProvider', '$locationProvider',
     function($routeProvider, $locationProvider) {
       $routeProvider
@@ -32,10 +32,10 @@ angular.module('homepage', ['ngRoute', 'ngAnimate'])
   }])
 
   .controller('PubsCtrl', ['$scope', '$http', function($scope, $http) {
-    $scope.publications = [];
+    $scope.papers = [];
 
     $http.get('data/papers.json').success(function(data) {
-      $scope.publications = data;
+      $scope.papers = data;
     });
   }])
 
@@ -44,8 +44,8 @@ angular.module('homepage', ['ngRoute', 'ngAnimate'])
       restrict: 'A',
       link: function(scope, element) {
         element.dropdownit({
-	  gutter : 0
-	});
+          gutter: 0
+        });
       }
     };
   })
@@ -54,24 +54,15 @@ angular.module('homepage', ['ngRoute', 'ngAnimate'])
     return {
       restrict: 'A',
       link: function(scope, element) {
-	element.mixitup({
-	  layoutMode: 'list',
-	  easing: 'snap',
-	  transitionSpeed: 600,
-	  onMixEnd: function(){
-	    $('.tooltips').tooltip();
-	  }
-	}).on('click','div.pubmain',function(){
-	  var $this = $(this);
-	  var $item = $this.closest(".item");
+        element.on('click', 'div.pubmain', function() {
+          var $this = $(this);
+          var $item = $this.closest('.item');
 
-	  $item.find('div.pubdetails').slideToggle(function(){
-	    $this.children("i").toggleClass('icon-collapse-alt icon-expand-alt');
-	  },function(){
-	    $this.children("i").toggleClass('icon-expand-alt icon-collapse-alt');
-	  });
-
-          return false;
+          $item.find('div.pubdetails').slideToggle(function(){
+            $this.children('i').toggleClass('icon-collapse-alt icon-expand-alt');
+          },function(){
+            $this.children('i').toggleClass('icon-expand-alt icon-collapse-alt');
+          });
 	});
       }
     };
