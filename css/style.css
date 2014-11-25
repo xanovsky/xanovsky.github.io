@@ -928,6 +928,11 @@ ul.timeline li .data .text {
 	font-size: 18px;
 }
 
+.pitems .pubcite emph {
+	font-size: 110%;
+	font-style: italic;
+}
+
 .pitems .pubmain .pubassets a:hover,.pitems .pubmain .pubassets a:focus,.pitems .pubmain .pubassets a.pubcollapse {
 	/*background: #03cc85;*/
 	color: #fff;

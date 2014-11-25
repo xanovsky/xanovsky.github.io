@@ -1,0 +1,103 @@
+[{
+  "year": 2014,
+  "id": "FKMST14",
+  "authors": ["Nate Foster", "Dexter Kozen", "Matthew Milano", "Alexandra Silva", "Laure Thompson"],
+  "title": "A coalgebraic decision procedure for NetKAT.",
+  "conference": {
+    "name": "POPL 2015: 42nd ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages",
+    "location": "Mumbai, India",
+    "url": "http://popl.mpi-sws.org/2015"
+  },
+  "abstract": "<p>NetKAT is a domain-specific language and logic for specifying and verifying network packet-processing functions. It consists of Kleene algebra with tests (KAT) augmented with primitives for testing and modifying packet headers and encoding network topologies. Previous work developed the design of the language and its standard semantics, proved the soundness and completeness of the logic, defined a PSPACE algorithm for deciding equivalence, and presented several practical applications.</p><p>This paper develops the coalgebraic theory of NetKAT, including a specialized version of the Brzozowski derivative, and presents a new efficient algorithm for deciding the equational theory using bisimulation. The coalgebraic structure admits an efficient sparse representation that results in a significant reduction in the size of the state space. We discuss the details of our implementation and optimizations that exploit NetKAT\"s equational axioms and coalgebraic structure to yield significantly improved performance. We present results from experiments demonstrating that our tool is competitive with state-of-the-art tools on several benchmarks including all-pairs connectivity, loop-freedom, and translation validation.</p>",
+  "download": {
+    "pdf": "http://alexandrasilva.org/files/popl265-foster.pdf"
+  }
+
+}, {
+  "year": 2014,
+  "id": "MGS14",
+  "authors": ["Stefan Milius", "Sergey Goncharov", "Alexandra Silva"],
+  "title": "Towards a Coalgebraic Chomsky Hierarchy",
+  "conference": {
+    "name": "Theoretical Computer Science -- 8th IFIP TC 1/WG 2.2 International Conference",
+    "location": "Rome, Italy",
+    "url": "http://www.easyconferences.eu/tcs2014",
+    "lncs": {
+      "volume": 8705,
+      "pages": "265-280"
+    }
+  },
+  "abstract": "<p>The Chomsky hierarchy plays a prominent role in the foundations of the theoretical computer science relating classes of formal languages of primary importance. In this paper we use recent developments on coalgebraic and monad-based semantics to obtain a generic notion of a T-automaton, where T is a monad, which allows the uniform study of various notions of machines (e.g. finite state machines, multi-stack machines, Turing machines, valence automata, weighted automata). We use the generalized powerset construction to define a generic (trace) semantics for T-automata, and we show by numerous examples that it correctly instantiates for the known classes of machines/languages captured by the Chomsky hierarchy. Moreover, our approach provides new generic techniques for proving expressivity bounds of various machine-based models.</p>",
+  "download": {
+    "corr": "http://arxiv.org/pdf/1401.5277v3.pdf"
+  }
+
+}, {
+  "year": 2014,
+  "id": "CLSS14",
+  "authors": ["Marco Carbone", "Ivan Lanese", "Alexandra Silva", "Ana Sokolova"],
+  "title": "Special issue with selected contributions of the 5th Interaction and Concurrency Experience.",
+  "edited": {
+    "publisher": "Elsevier",
+    "series": "Science of Computer Programming",
+    "note": "To appear"
+  }
+
+}, {
+  "year": 2014,
+  "id": "JSS14b",
+  "authors": ["Bart Jacobs", "Alexandra Silva", "Sam Staton"],
+  "title": "Proceedings of the 30th conference on Mathematical Foundations of Programming Semantics.",
+  "edited": {
+    "publisher": "Elsevier",
+    "series": "Electronic Notes in Theoretical Computer Science",
+    "volume": 308,
+    "pages": "1-2",
+    "url": "http://www.sciencedirect.com/science/article/pii/S1571066114000681"
+  }
+
+}, {
+  "year": 2014,
+  "id": "JS14b",
+  "authors": ["Bart Jacobs", "Alexandra Silva"],
+  "title": "Automata learning: a categorical perspective.",
+  "conference": {
+    "name": "Horizons of the Mind. A Tribute to Prakash Panangaden.",
+    "location": "Oxford, United Kingdom",
+    "url": "http://www.cs.ox.ac.uk/pf2014",
+    "lncs": {
+      "volume": 8464,
+      "pages": "384-406"
+    }
+  },
+  "abstract": "Automata learning is a known technique to infer a finite state machine from a set of observations. In this paper, we revisit Angluin’s original algorithm from a categorical perspective. This abstract view on the main ingredients of the algorithm lays a uniform framework to derive algorithms for other types of automata. We show a straightforward generalization to Moore and Mealy machines, which yields an algorithm already know in the literature, and we discuss generalizations to other types of automata, including weighted automata.",
+  "download": {
+    "pdf": "http://alexandrasilva.org/files/prakash.pdf"
+  }
+
+}, {
+  "id": "OSB14a",
+  "authors": ["Nuno Oliveira", "Alexandra Silva", "Luís Barbosa"],
+  "title": "IMC-Reo: Interactive Markov Chains for stochastic Reo.",
+  "journal": {
+    "name": "Journal of Internet Services and Information Security",
+    "note": "This is an extended version of our ACM SAC 2014 paper (see below)"
+  },
+  "abstract": "<p>The study of composed software and its properties is in itself a great challenge. Bringing quantitative aspects into the picture increases the complexity of the analysis and entails the need for reconciling both the classical and the stochastic analyses. The quest herein is to provide constructs for composition of building blocks and semantic models thereof which enable both analyses and allow for modeling and verification.</p><p>Stochastic Reo offers constructs for component and service coordination and provides means for specification of stochastic values for software connectors. Interactive Markov chains (IMC) on the other hand, are a stochastic, compositional, extension of classical models of concurrency, integrating classical and stochastic aspects.</p><p>This paper discusses how IMC can be effectively used as a compositional semantic model for Stochastic Reo, avoiding to resort to a separate automaton model, often lacking full compositionality, as intermediate semantics. A tool chain integrating available tool support for IMC, is described and applied in the analysis of a case study dealing with performance and resource allocation of a mediation system.</p>",
+  "download": {
+    "pdf": "http://alexandrasilva.org/files/jisisOSB_final.pdf"
+  }
+
+}, {
+  "id": "JSS14",
+  "authors": ["Bart Jacobs", "Alexandra Silva", "Ana Sokolova"],
+  "title": "Trace Semantics via Determinization",
+  "journal": {
+    "name": "Journal of Computer and System Sciences",
+    "note": "This is an extended version of our homonimous CMCS 2012 paper (see below)"
+  },
+  "abstract": "<p>This paper takes a fresh look at the topic of trace semantics in the theory of coalgebras. In the last few years, two approaches, somewhat incomparable at first sight, captured successfully in a coalgebraic setting trace semantics for various types of transition systems. The first development of coalgebraic trace semantics used final coalgebras in Kleisli categories and required some non-trivial assumptions, which do not always hold, even in cases where one can reasonably speak of traces (like for weighted automata). The second development stemmed from the observation that trace semantics can also arise by performing a determinization construction and used final coalgebras in Eilenberg-Moore categories. In this paper, we develop a systematic study in which the two approaches can be studied and compared. Notably, we show that the two different views on trace semantics are equivalent, in the examples where both approaches are applicable.</p>",
+  "download": {
+    "pdf": "http://alexandrasilva.org/files/determinization-journal.pdf"
+  }
+}]

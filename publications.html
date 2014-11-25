@@ -86,6 +86,12 @@
                         <span ng-if="paper.edited.note"><span ng-bind="paper.edited.note"></span>,</span>
                         <span ng-bind="paper.year"></span>
                       </span>
+                      <span ng-if="paper.journal">
+                        <span class="label label-danger">Journal Paper</span>
+                        <emph ng-bind="paper.journal.name"></emph>,
+                        <span ng-if="paper.journal.note"><span ng-bind="paper.journal.note"></span>)</span>
+                        <span ng-bind="paper.year"></span>
+                      </span>
                     </div>
                   </div>
                   <div ng-if="paper.abstract" class="pubdetails">
