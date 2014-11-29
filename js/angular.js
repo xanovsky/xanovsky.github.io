@@ -12,6 +12,9 @@ angular.module('homepage', ['ngRoute', 'ngAnimate', 'ngSanitize'])
           templateUrl: 'publications.html',
           controller: 'PubsCtrl'
         })
+        .when('/news.html', {
+          templateUrl: 'news.html'
+        })
         .when('/calendar.html', {
           templateUrl: 'calendar.html'
         })
@@ -27,6 +30,7 @@ angular.module('homepage', ['ngRoute', 'ngAnimate', 'ngSanitize'])
       { href: '#/main.html', icon: 'home', text: 'Main page' },
       { href: '#/aboutme.html', icon: 'user', text: 'About me' },
       { href: '#/publications.html', icon: 'edit', text: 'Publications' },
+      { href: '#/news.html', icon: 'bullhorn', text: 'News' },
       { href: '#/calendar.html', icon: 'calendar', text: 'Calendar' },
       { href: 'cv.pdf', icon: 'download-alt', text: 'Download CV' }
     ];
@@ -51,6 +55,14 @@ angular.module('homepage', ['ngRoute', 'ngAnimate', 'ngSanitize'])
 
     $http.get('data/papers.json').success(function(data) {
       $scope.papers = data;
+    });
+  }])
+
+  .controller('NewsCtrl', ['$scope', '$http', function($scope, $http) {
+    $scope.news = [];
+
+    $http.get('data/news.json').success(function(data) {
+      $scope.news = data;
     });
   }])
 

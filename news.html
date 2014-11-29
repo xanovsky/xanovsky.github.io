@@ -1,0 +1,16 @@
+<div id="calendar" class="page">
+  <div class="pageheader">
+    <div class="headercontent">
+      <div class="section-container">
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1">
+            <h2 class="title">News</h2>
+            <ul ng-controller="NewsCtrl">
+              <li ng-repeat="info in news" ng-bind-html="info"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -27,61 +27,14 @@
         <div class="section color-1">
           <div class="section-container">
             <div class="row">
-              <div class="col-md-5 col-md-offset-1">
+              <div class="col-md-10 col-md-offset-1">
                 <div class="title text-center">
-                  <h3>Academic Positions <small>(currently held)</small></h3>
+                  <h3>News</h3>
                 </div>
-                <ul class="ul-dates">
-                  <li>
-                    <div class="dates">
-                      <span>Present</span>
-                      <span>Sep '11</span>
-                    </div>
-                    <div class="content">
-                      <h4>Assistant Professor</h4>
-                      <p><em><a href="http://www.ru.nl">Radboud University Nijmegen</a></em></p>
-                      <p>Tenured since Sep 2012</p>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="dates">
-                      <span>Present</span>
-                      <span>Sep '11</span>
-                    </div>
-                    <div class="content">
-                      <h4>Guest Researcher</h4>
-                      <p><em><a href="http://www.cwi.nl">CWI</a></em>, The Netherlands</p>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="dates">
-                      <span>Present</span>
-                      <span>Sep '11</span>
-                    </div>
-                    <div class="content">
-                      <h4>Guest Researcher</h4>
-                      <p><a href="http://haslab.uminho.pt/content/about">HASlab</a> / <a href="http://www.inesctec.pt/ip-en/about-us">INESC TEC</a>, Braga, Portugal</p>
-                    </div>
-                  </li>
+                <ul ng-controller="NewsCtrl">
+                  <li ng-repeat="info in news | limitTo: 7" ng-bind-html="info"></li>
                 </ul>
-              </div>
-              <div class="col-md-5">
-                <div class="title text-center">
-                  <h3>Education</h3>
-                </div>
-                <ul class="ul-card">
-                  <li>
-                    <div class="dy">
-                      <span class="degree">Ph.D.</span>
-                      <span class="year">2010</span>
-                    </div>
-                    <div class="description">
-                      <p class="waht">Ph.D. (<emph>cum laude</emph>) in Computer Science</p>
-                      <p>Degree awarded by <em><a href="http://www.ru.nl">Radboud University Nijmegen</a></em></p>
-                      <p>Research carried out at <em><a href="http://www.cwi.nl">CWI</a></em></p>
-                    </div>
-                  </li>
-                </ul>
+                <a href="#/news.html" type="button" class="btn btn-info pull-right">More »</a>
               </div>
             </div>
           </div>
