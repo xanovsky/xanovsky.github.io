@@ -12,6 +12,9 @@ angular.module('homepage', ['ngRoute', 'ngAnimate', 'ngSanitize'])
           templateUrl: 'publications.html',
           controller: 'PubsCtrl'
         })
+        .when('/calendar.html', {
+          templateUrl: 'calendar.html'
+        })
 	.when('/cv.pdf', {
           redirectTo: '/cv.pdf'
         })
@@ -24,6 +27,7 @@ angular.module('homepage', ['ngRoute', 'ngAnimate', 'ngSanitize'])
       { href: '#/main.html', icon: 'home', text: 'Main page' },
       { href: '#/aboutme.html', icon: 'user', text: 'About me' },
       { href: '#/publications.html', icon: 'edit', text: 'Publications' },
+      { href: '#/calendar.html', icon: 'calendar', text: 'Calendar' },
       { href: 'cv.pdf', icon: 'download-alt', text: 'Download CV' }
     ];
     $scope.isCurrent = function(menuItem) {
