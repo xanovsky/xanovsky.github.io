@@ -31,8 +31,13 @@
                 <div class="title text-center">
                   <h3>News</h3>
                 </div>
-                <ul ng-controller="NewsCtrl">
-                  <li ng-repeat="info in news | limitTo: 7" ng-bind-html="info"></li>
+                <ul class="ul-dates" ng-controller="NewsCtrl">
+                  <li ng-repeat="info in news | limitTo: 7">
+                    <div class="dates">
+                      <span ng-bind="info.date"></span>
+                    </div>
+                    <div class="content" ng-bind-html="info.note"></div>
+                  </li>
                 </ul>
                 <a href="#/news.html" type="button" class="btn btn-info pull-right">More »</a>
               </div>
