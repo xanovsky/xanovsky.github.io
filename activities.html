@@ -38,39 +38,11 @@
         <p>I am the site representative in Nijmegen of <a href="http://homepages.cwi.nl/%7Ewinter/coin.html">COIN</a>: Coalgebra in the Netherlands, a recently started bi-monthly seminar, alternatingly taking place at CWI and the Radboud University Nijmegen. From 2012-2014, I co-organized the <a href="http://www.fnds.cs.ru.nl/fndswiki/Seminars">Brouwer seminar</a>. From 2008-2011, I organized with Frank de Boer the <a href="http://acg.project.cwi.nl">ACG seminar</a>.</p>
 
         <p>I collaborate(d) with wonderful people:</p>
-        <div class="row">
-          <div class="col-md-6">
-            <ul>
-              <li><a href="http://www.tu-braunschweig.de/iti/mitarbeiter/adamek">Jirí Adámek</a>,
-              <li><a href="http://www.cwi.nl/~arbab">Farhad Arbab</a>,
-              <li><a href="http://www.di.uminho.pt/~lsb">Luis Barbosa</a>,
-              <li><a href="http://www.di.unipi.it/~fibonchi/">Filippo Bonchi</a>,
-              <li><a href="http://liacs.nl/~marcello">Marcello Bonsangue</a>,
-              <li><a href="http://rap.dsi.unifi.it/~boreale/">Michele Boreale</a>,
-              <li><a href="http://georgiana.caltais.goriac.info/">Georgiana Caltais</a>,
-              <li><a href="http://www.cs.kuleuven.be/~dave/">Dave Clarke</a>,
-              <li><a href="http://eugen.goriac.info/">Eugen Goriac</a>,
-              <li><a href="http://www.ti.inf.uni-due.de/people/huelsbusch/">Mathias Hülsbusch</a>,
-              <li><a href="http://www.cs.ru.nl/~bart">Bart Jacobs</a>,
-              <li><a href="http://www.ti.inf.uni-due.de/people/koenig/">Barbara König</a>,
-            </ul>
-          </div>
-          <div class="col-md-6">
-            <ul>
-              <li><a href="http://www.cs.cornell.edu/~kozen/">Dexter Kozen</a>,
-              <li><a href="http://www.hpi.uni-potsdam.de/giese/personen/dr_christian_krause.html">Christian Krause</a>,
-              <li><a href="http://profs.info.uaic.ro/~dlucanu/">Dorel Lucanu</a>,
-              <li><a href="http://phoenix.inria.fr/index.php/members/90-youngjoomoon">Young-Joo Moon</a>,
-              <li><a href="http://www.tu-braunschweig.de/iti/mitarbeiter/milius">Stefan Milius</a>,
-              <li><a href="http://www.di.uminho.pt/~jno/">José Nuno Oliveira</a>,
-              <li><a href="http://www.cs.mcgill.ca/~prakash/">Prakash Panangaden</a>,
-              <li><a href="http://sardes.inrialpes.fr/~pous/">Damien Pous</a>,
-              <li><a href="http://homepages.cwi.nl/~janr/">Jan Rutten</a>,
-              <li><a href="http://cs.uni-salzburg.at/~anas/">Ana Sokolova</a>,
-              <li><a href="http://www.di.uminho.pt/~joost/">Joost Visser</a>.
-            </ul>
-          </div>
-        </div>
+        <ul ng-controller="CollabCtrl">
+          <li ng-repeat="person in collaborators">
+            <a ng-href="person.link" ng-bind="person.name"></a>
+          </li>
+        </ul>
       </div>
     </div>
   </div>

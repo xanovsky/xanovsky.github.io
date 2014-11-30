@@ -75,6 +75,14 @@ angular.module('homepage', ['ngRoute', 'ngAnimate', 'ngSanitize'])
     });
   }])
 
+  .controller('CollabCtrl', ['$scope', '$http', function($scope, $http) {
+    $scope.collaborators = [];
+
+    $http.get('data/collaborators.json').success(function(data) {
+      $scope.collaborators = data;
+    });
+  }])
+
   .directive('pubTypeDropdown', ['$timeout', '$rootScope', function($timeout, $rootScope) {
     return {
       restrict: 'A',
