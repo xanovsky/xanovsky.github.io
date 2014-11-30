@@ -63,6 +63,15 @@
     opacity: 1;
 }
 
+.collaborators img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray;
+}
+.collaborators img:hover {
+    -webkit-filter: none;
+    filter: none;
+}
 
 /* General styles
  **************************************************/

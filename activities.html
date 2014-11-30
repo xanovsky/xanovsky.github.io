@@ -38,11 +38,20 @@
         <p>I am the site representative in Nijmegen of <a href="http://homepages.cwi.nl/%7Ewinter/coin.html">COIN</a>: Coalgebra in the Netherlands, a recently started bi-monthly seminar, alternatingly taking place at CWI and the Radboud University Nijmegen. From 2012-2014, I co-organized the <a href="http://www.fnds.cs.ru.nl/fndswiki/Seminars">Brouwer seminar</a>. From 2008-2011, I organized with Frank de Boer the <a href="http://acg.project.cwi.nl">ACG seminar</a>.</p>
 
         <p>I collaborate(d) with wonderful people:</p>
-        <ul ng-controller="CollabCtrl">
-          <li ng-repeat="person in collaborators">
-            <a ng-href="person.link" ng-bind="person.name"></a>
-          </li>
-        </ul>
+        <div class="collaborators row" ng-controller="CollabCtrl">
+          <div ng-repeat="person in collaborators" class="col-sm-3">
+            <div class="thumbnail">
+              <a ng-href="{{person.link}}">
+                <img ng-src="img/collaborators/{{person.img}}" alt="{{person.name}}">
+              </a>
+              <div class="caption">
+                <a ng-href="{{person.link}}">
+                  <h4 ng-bind="person.name"></h4>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
