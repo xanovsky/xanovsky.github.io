@@ -8,7 +8,7 @@
     "location": "Mumbai, India",
     "url": "http://popl.mpi-sws.org/2015"
   },
-  "download": "http://alexandrasilva.org/files/popl265-foster.pdf",
+  "download": "/files/popl265-foster.pdf",
   "abstract": "<p>NetKAT is a domain-specific language and logic for specifying and verifying network packet-processing functions. It consists of Kleene algebra with tests (KAT) augmented with primitives for testing and modifying packet headers and encoding network topologies. Previous work developed the design of the language and its standard semantics, proved the soundness and completeness of the logic, defined a PSPACE algorithm for deciding equivalence, and presented several practical applications.</p><p>This paper develops the coalgebraic theory of NetKAT, including a specialized version of the Brzozowski derivative, and presents a new efficient algorithm for deciding the equational theory using bisimulation. The coalgebraic structure admits an efficient sparse representation that results in a significant reduction in the size of the state space. We discuss the details of our implementation and optimizations that exploit NetKAT's equational axioms and coalgebraic structure to yield significantly improved performance. We present results from experiments demonstrating that our tool is competitive with state-of-the-art tools on several benchmarks including all-pairs connectivity, loop-freedom, and translation validation.</p>"
 
 }, {
@@ -64,7 +64,7 @@
     "volume": 8464,
     "pages": "384-406"
   },
-  "download": "http://alexandrasilva.org/files/prakash.pdf",
+  "download": "/files/prakash.pdf",
   "abstract": "Automata learning is a known technique to infer a finite state machine from a set of observations. In this paper, we revisit Angluin’s original algorithm from a categorical perspective. This abstract view on the main ingredients of the algorithm lays a uniform framework to derive algorithms for other types of automata. We show a straightforward generalization to Moore and Mealy machines, which yields an algorithm already know in the literature, and we discuss generalizations to other types of automata, including weighted automata."
 
 }, {
@@ -76,7 +76,7 @@
     "name": "Journal of Internet Services and Information Security",
     "note": "This is an extended version of our ACM SAC 2014 paper (see below)"
   },
-  "download": "http://alexandrasilva.org/files/jisisOSB_final.pdf",
+  "download": "/files/jisisOSB_final.pdf",
   "abstract": "<p>The study of composed software and its properties is in itself a great challenge. Bringing quantitative aspects into the picture increases the complexity of the analysis and entails the need for reconciling both the classical and the stochastic analyses. The quest herein is to provide constructs for composition of building blocks and semantic models thereof which enable both analyses and allow for modeling and verification.</p><p>Stochastic Reo offers constructs for component and service coordination and provides means for specification of stochastic values for software connectors. Interactive Markov chains (IMC) on the other hand, are a stochastic, compositional, extension of classical models of concurrency, integrating classical and stochastic aspects.</p><p>This paper discusses how IMC can be effectively used as a compositional semantic model for Stochastic Reo, avoiding to resort to a separate automaton model, often lacking full compositionality, as intermediate semantics. A tool chain integrating available tool support for IMC, is described and applied in the analysis of a case study dealing with performance and resource allocation of a mediation system.</p>"
 
 }, {
@@ -88,7 +88,7 @@
     "name": "Journal of Computer and System Sciences",
     "note": "This is an extended version of our homonimous CMCS 2012 paper (see below)"
   },
-  "download": "http://alexandrasilva.org/files/determinization-journal.pdf",
+  "download": "/files/determinization-journal.pdf",
   "abstract": "<p>This paper takes a fresh look at the topic of trace semantics in the theory of coalgebras. In the last few years, two approaches, somewhat incomparable at first sight, captured successfully in a coalgebraic setting trace semantics for various types of transition systems. The first development of coalgebraic trace semantics used final coalgebras in Kleisli categories and required some non-trivial assumptions, which do not always hold, even in cases where one can reasonably speak of traces (like for weighted automata). The second development stemmed from the observation that trace semantics can also arise by performing a determinization construction and used final coalgebras in Eilenberg-Moore categories. In this paper, we develop a systematic study in which the two approaches can be studied and compared. Notably, we show that the two different views on trace semantics are equivalent, in the examples where both approaches are applicable.</p>"
 
 }, {
@@ -99,7 +99,7 @@
   "journal": {
     "name": "Mathematical Structures in Computer Science"
   },
-  "download": "http://alexandrasilva.org/files/new-dec-traces-mscs.pdf</url>",
+  "download": "/files/new-dec-traces-mscs.pdf</url>",
   "abstract": "<p>In concurrency theory, various semantic equivalences on transition systems are based on traces decorated with some additional observations, generally referred to as decorated traces. Using the generalized powerset construction, recently introduced by a subset of the authors, we give a coalgebraic presentation of decorated trace semantics. The latter include ready, failure, (complete) trace, possible-futures, ready trace and failure trace semantics for labeled transition systems, and ready, (maximal) failure and (maximal) trace semantics for generative probabilistic systems.  This yields a uniform notion of minimal representatives for the various decorated trace equivalences, in terms of final Moore automata. As a consequence, proofs of decorated trace equivalence can be given by coinduction, using different types of (Moore-) bisimulation (up-to context).</p>"
 
 }, {
@@ -132,7 +132,7 @@
     "volume": 2,
     "pages": "1247-1254"
   },
-  "download": "http://alexandrasilva.org/files/imcreoOSB.pdf",
+  "download": "/files/imcreoOSB.pdf",
   "abstract": "<p>Quality of Service analysis of composed software systems is an active research area, with the goal of evaluating and improving performance and resource allocation in serviceoriented applications, namely, in the glue code--coordination layer--of such systems. Stochastic Reo offers constructs for service coordination and allows the specification of stochastic values for channels. But its state-of-the-art semantic models fail in several (important) ways. In this paper, we will see how Interactive Markov chains (IMC), proposed as a stochastic compositional model of concurrency, can be effectively used to serve as a compositional semantic model for Stochastic Reo. Treating IMC as a direct semantic model, gives rise to more faithful models and has obvious efficiency advantages. Moreover, tool support that exists for IMC is made available, without significant effort, to verify and reason about the coordination layer modelled as Reo connectors.</p>"
 
 }, {
@@ -168,7 +168,7 @@
   "journal": {
     "name": "Mathematical Structures in Computer Science"
   },
-  "download": "http://alexandrasilva.org/files/up-to.pdf",
+  "download": "/files/up-to.pdf",
   "abstract": "<p>Theoretical models of recursion schemes have been well studied under the names well-founded coalgebras, recursive coalgebras, corecursive algebras, and Elgot algebras. Much of this work focuses on conditions ensuring unique or canonical solutions, e.g. when the coalgebra is well-founded. If the coalgebra is not well-founded, then there can be multiple solutions. The standard semantics of recursive programs gives a particular solution, namely the least solution in a flat Scott domain, which may not be the desired one. We have recently proposed programming language constructs to allow the specification of alternative solutions and methods to compute them. We have implemented these new constructs as an extension of OCaml. In this paper, we prove some theoretical results characterizing well-founded coalgebras that slightly extend results of Adamek, Luecke, and Milius (2007), along with several examples for which this extension is useful. We also give several examples that are not well-founded but still have a desired solution. In each case, the function would diverge under the standard semantics of recursion, but can be specified and computed with the programming language constructs we have proposed.</p>"
 
 }, {
@@ -193,7 +193,7 @@
     "name": "Mathematical Structures in Computer Science",
     "note": "A previous version of this paper appeared as a Cornell tech report (see below)"
   },
-  "download": "http://alexandrasilva.org/files/theory.pdf",
+  "download": "/files/theory.pdf",
   "abstract": "<p>Theoretical models of recursion schemes have been well studied under the names well-founded coalgebras, recursive coalgebras, corecursive algebras, and Elgot algebras. Much of this work focuses on conditions ensuring unique or canonical solutions, e.g. when the coalgebra is well-founded. If the coalgebra is not well-founded, then there can be multiple solutions. The standard semantics of recursive programs gives a particular solution, namely the least solution in a flat Scott domain, which may not be the desired one. We have recently proposed programming language constructs to allow the specification of alternative solutions and methods to compute them. We have implemented these new constructs as an extension of OCaml. In this paper, we prove some theoretical results characterizing well-founded coalgebras that slightly extend results of Adamek, Luecke, and Milius (2007), along with several examples for which this extension is useful. We also give several examples that are not well-founded but still have a desired solution. In each case, the function would diverge under the standard semantics of recursion, but can be specified and computed with the programming language constructs we have proposed.</p>"
 
 }, {
@@ -205,7 +205,7 @@
     "name": "Mathematical Structures in Computer Science",
     "note": "A previous version of this paper appeared as a Cornell tech report (see below)"
   },
-  "download": "http://alexandrasilva.org/files/Structural.pdf",
+  "download": "/files/Structural.pdf",
   "abstract": "<p>Induction is a well-established proof principle that is taught in most undergraduate programs in mathematics and computer science. In computer science, it is used primarily to reason about inductively-defined datatypes such as finite lists, finite trees, and the natural numbers. Coinduction is the dual principle that can be used to reason about coinductive datatypes such as infinite streams or trees, but it is not as widespread or as well understood. In this paper, we illustrate through several examples the use of coinduction in informal mathematical arguments. Our aim is to promote the principle as a useful tool for the working mathematician and to bring it to a level of familiarity on par with induction. We show that coinduction is not only about bisimilarity and equality of behaviors, but also applicable to a variety of functions and relations defined on coinductive datatypes.</p>"
 
 }, {
@@ -236,7 +236,7 @@
     "volume": "8301",
     "pages": "1-16"
   },
-  "download": "http://alexandrasilva.org/files/aplas2013.pdf",
+  "download": "/files/aplas2013.pdf",
   "abstract": "<p>Checking language equivalence (or inclusion) of finite automata is a classical problem in Computer Science, which has recently received a renewed interest and found novel and more effective solutions, such as approaches based on antichains or bisimulations up-to. Several notions of equivalence (or preorder) have been proposed for the analysis of concurrent systems. Usually, the problem of checking these equivalences is reduced to checking bisimilarity. In this paper, we take a different approach and propose to adapt algorithms for language equivalence to check one prime equivalence in concurrency theory, must testing semantics. To achieve this transfer of technology from language to must semantics, we take a coalgebraic outlook at the problem.</p>"
 
 }, {
@@ -252,7 +252,7 @@
     "volume": "8089",
     "pages": "267-282"
   },
-  "download": "http://alexandrasilva.org/files/epsilon-extended.pdf",
+  "download": "/files/epsilon-extended.pdf",
   "abstract": "<p>In automata theory, a machine transitions from one state to the next when it reads an input symbol. It is common to also allow an automaton to transition without input, via an epsilon-transition. These epsilon-transitions are convenient, e.g., when one defines the composition of automata. However, they are not necessary, and can be eliminated. Such epsilon-elimination procedures have been studied separately for different types of automata, including non-deterministic and weighted automata. It has been noted by Hasuo that it is possible to give a coalgebraic account of epsilon-elimination for some automata using trace semantics (as defined by Hasuo, Jacobs and Sokolova).</p><p>In this paper, we give a detailed description of the epsilon-elimination procedure via trace semantics (missing in the literature). We apply this framework to several types of automata, and explore its boundary. In particular, we show that is possible (by careful choice of a monad) to define an epsilon-removal procedure for all weighted automata over the positive reals (and certain other semirings). Our definition extends the recent proposals by Sakarovitch and Lombardy for these semirings.</p>"
 
 }, {
@@ -443,7 +443,7 @@
     "pages": "162-178",
     "note": "An earlier version of this paper appeared as Cornell Technical report (see below)"
   },
-  "download": "http://alexandrasilva.org/files/Left.pdf",
+  "download": "/files/Left.pdf",
   "abstract": "<p>We give a new, significantly shorter proof of the completeness of the left-handed star rule of Kleene algebra. The proof reveals the rich interaction of algebra and coalgebra in the theory.</p>"
 
 }, {
@@ -472,7 +472,7 @@
     "pages": "12-23",
     "note": "An earlier version of this paper appeared as CWI tech report SEN 11-14 (see below)"
   },
-  "download": "http://alexandrasilva.org/files/RechabilityObservability.pdf",
+  "download": "/files/RechabilityObservability.pdf",
   "abstract": "<p>We give a new presentation of Brzozowski’s algorithm to minimize finite automata, using elementary facts from universal algebra and coalgebra, and building on earlier work by Arbib and Manes on the duality between reachability and observability. This leads to a simple proof of its correctness and opens the door to further generalizations.</p>"
 
 }, {
@@ -497,7 +497,7 @@
     "volume": "211",
     "pages": "77-105"
   },
-  "download": "http://alexandrasilva.org/files/ic-lwa.pdf http://dx.doi.org/10.1016/j.ic.2011.12.002",
+  "download": "/files/ic-lwa.pdf",
   "abstract": "<p>Weighted automata are a generalisation of non-deterministic automata where each transition, in addition to an input letter, has also a quantity expressing the weight (e.g. cost or probability) of its execution. As for non-deterministic automata, their behaviours can be expressed in terms of either (weighted) bisimilarity or (weighted) language equivalence.</p><p>Coalgebras provide a categorical framework for the uniform study of state-based systems and their behaviours. In this work, we show that coalgebras can suitably model weighted automata in two different ways: coalgebras on Set (the category of sets and functions) characterise weighted bisimilarity, while coalgebras on Vect (the category of vector spaces and linear maps) characterise weighted language equivalence.</p><p>Relying on the second characterisation, we show three different procedures for computing weighted language equivalence. The first one consists in a generalisation of the usual partition refinement algorithm for ordinary automata. The second one is the backward version of the first one. The third procedure relies on a syntactic representation of rational weighted languages.</p>"
 
 }, {
@@ -513,7 +513,7 @@
     "volume": "7399",
     "pages": "109-129"
   },
-  "download": "http://alexandrasilva.org/files/determinization.pdf",
+  "download": "/files/determinization.pdf",
   "abstract": "<p>This paper takes a fresh look at the topic of trace semantics in the theory of coalgebras. The first development of coalgebraic trace semantics used final coalgebras in Kleisli categories, stemming from an initial algebra in the underlying category (see notably~\\cite{HasuoJS07}). This approach requires some non-trivial assumptions, like dcpo enrichment, which do not always hold, even in cases where one can reasonably speak of traces (like for weighted automata). More recently, it has been noticed (see~\\cite{SBBR10}) that trace semantics can also arise by first performing a determinization construction. In this paper, we develop a systematic approach, in which the two approaches correspond to different orders of composing a functor and a  monad, and accordingly, to different distributive laws. The relevant final coalgebra that gives rise to trace semantics does not live in a Kleisli category, but more generally, in a category of Eilenberg-Moore algebras. In order to exploit its finality, we identify an extension operation, that changes the state space of a coalgebra into a free algebra, which abstractly captures determinization of automata. Notably, we show that the two different views on trace semantics are equivalent, in the examples where both approaches are applicable.</p>"
 
 }, {
@@ -529,7 +529,7 @@
     "volume": "286",
     "pages": "73-86"
   },
-  "download": "http://alexandrasilva.org/files/decorated.pdf",
+  "download": "/files/decorated.pdf",
   "abstract": "<p>In concurrency theory, various semantic equivalences on la- belled transition systems are based on traces enriched or decorated with some additional observations. They are generally referred to as decorated traces, and examples include ready, failure, trace and complete trace equivalence. Using the generalized powerset construction, recently introduced by a subset of the authors (FSTTCS’10), we give a coalgebraic presentation of decorated trace semantics. This yields a uniform notion of canonical, minimal representatives for the various decorated trace equivalences, in terms of final Moore automata. As a consequence, proofs of decorated trace equivalence can be given by coinduction, using different types of (Moore-) bisimulation, which is helpful for automation.</p>"
 
 }, {
@@ -546,7 +546,7 @@
     "pages": "58-73",
     "note": "This paper contains part of the results of the CWI technical report SEN-1106 (see below)"
   },
-  "download": "http://alexandrasilva.org/files/fossacs12-extended.pdf http://alexandrasilva.org/files/fossacs12.pdf",
+  "download": "/files/fossacs12-extended.pdf",
   "abstract": "<p>Coalgebra offers a unified theory of state based systems, including infinite streams, labelled transition systems and deterministic automata. In this paper, we use the coalgebraic view on systems to derive, in a uniform way, abstract procedures for checking behavioural equivalence in coalgebras, which perform (a combination of) minimization and determinization. First, we show that for coalgebras in categories equipped with factorization structures, there exists an abstract procedure for equivalence checking. Then, we consider coalgebras in categories without suitable factorization structures: under certain conditions, it is possible to apply the above procedure after transforming coalgebras with reflections. This transformation can be thought of as some kind of determinization. We will apply our theory to the following examples: conditional transition systems and (non-deterministic) automata</p>"
 
 }, {
@@ -585,7 +585,7 @@
     "location": "Oslo, Norway",
     "url": "http://facs2011.ifi.uio.no/index.php?n=TTSS.TTSS2011"
   },
-  "download": "http://alexandrasilva.org/files/ttss11.pdf",
+  "download": "/files/ttss11.pdf",
   "abstract": "<p>QoS analysis of coordinated distributed autonomous services is currently of interest in the area of service-oriented computing and calls for new technologies and supporting tools. In previous work, the first three authors have proposed a compositional automata model to provide semantics for stochastic Reo, a channel based coordination language that supports the specification of QoS values (such as request arrivals or processing rates). Furthermore, translations from this automata model into stochastic models, such as continuous-time Markov chains (CTMCs) and interactive Markov chains (IMCs) have also been presented.</p><p>Based on those results, we describe in this paper a case study of QoS analysis. We analyze a certain instance of the ASK system, an industrial software system for connecting people offering professional services to clients requiring those services. We develop a model of the ASK system using stochastic Reo. The distributions used in this model were obtained by applying statistical analysis techniques on the raw values that we obtained from the real logs of an actual running ASK system. These distributions are used for the derived CTMC model for the ASK system to analyze and to improve the performance of the system, under the assumption that the distributions are exponentially distributed. In practice, this is not always the case. Thus, we also carry out a simulation-based analysis by a Reo simulator that can deal with non-exponential distributions. Compared to the analysis on the derived CTMC model, the simulation is approximation-based analysis, but it reveals valuable insight in the behavior of the system. The outcome of both analyses helps both the developers and the installations of the ASK system to improve the performance of the system.</p>"
 
 }, {
@@ -682,7 +682,7 @@
     "volume": "276",
     "pages": "291-311"
   },
-  "download": "http://alexandrasilva.org/files/mfps11.pdf",
+  "download": "/files/mfps11.pdf",
   "abstract": "<p>We present a sound and complete axiomatization of finite complete trace semantics for generative probabilistic transition systems. Our approach is coalgebraic, which opens the door to axiomatize other types of systems. In order to prove soundness and completeness, we employ determinization and show that coalgebraic traces can be recovered via determinization, a result interesting in itself. The approach is also applicable to labelled transition systems, for which we can recover the known axiomatization of trace semantics (work of Rabinovich).</p>"
 
 }, {
@@ -696,7 +696,7 @@
     "number": "5",
     "pages": "822-849"
   },
-  "download": "http://alexandrasilva.org/files/ic-concur.pdf http://dx.doi.org/10.1016/j.ic.2010.09.007",
+  "download": "/files/ic-concur.pdf",
   "abstract": "<p>We present a systematic way to generate (1) languages of (generalised) regular expressions,  and (2) sound and complete axiomatizations thereof, for a wide variety of quantitative systems.  Our quantitative systems include weighted versions of automata and transition systems, in which transitions are assigned a value in a monoid that represents cost, duration, probability, etc. Such systems are represented as coalgebras and (1) and (2) above are derived in a modular fashion from the underlying (functor) type of these coalgebras. In previous work, we applied a similar approach to a class of systems (without weights) that generalizes both the results of Kleene (on rational languages and DFA’s) and Milner (on regular behaviours and finite LTS’s), and includes many other systems such as Mealy and Moore machines.In the present paper, we extend this framework to deal with quantitative systems. As a consequence, our results now include languages and axiomatizations, both existing and new ones, for many different kinds of probabilistic systems.</p>"
 
 }, {
@@ -705,7 +705,7 @@
   "authors": ["Marcello Bonsangue", "Stefan Milius", "Alexandra Silva"],
   "title": "Sound and complete axiomatizations of coalgebraic language equivalence",
   "unpublished": "A revised version of this paper was accepted for publication in ACM TOCL (see above)",
-  "download": "http://alexandrasilva.org/files/BMS-11-draft.pdf http://arxiv.org/abs/1104.2803",
+  "download": "/files/BMS-11-draft.pdf",
   "abstract": "<p>Coalgebras provide a uniform framework to study dynamical systems, including several types of automata. In this paper, we make use of the coalgebraic view on systems to investigate, in a uniform way, under which conditions calculi that are sound and complete with respect to behavioral equivalence can be extended to a coarser coalgebraic language equivalence, which arises from a generalised powerset construction. We illustrate the framework with two examples: non-deterministic automata, for which we recover Rabinovich’s sound and complete calculus for language equivalence, and weighted automata, for which we present the first sound and complete calculus for weighted language equivalence.</p>"
 
 }, {
@@ -753,7 +753,7 @@
   "authors": ["Alexandra Silva", "Marcello Bonsangue", "Jan Rutten"],
   "title": "Kleene Coalgebra: an overview",
   "unpublished": "Nieuwsbrief van de Nederlandse Vereniging voor Theoretische Informatica (NVTI). Nummer 15",
-  "download": "http://alexandrasilva.org/files/2011-nvti.pdf",
+  "download": "/files/2011-nvti.pdf",
   "abstract": "<p>Coalgebras provide a uniform framework for the study of dynamical systems, including several types of automata. The coalgebraic view on systems has recently been proved relevant by the development of a number of expression calculi which generalize classical results by Kleene, on regular expressions, and by Kozen, on Kleene algebra.</p><p>This note contains an overview of the motivation and results of the generic framework we developed – Kleene Coalgebra – to uniformly derive the aforementioned calculi. We present an historical overview of work on regular expressions and axiomatizations, as well a discussion of related work. We show applications of the framework to three types of probabilistic systems: simple Segala, stratified and Pnueli-Zuck.</p>"
 
 }, {
@@ -825,7 +825,7 @@
     "pages": "226-241",
     "note": "An extended version appears as CWI technical report SEN-1109 (see above)"
   },
-  "download": "http://alexandrasilva.org/files/sbmf10.pdf",
+  "download": "/files/sbmf10.pdf",
   "abstract": "<p>A notion of generalized regular expressions for a large class of systems modeled as coalgebras, and an analogue of Kleene’s theorem and Kleene algebra, were recently proposed by a subset of the authors of this paper. Examples of the systems covered include infinite streams, deterministic automata and Mealy machines. In this paper, we present a tool where the aforementioned expressions can be derived automatically and a novel algorithm to decide whether two expressions are bisimilar or not. The procedure is implemented in the automatic theorem prover CIRC, by reducing coinduction to an entailment relation between an algebraic specification and an appropriate set of equations.</p>"
 
 }, {
@@ -894,7 +894,7 @@
     "number": 5,
     "pages": "578-593"
   },
-  "download": "http://alexandrasilva.org/files/2010-Rutten-Silva-IC.pdf",
+  "download": "/files/2010-Rutten-Silva-IC.pdf",
   "abstract": "<p>We study the set TA of infinite binary trees with nodes labelled in a semiring A from a coalgebraic perspective. We present coinductive definition and proof principles based on the fact that TA carries a final coalgebra structure. By viewing trees as formal power series, we develop a calculus where definitions are presented as behavioural differential equations. We present a general format for these equations that guarantees the existence and uniqueness of solutions. Although technically not very difficult, the resulting framework has surprisingly nice applications, which is illustrated by various concrete examples.</p>"
 
 }, {
@@ -941,7 +941,7 @@
   "id": "BBRS09a",
   "authors": ["Filippo Bonchi", "Marcello Bonsangue", "Jan Rutten", "Alexandra Silva"],
   "title": " Quantitative regular behaviours",
-  "download": "http://alexandrasilva.org/files/calco-jnr2009.pdf",
+  "download": "/files/calco-jnr2009.pdf",
   "unpublished": "Calco-jnr 2009, Udine, Italy",
   "abstract": "<p>We present a systematic way to generate (1) languages of (generalised) regular expressions, and (2) sound and complete axiomatizations thereof, for a wide variety of quantitative systems. Our quantitative systems include weighted versions of automata and transition systems, in which transitions are assigned a value in a monoid that represents cost, duration, probability, etc. Such systems are represented as coalgebras and (1) and (2) above are derived in a modular fashion from the underlying (functor) type of these coalgebras.</p><p>In previous work, we applied a similar approach to a class of systems (without weights), coalgebras for the so-called Kripke-polynomial functors, that generalizes both the results of Kleene (on rational languages and DFA's) and Milner (on regular behaviours and finite LTS's), and includes many other systems such as Mealy and Moore machines.</p><p>We now enlarge this framework to deal with quantitative systems. To this end, we give a non-trivial extension of the class of Kripke-polynomial functors by adding a functor type that allows the transitions of our systems to take values in a monoid structure of quantitative values. This new class, which we shall call quantitative functors, now includes weighted automata and several probabilistic systems. At the same time, we extend our earlier approach to the new setting. This will allow us to derive for each functor in our new extended class everything we were after: a language of regular expressions; a corresponding Kleene Theorem; and a sound and complete axiomatization for the corresponding notion of behavioural equivalence.</p><p>As a consequence, our results now include languages and axiomatizations, both existing and new ones, for weighted automata and many different kinds of probabilistic systems. Table 1 shows three examples of derived languages and axiomatizations.</p>"
 
@@ -958,7 +958,7 @@
     "volume": "5710",
     "pages": "146-162"
   },
-  "download": "http://alexandrasilva.org/files/concur09.pdf",
+  "download": "/files/concur09.pdf",
   "abstract": "<p>We present a systematic way to generate (1) languages of (generalised) regular expressions, and (2) sound and complete axiomatizations thereof, for a wide variety of quantitative systems. Our quantitative systems include weighted versions of automata and transition systems, in which transitions are assigned a value in a monoid that represents cost, duration, probability, etc. Such systems are represented as coalgebras and (1) and (2) above are derived in a modular fashion from the underlying (functor) type of these coalgebras.</p><p>In previous work, we applied a similar approach to a class of systems (without weights) that generalizes both the results of Kleene (on rational languages and DFA’s) and Milner (on regular behaviours and finite LTS’s), and includes many other systems such as Mealy and Moore machines.</p><p>In the present paper, we extend this framework to deal with quantitative systems. As a consequence, our results now include languages and axiomatizations, both existing and new ones, for many different kinds of probabilistic systems.</p>"
 
 }, {
@@ -973,7 +973,7 @@
     "series": "IEEE",
     "pages": "49-58"
   },
-  "download": "http://alexandrasilva.org/files/lics-draft.pdf",
+  "download": "/files/lics-draft.pdf",
   "abstract": "<p>Several dynamical systems, like deterministic automata and labelled transition systems, can be described as coalgebras of so-called Kripke polynomial functors, built up from constants and identities, using product, coproduct and powerset. Locally finite Kripke polynomial coalgebras can be characterized up to bisimulation by a specification language that generalizes Kleene’s regular expressions for finite automata. In this paper, we equip this specification language with an axiomatization and prove it sound and complete with respect to bisimulation, using a purely coalgebraic argument. We demonstrate the usefulness of our framework by providing an alternative finite equational system for (non-)deterministic finite automata, labelled transition systems with explicit termination, and automata on guarded strings.</p>"
 
 }, {
@@ -989,7 +989,7 @@
     "volume": "5521",
     "pages": "184-203"
   },
-  "download": "http://alexandrasilva.org/files/coord09.pdf",
+  "download": "/files/coord09.pdf",
   "abstract": "<p>Recent approaches to component-based software engineering employ coordinating connectors to compose components into software systems. For maximum flexibility and reuse, such connectors can themselves be composed, resulting in an expressive calculus of connectors whose semantics encompasses complex combinations of synchronisation, mutual exclusion, non-deterministic choice and state-dependent behaviour. A more expressive notion of connector includes also context-dependent behaviour, namely, whenever the choices the connector can take change non-monotonically as the context, given by the pending activity on its ports, changes. Context dependency can express notions of priority and inhibition. Capturing context-dependent behaviour in formal models is non-trivial, as it is unclear how to propagate context information through composition. In this paper we present an intuitive automata-based formal model of context-dependent connectors, and argue that it is superior to previous attempts at such a model for the coordination language Reo.</p>"
 
 }, {
@@ -1006,7 +1006,7 @@
     "pages": "122-136",
     "note": "A previous version appeared as CWI technical report SEN-0703 (see below)"
   },
-  "download": "http://alexandrasilva.org/files/BRS09a.pdf",
+  "download": "/files/BRS09a.pdf",
   "abstract": "<p>For polynomial functors G, we show how to generalize the classical notion of regular expression to G-coalgebras. We introduce a language of expressions for describing elements of the final G-coalgebra and, analogously to Kleene’s theorem, we show the correspondence between expressions and finite G-coalgebras.</p>"
 
 }, {
@@ -1022,7 +1022,7 @@
     "volume": "5140",
     "pages": "83-99"
   },
-  "download": "http://alexandrasilva.org/files/BOS08.pdf",
+  "download": "/files/BOS08.pdf",
   "abstract": "<p>Invariants, bisimulations and assertions are the main ingredients of coalgebra theory applied to software systems. In this paper we reduce the first to a particular case of the second and show how both together pave the way to a theory of coalgebras which regards invariant predicates as types. An outcome of such a theory is a calculus of invariants' proof obligation discharge, a fragment of which is presented in the paper.</p><p>The approach has two main ingredients: one is that of adopting relations as \"first class citizens\" in a pointfree reasoning style; the other lies on a synergy found between a relational construct, Reynolds' relation on functionsinvolved in the abstraction theoremon parametric polymorphism and the coalgebraic account of bisimulations and invariants. This leads to an elegant proof of the equivalence between two different definitions of bisimulation found in coalgebra literature (due to B. Jacobs and Aczel and Mendler, respectively) and to their instantiation to the classical Park-Milner definition popular in process algebra.</p>"
 
 }, {
@@ -1031,7 +1031,7 @@
   "authors": ["Marcello Bonsangue", "Jan Rutten", "Alexandra Silva"],
   "title": "Regular expressions for polynomial coalgebras",
   "unpublished": "CMCS 2008 (short contributions), Budapest, Hungary",
-  "download": "http://alexandrasilva.org/files/cmcs08-short.pdf",
+  "download": "/files/cmcs08-short.pdf",
   "abstract": "<p>For polynomial set functors G, we generalize the notion of regular expressions and introduce a language of expressions for describing elements of the final G-coalgebra. We show that every state of a finite G-coalgebra corresponds to an expression in the language, in the sense that they both have the same semantics. Conversely, we give a compositional synthesis algorithm which transforms every expression into a finite G-coalgebra. The language of expressions is equipped with an equational system that is sound, complete and expressive with respect to G-bisimulation.</p>"
 
 }, {
@@ -1048,7 +1048,7 @@
     "pages": "231-245",
     "note": "A previous version appeared as CWI technical report SEN-0705 (see below)"
   },
-  "download": "http://alexandrasilva.org/files/mealy.pdf",
+  "download": "/files/mealy.pdf",
   "abstract": "<p>We present a novel coalgebraic logic for deterministic Mealy machines that is sound, complete and expressive w.r.t. bisimulation. Every finite Mealy machine corresponds to a finite formula in the language. For the converse, we give a compositional synthesis algorithm which transforms every formula into a finite Mealy machine whose behaviour is exactly the set of causal functions satisfying the formula.</p>"
 
 }, {
@@ -1095,7 +1095,7 @@
   "id": "Silva07",
   "authors": ["Alexandra Silva"],
   "title": "A coalgebraic view on bi-infinite streams",
-  "download": "http://alexandrasilva.org/files/calco-jnr2007.pdf",
+  "download": "/files/calco-jnr2007.pdf",
   "unpublished": "Calco-jnr 2007, Bergen, Norway",
   "abstract": "<p>Bi-infinite streams arise as a natural data structure in several contexts, such as signal processing, symbolic dynamics, (balanced) representation of real/rational numbers or study of sets invariant under shift transformation. In this paper, we will present a coalgebraic view of the set of bi-infinite streams.</p>"
 
@@ -1112,7 +1112,7 @@
     "pages": "322 - 336",
     "note": "This paper has an extended version published in 2009 in Information and Computation (see above)"
   },
-  "download": "http://alexandrasilva.org/files/wollic2007.pdf",
+  "download": "/files/wollic2007.pdf",
   "abstract": "<p>We study the set TA of infinite binary trees with nodes labelled in a semiring A from a coalgebraic perspective. We present coinductive definition and proof principles based on the fact that TA carries a final coalgebra structure. By viewing trees as formal power series, we develop a calculus where definitions are presented as behavioural differential equations. We present a general format for these equations that guarantees the existence and uniqueness of solutions. Although technically not very difficult, the resulting framework has surprisingly nice applications, which is illustrated by various concrete examples.</p>"
 
 }, {
@@ -1141,7 +1141,7 @@
     "pages": "25-36",
     "note": "This paper is supported by the CoddFish library"
   },
-  "download": "http://alexandrasilva.org/files/hw2006.pdf",
+  "download": "/files/hw2006.pdf",
   "abstract": "<p>Haskell's type system with multi-parameter constructor classes and functional dependencies allows static (compile-time) computations to be expressed by logic programming on the level of types. This emergent capability has been exploited for instance to model arbitrary-length tuples (heterogeneous lists), extensible records, functions with variable length argument lists, and (homogenous) lists of statically fixed length (vectors).We explain how type-level programming can be exploited to define a strongly-typed model of relational databases and operations on them. In particular, we present a strongly typed embedding of a significant subset of SQL in Haskell. In this model, meta-data is represented by type-level entities that guard the semantic correctness of database operations at compile time.Apart from the standard relational database operations, such as selection and join, we model functional dependencies (among table attributes), normal forms, and operations for database transformation. We show how functional dependency information can be represented at the type level, and can be transported through operations. This means that type inference statically computes functional dependencies on the result from those on the arguments.Our model shows that Haskell can be used to design and prototype typed languages for designing, programming, and transforming relational databases.</p>"
 
 }, {
