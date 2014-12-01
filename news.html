@@ -6,7 +6,7 @@
           <div class="col-md-10 col-md-offset-1">
             <h2 class="title">News</h2>
             <ul class="ul-dates" ng-controller="NewsCtrl">
-              <li ng-repeat="info in news | limitTo: 7">
+              <li ng-repeat="info in news">
                 <div class="dates">
                   <span ng-bind="info.date"></span>
                 </div>
