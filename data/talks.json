@@ -1,0 +1,307 @@
+[
+{ "title": "",
+  "pres": [{ "date": "September 2014", "event": "Coalgebras for Concurrency", "url": "http://ceres.hh.se/mediawiki/index.php/TRENDS_2014/", "location": "Rome, Italy"}],
+  "download": [{ "text": "PDF", "url": "/files/talks/trends.pdf" }]
+},
+{ "title": "Coinduction up-to: from concurrency to coalgebra and back",
+  "pres": [{ "date": "June 2014", "event": "Open problems in concurrency theory", "url": "http://opct2014.cs.vu.nl/", "location": "Bertinoro, Italy (joint with Filippo Bonchi)" }],
+  "download": [{ "text": "PDF", "url": "/files/talks/bertinoro.pdf" }]
+},
+{ "title": "The generalized powerset construction: applications to semantics and concurrency (Invited talk)",
+  "pres": [{ "date": "June 2014", "event": "MFPS 2014", "url": "http://www.cs.cornell.edu/Conferences/MFPS30/", "location": "Ithaca, NY, USA"}],
+  "download": [{ "text": "PDF", "url": "/files/talks/mfps2014.pdf" }]
+},
+{ "title": "Algebra-Coalgebra Duality in Brzozowski's Minimization Algorithm",
+  "pres": [{ "date": "January 2014", "event": "TCS and PAM seminar, VU Amsterdam", "url": "http://www.cs.vu.nl/~tcs/seminar/", "location": "Amsterdam, The Netherlands"}],
+  "download": [{ "text": "PDF", "url": "/files/talks/vu.pdf" }]
+},
+{ "title": "Automata learning: a categorical perspective",
+  "pres": [
+    { "date": "January 2014", "event": "ACG seminar, CWI", "url": "http://acg.project.cwi.nl/htbin/acg/ACG.php4", "location": "Amsterdam, The Netherlands (blackboard talk)" },
+    { "date": "January 2014", "event": "Brouwer seminar, RUN", "url": "http://www.cs.ru.nl/is/foundations/seminar/", "location": "Nijmegen, The Netherlands (blackboard talk)"},
+    { "date": "May 2014", "event": "Prakash fest", "url": "http://www.cs.ox.ac.uk/pf2014/", "location": "Oxford, UK" }
+  ],
+  "download": [{ "text": "PDF (Prakash fest)", "url": "/files/talks/prakash.pdf" }]
+},
+{ "title": "Brzozowski's and up-to algorithms in concurrency and programming languages (Invited talk)",
+  "pres": [{ "date": "December 2013", "event": "11th Asian Symposium on Programming Languages and Systems (APLAS 2013)", "url": "http://aplas2013.soic.indiana.edu", "location": "Melbourne, Vic, Australia" }],
+  "download": [{ "text": "PDF", "url": "/files/talks/aplas.pdf" }]
+},
+{ "title": "Coalgebraic Up-to techniques",
+  "pres": [
+    { "date": "October 2013", "event": "Shonan NII Meeting on coinduction for computation structures and programming languages", "url": "https://sites.google.com/site/shonanmeeting026/", "location": "Shonan Village Center, Japan"},
+    { "date": "September 2013", "event": "Workshop on quantitative analysis of interacting systems: foundations and algorithms", "url": "http://wiki.di.uminho.pt/twiki/bin/view/Research/QAIS/Workshops", "location": "Braga, Portugal"}
+  ],
+  "download": [{ "text": "PDF Shonan", "url": "/files/talks/up-to-shonan.pdf"}]
+},
+{ "title": "Algebra-Coalgebra Duality: applications in automata theory (Invited talk)",
+  "pres": [{ "date": "September 2013", "event": "TbiLLC 2013: Tenth International Tbilisi Symposium on Language, Logic and Computation", "url": "http://www.illc.uva.nl/Tbilisi/Tbilisi2013", "location": "Gudauri, Georgia"}],
+  "download": [{ "text": "PDF", "url": "http://www.illc.uva.nl/Tbilisi/Tbilisi2013/uploaded_files/inlineitem/silva.pdf"}]
+},
+{ "title": "Rational fixpoints in programming languages (Invited talk)",
+  "pres": [{ "date": "September 2013", "event": "Fixed points in Computer Science", "url": "http://fics2013.univ-mlv.fr/", "location": "Torino, Italy"}],
+  "download": [{ "text": "PDF", "url": "/files/talks/fics.pdf"}]
+},
+{ "title": "The importance of algorithms in Computer Science - or - how Manao learned how to defeat all the monsters.",
+  "pres": [{ "date": "August 2013", "event": "Academic lecture for first year CS students", "location": "Nijmegen, The Netherlands"}],
+  "download": [{ "text": "PDF", "url": "/files/talks/intreedag2013.pdf"}]
+},
+{ "title": "Generalized determinization constructions",
+  "pres": [{ "date": "August 2013", "event": "Logic Seminar, Indiana University", "url": "http://www.math.indiana.edu/seminars/event.phtml?id=3725", "location": "Bloomington (IN), USA"}],
+  "download": [{ "text": "PDF", "url": "/files/talks/indiana.pdf"}]
+},
+{ "title": "Coalgebra: applications in automata theory and programming language design",
+  "pres": [{ "date": "May 2013", "event": "Chocola meeting, ENS Lyon", "url": "http://chocola.ens-lyon.fr/events/", "location": "Lyon, France"}],
+  "download": [{ "text": "PDF", "url": "http://chocola.ens-lyon.fr/media/talk72/silva-chocola.pdf"}]
+},
+{ "title": "An introduction to coalgebra: the generalized powerset construction.",
+  "pres": [{ "date": "May 2013", "event": "SPADES seminar, INRIA Rhone-Alpes", "url": "https://team.inria.fr/spades/", "location": "Grenoble, France (blackboard talk)"}]
+},
+{ "title": "Cocaml: programming with coinductive types",
+  "pres": [
+    { "date": "June 2013", "event": "MBSD seminar, Radboud University Nijmegen", "location": "Nijmegen, The Netherlands"},
+    { "date": "May 2013", "event": "University of Utrecht", "location": "Utrecht, The Netherlands"},
+    { "date": "April 2013", "event": "FSA seminar, Technical University Eindhoven", "url": "http://www.win.tue.nl/fsacolloquium/", "location": "Eindhoven, The Netherlands"},
+    { "date": "February 2013", "event": "TCS seminar, Technical University Braunschweig, dedicated to Stefan Milius on the occasion of his habilitation", "location": "Braunschweig, Germany"}
+  ],
+  "download": [{ "text": "PDF TU/e", "url": "/files/talks/eindhoven13.pdf"}]
+},
+{ "title": "A tutorial on bisimulation",
+  "pres": [{ "date": "March 2013", "event": "Coalgebras in Computation, Logic, Probability and Quantum Physics", "url": "http://www.cs.mcgill.ca/~prakash/wshop2013.html", "location": "Bellairs, Barbados (blackboard talk)"}]
+},
+{ "title": "Initial Algebras of Terms, with binding and algebraic structure",
+  "pres": [{ "date": "February 2013", "event": "COIN", "url": "http://homepages.cwi.nl/~winter/coin.html", "location": "Amsterdam, The Netherlands"}],
+  "download": [{ "text": "PDF", "url": "/files/talks/coin13.pdf"}]
+},
+{ "title": "Cocaml: programming with coinductive types",
+  "pres": [{ "date": "November 2012", "event": "Computer Science seminar, University of Leicester", "url": "http://www2.le.ac.uk/departments/computer-science/news/researchevents/external", "location": "Leicester, United Kingdom"}],
+  "download": [{ "text": "PDF", "url": "/files/talks/leicester12.pdf"}]
+},
+{ "title": "Trace semantics via determinization",
+  "pres": [{ "date": "June 2012", "event": "COIN", "url": "http://homepages.cwi.nl/~winter/coin.html", "location": "Nijmegen, The Netherlands"}],
+  "download": [{ "text": "PDF", "url": "/files/talks/coin12.pdf"}]
+},
+{ "title": "Brzozowski's algorithm (co)algebraically",
+  "pres": [
+    { "date": "October 2012", "event": "Dagstuhl workshop on Coalgebraic logics", "url": "http://www.dagstuhl.de/en/program/calendar/semhp/?semnr=12411", "location": "Dagstuhl, Germany (joint talk with Helle Hansen)"},
+    { "date": "October 2012", "event": "Brouwer seminar", "url": "http://www.fnds.cs.ru.nl/fndswiki/Seminars", "location": "Nijmegen, The Netherlands"},
+    { "date": "August 2012", "event": "16th Wessex Theory Seminar (farewell workshop for Dirk Pattinson and Tadeusz Litak)", "url": "http://wiki.bath.ac.uk/display/wessex/16th+Wessex+Theory+Seminar", "location": "Imperial College, London, UK"},
+    { "date": "May 2012", "event": "Lutz Schröder's seminar", "url": "http://www8.informatik.uni-erlangen.de/DE/teaching/2012-SS/Oberseminar.shtml", "location": "Erlangen, Germany"},
+    { "date": "May 2012", "event": "Voices of Cante seminar", "url": "http://www.dcc.fc.up.pt/cante/news/", "location": "Porto, Portugal"},
+    { "date": "April 2012", "event": "2012 Bellairs Workshop", "url": "http://www.cs.mcgill.ca/~prakash/wshop.html", "location": "Bellairs, Barbados (blackboard talk)"}
+  ],
+  "download": [
+    { "text": "PDF Erlangen", "url": "http://www8.informatik.uni-erlangen.de/DE/teaching/2012-SS/Ober/silva-slides.pdf"},
+    { "text": "PDF Dagstuhl (extended)", "url": "/files/talks/dagstuhl13.pdf"}
+  ]
+},
+{ "title": "A coalgebraic perspective on minimization and determinization",
+  "pres": [{ "date": "March 2012", "event": "FoSSaCS 2012", "url": "http://www.etaps.org/2012/fossacs", "location": "Tallin, Estonia"}],
+  "download": [{ "text": "PDF", "url": "/files/talks/fossacs12.pdf"}]
+},
+{ "title": "Determinization constructions: from automata to coalgebras",
+  "pres": [{ "date": "22 November 2011", "event": "ACG seminar", "url": "http://acg.project.cwi.nl", "location": "Amsterdam, The Netherlands"}],
+  "download": [{ "text": "PDF", "url": "/files/talks/acg2011.pdf"}]
+},
+{ "title": "The QAIS project",
+  "pres": [{ "date": "17 October 2011", "event": "QAIS kickoff meeting", "url": "http://wiki.di.uminho.pt/twiki/pub/DI/FMHAS/News/QAIS2011.pdf", "location": "Braga, Portugal"}]
+},
+{ "title": "On Moessner's theorem",
+  "pres": [
+    { "date": "17 October 2011", "event": "QAIS kickoff meeting", "url": "http://wiki.di.uminho.pt/twiki/pub/DI/FMHAS/News/QAIS2011.pdf", "location": "Braga, Portugal"},
+    { "date": "24 September 2011", "event": "RuFiDim", "url": "www.pdmi.ras.ru/EIMI/2011/RuFiDiM/Home.php", "location": "St. Petersburg, Russia"}
+  ],
+  "download": [{ "text": "PDF", "url": "/files/talks/moessner.pdf"}]
+},
+{ "title": "Kleene Coalgebra",
+  "pres": [
+    { "date": "18 October 2011", "event": "Cerimónia de entrega do Prémio Científico IBM", "url": "http://www-05.ibm.com/pt/pc/crct/", "location": "Braga, Portugal"},
+    { "date": "14 October 2011", "event": "Seminrio de lgebra, Lgica e Computao, Universidade do Minho", "url": "http://www.cmat.uminho.pt", "location": "Braga, Portugal"},
+    { "date": "25 April 2011", "event": "Theory Seminar, Cornell University", "url": "http://www.cs.cornell.edu/courses/cs7890/2011sp/silva.htm", "location": "Ithaca, NY, USA"}
+  ],
+  "download": [
+    { "text": "PDF IBM", "url": "/files/ibm_talk.pdf"},
+    { "text": "PDF", "url": "/files/talks/dmat.pdf"}
+  ]
+},
+{ "title": "Sound and Complete Axiomatization of Trace Semantics for Probabilistic Systems",
+  "pres": [
+    { "date": "8 October 2011", "event": "Core workshop", "location": "Amsterdam, The Netherlands"},
+    { "date": "9 June 2011", "event": "Theory Seminar Reykjavik University", "location": "Reykjavik, Iceland"},
+    { "date": "11 March 2011", "event": "Comte-Parsifal Seminar, LIX, Ecole Polytechnique", "location": "Paris, France"}
+  ],
+  "download": [{ "text": "PDF", "url": "/files/talks/reykjavik.pdf"}]
+},
+{ "title": "PhD survival Kit -- my personal experience (Invited talk)",
+  "pres": [{ "date": "12 September 2011", "event": "4th MAP-i Doctoral Symposium", "url": "http://map.edu.pt/i/2010/symposium", "location": "Porto, Portugal"}],
+  "download": [{ "text": "PDF", "url": "/files/talks/mapi.pdf"}]
+},
+{ "title": "Coalgebra at the CWI: a brief overview",
+  "pres": [{ "date": "4 February 2011", "event": "CWI Pos-doc scientific meeting", "location": "Amsterdam, The Netherlands"}],
+  "download": [{ "text": "PDF", "url": "/files/talks/cwi-scientific-meeting.pdf"}]
+},
+{ "title": "Deriving syntax and axioms for quantitative regular behaviours",
+  "pres": [{ "date": "January 2011", "event": "Theory seminar", "location": "University of Salzburg, Austria"}],
+  "download": [{ "text": "PDF", "url": "/files/talks/salzburg.pdf"}]
+},
+{ "title": "Beyond Kleene Coalgebra",
+  "pres": [{ "date": "21 December 2010", "event": "Kleene Coalgebra workshop", "url": "/kc", "location": "Nijmegen, The Netherlands"}]
+},
+{ "title": "A decision procedure for bisimilarity of regular expressions",
+  "pres": [
+    { "date": "November 2010", "event": "SBMF'10", "url": "http://sbmf2010.dimap.ufrn.br/", "location": "Natal, Brazil (Best presentation award)"},
+    { "date": "November 2010", "event": "IPA Herfstdagen", "url": "http://www.win.tue.nl/ipa/archive/falldays2010/index.html", "location": "Veldhoven, The Netherlands"}
+  ],
+  "download": [
+    { "text": "PDF SBMF", "url": "/files/talks/sbmf10.pdf"},
+    { "text": "PDF IPA", "url": "/files/talks/ipa10.pdf"}
+  ]
+},
+{ "title": "Weighted automata, coalgebraically",
+  "pres": [{ "date": "August 2010", "event": "TCS seminar group, University of Braunschweig", "url": "https://www.tu-braunschweig.de/iti", "location": "Braunschweig, Germany"}],
+  "download": [{ "text": "PDF", "url": "/files/talks/braunsch10.pdf"}]
+},
+{ "title": "Generalizing the powerset construction, coalgebraically",
+  "pres": [{ "date": "April 2010", "event": "Comète seminar, LiX, École Polytechnique", "url": "http://www.lix.polytechnique.fr/comete/seminar/", "location": "Paris, France"}],
+  "download": [{ "text": "PDF", "url": "/files/talks/lix10.pdf"}]
+},
+{ "title": "Algebraic enriched coalgebras.",
+  "pres": [
+    { "date": "March 2010", "event": "Coalgebra day", "url": "http://staff.science.uva.nl/~ciancia/coalgebra_day/", "location": "UvA, Amsterdam, The Netherlands"},
+    { "date": "March 2010", "event": "LiX, École polytechnique", "location": "Paris, France"},
+    { "date": "March 2010", "event": "CMCS'10", "url": "http://coalg.org/cmcs10/", "location": "Paphos, Cyprus"}
+  ],
+  "download": [
+    { "text": "PDF UvA", "url": "/files/talks/coalgday10.pdf"},
+    { "text": "PDF LiX", "url": "/files/talks/cmcs10.pdf"},
+    { "text": "PDF CMCS", "url": "/files/talks/cmcs10.pdf"}
+  ]
+},
+{ "title": "Regular expressions for polynomial coalgebras",
+  "pres": [{ "date": "November 2009", "event": "Arco meeting", "location": "Eindhoven, The Netherlands"}],
+  "download": [{ "text": "PDF", "url": "/files/talks/arco2009.pdf"}]
+},
+{ "title": "Deriving syntax and axioms for quantitative regular behaviours",
+  "pres": [
+    { "date": "October 2009", "event": "Second CWI-DIPisa Workshop on Coordination, Coalgebras and Constraints (CoCoCo 2009)", "location": "Amsterdam, The Netherlands"},
+    { "date": "September 2009", "event": "CONCUR'09", "url": "http://concur09.cs.unibo.it/", "location": "Bologna, Italy"},
+    { "date": "May 2009", "event": "Arco meeting", "location": "Iasi, Romania"}
+  ],
+  "download": [
+    { "text": "PDF CoCoCo", "url": "/files/talks/cococo09.pdf"},
+    { "text": "PDF CONCUR", "url": "/files/talks/concur09.pdf"},
+    { "text": "PDF Arco", "url": "/files/talks/arco2009d.pdf"}
+  ]
+},
+{ "title": "Quantitative regular behaviours",
+  "pres": [{ "date": "September 2009", "event": "Calco-jnr'09", "url": "http://calco09.dimi.uniud.it/", "location": "Udine, Italy"}],
+  "download": [{ "text": "PDF", "url": "/files/talks/calco09.pdf"}]
+},
+{ "title": "An algebra for Kripke polynomial coalgebras",
+  "pres": [
+    { "date": "August 2009", "event": "LICS'09", "url": "http://www2.informatik.hu-berlin.de/lics/lics09/", "location": "Los Angeles, USA"},
+    { "date": "January 2009", "event": "Arco meeting", "location": "Amsterdam, The Netherlands"}
+  ],
+  "download": [
+    { "text": "PDF LICS", "url": "/files/talks/lics09.pdf"},
+    { "text": "PDF Arco", "url": "/files/talks/arco2009a.pdf"}
+  ]
+},
+{ "title": "A Kleene theorem for polynomial coalgebras",
+  "pres": [
+    { "date": "July 2009", "event": "Seminar of the TCS group, University of Duisburg-Essen", "url": "http://www.ti.inf.uni-due.de/en/", "location": "Duisburg, Germany"},
+    { "date": "May 2009", "event": "CIC'09", "url": "http://lmf.di.uminho.pt/~lsb/cic09/cic09.html", "location": "Braga, Portugal"},
+    { "date": "March 2009", "event": "FoSSaCS'09", "url": "http://fossacs09.soe.ucsc.edu/", "location": "York, United Kingdom"},
+    { "date": "March 2009", "event": "Coalgebra day", "location": "CWI, Amsterdam, The Netherlands"}
+  ],
+  "download": [
+    { "text": "PDF Duisburg", "url": "/files/talks/duisburg.pdf"},
+    { "text": "PDF Braga", "url": "/files/talks/cic09.pdf"},
+    { "text": "PDF FoSSaCS", "url": "/files/talks/fossacs09.pdf"},
+    { "text": "PDF Amsterdam", "url": "/files/talks/coalgday09.pdf"}
+  ]
+},
+{ "title": "From KAT expressions to automata",
+  "pres": [{ "date": "May 2009", "event": "Arco meeting", "location": "Iasi, Romania"}],
+  "download": [{ "text": "PDF", "url": "/files/talks/arco2009c.pdf"}]
+},
+{ "title": "Tool demonstration",
+  "pres": [{ "date": "February 2009", "event": "ACG seminar", "url": "http://acg.project.cwi.nl", "location": "Amsterdam, The Netherlands"}],
+  "download": [{ "text": "PDF", "url": "/files/talks/acg2009.pdf"}]
+},
+{ "title": "Completeness of Kleene algebras coalgebraically (and beyond)",
+  "pres": [{ "date": "January 2009", "event": "A|C seminar", "url": "http://staff.science.uva.nl/~yde/ac/seminar", "location": "Amsterdam, The Netherlands"}],
+  "download": [{ "text": "Presentation on the blackboard, largely based on this paper", "url": "http://dx.doi.org/10.1007/11780274_20"}]
+},
+{ "title": "From regular expressions to automata",
+  "pres": [{ "date": "January 2009", "event": "Arco meeting", "location": "Amsterdam, The Netherlands"}],
+  "download": [{ "text": "PDF", "url": "/files/talks/arco2009b.pdf"}]
+},
+{ "title": "Beyond Kleene: A Kleene Theorem for polynomial coalgebras",
+  "pres": [{ "date": "October 2008", "event": "CWI Scientific meeting", "location": "CWI, Amsterdam, The Netherlands"}],
+  "download": [{ "text": "PDF", "url": "/files/talks/scimeeting08.pdf"}]
+},
+{ "title": "A Kleene theorem for polynomial coalgebras",
+  "pres": [{ "date": "September 2008", "event": "ACG seminar", "url": "http://acg.project.cwi.nl", "location": "Amsterdam, The Netherlands"}],
+  "download": [{ "text": "PDF", "url": "/files/talks/acg2008.pdf"}]
+},
+{ "title": "Coalgebraic Logics and Synthesis for Mealy machines",
+  "pres": [
+    { "date": "April 2008", "event": "FoSSaCS'08", "url": "http://fossacs08.pps.jussieu.fr/", "location": "Budapest, Hungary"},
+    { "date": "March 2008", "event": "Coalgebra day", "url": "http://www.cs.ru.nl/~ichiro/coalgebraday08/", "location": "RU, Nijmegen, The Netherlands"}
+  ],
+  "download": [
+    { "text": "PDF FoSSaCS", "url": "/files/talks/fossacs08.pdf"},
+    { "text": "PDF Nijmegen", "url": "/files/talks/coalgday08.pdf"}
+  ]
+},
+{ "title": "Regular expressions for polynomial coalgebras (joint talk with M. Bonsangue)",
+  "pres": [{ "date": "January 2008", "event": "First CWI-DIPisa Workshop on Coordination, Coalgebras and Constraints (CoCoCo 2008)", "location": "Pisa, Italy"}],
+  "download": [{ "text": "PDF", "url": "/files/talks/cococo08.pdf"}]
+},
+{ "title": "(Concrete) Coalgebraic logics and synthesis of Mealy machines",
+  "pres": [
+    { "date": "October 2007", "event": "Research workshop on Coinduction, Interaction and Composition (CIC 2007)", "url": "/cic2007/", "location": "Amsterdam, The Netherlands"},
+    { "date": "May 2007", "event": "A|C seminar", "url": "http://staff.science.uva.nl/~yde/ac/seminar", "location": "Amsterdam, The Netherlands"}
+  ],
+  "download": [
+    { "text": "PDF CIC", "url": "/files/talks/cic2007.pdf"},
+    { "text": "PDF A|C", "url": "/files/talks/acseminar07.pdf"}
+  ]
+},
+{ "title": "Bi-infinite streams coalgebraically",
+  "pres": [{ "date": "August 2007", "event": "Calco-jnr'07", "url": "http://www.ii.uib.no/calco07/", "location": "Bergen, Norway"}],
+  "download": [{ "text": "PDF", "url": "/files/talks/calco07.pdf"}]
+},
+{ "title": "Behavioural differential equations and coinduction for binary trees",
+  "pres": [{ "date": "July 2007", "event": "WoLLic 2007", "url": "http://wollic.org/wollic2007/", "location": "Rio de Janeiro, Brazil"}],
+  "download": [{ "text": "PDF", "url": "/files/talks/wollic07.pdf"}]
+},
+{ "title": "Behavioural differential equations and coinduction for binary trees",
+  "pres": [{ "date": "October 2006", "event": "Coalgebra day", "url": "http://www.sos.cs.ru.nl/coalgebraday06/", "location": "RU, Nijmegen, The Netherlands"}],
+  "download": [{ "text": "PDF", "url": "/files/talks/coalgday06.pdf"}]
+},
+{ "title": "Behavioural differential equations and coinduction for binary trees -- An exercise on coalgebraic reasoning",
+  "pres": [{ "date": "October 2006", "event": "ACG seminar", "url": "http://acg.project.cwi.nl", "location": "Amsterdam, The Netherlands"}],
+  "download": [{ "text": "PDF", "url": "/files/talks/acg2006.pdf"}]
+},
+{ "title": "Coinduction by calculation",
+  "pres": [{ "date": "October 2006", "event": "Research workshop on Coinduction, Interaction and Composition (CIC 2006)", "url": "http://lmf.di.uminho.pt/~lsb/cic06/", "location": "Braga, Portugal"}],
+  "download": [{ "text": "PDF", "url": "/files/talks/cic2006.pdf"}]
+},
+{ "title": "CoddFish - Strong Types for Relational Databases",
+  "pres": [{ "date": "September 2006", "event": "Haskell Workshop 2006", "url": "http://www.haskell.org/haskell-workshop/2006/", "location": "Portland, Oregon, USA"}],
+  "download": [{ "text": "PDF", "url": "/files/talks/hw2006.pdf"}]
+},
+{ "title": "A calculational account of lambda-coinduction",
+  "pres": [{ "date": "March 2006", "event": "CMCS'06", "url": "http://conferences.inf.ed.ac.uk/cmcs06/cmcs06.html", "location": "Wien, Austria"}]
+},
+{ "title": "Strong Types for Relational Databases",
+  "pres": [{ "date": "December 2005", "event": "PURe Cafe", "url": "http://wiki.di.uminho.pt/twiki/bin/view/Research/PURe/", "location": "Braga, Portugal"}],
+  "download": [{ "text": "PDF", "url": "/files/talks/purecafe2005.pdf"}]
+},
+{ "title": "Spreadsheet Understanding - A Survey",
+  "pres": [{ "date": "October 2005", "event": "PURe Workshop", "url": "http://wiki.di.uminho.pt/twiki/bin/view/Research/PURe/", "location": "Braga, Portugal"}],
+  "download": [{ "text": "PDF", "url": "/files/talks/pure2005.pdf"}]
+}
+]
