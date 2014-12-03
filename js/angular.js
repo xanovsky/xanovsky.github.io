@@ -12,6 +12,10 @@ angular.module('homepage', ['ngRoute', 'ngAnimate', 'ngSanitize'])
           templateUrl: 'publications.html',
           controller: 'PubsCtrl'
         })
+        .when('/talks.html', {
+          templateUrl: 'talks.html',
+          controller: 'TalksCtrl'
+        })
         .when('/news.html', {
           templateUrl: 'news.html'
         })
@@ -67,6 +71,14 @@ angular.module('homepage', ['ngRoute', 'ngAnimate', 'ngSanitize'])
 
     $http.get('data/papers.json').success(function(data) {
       $scope.papers = data;
+    });
+  }])
+
+  .controller('TalksCtrl', ['$scope', '$http', function($scope, $http) {
+    $scope.talks = [];
+
+    $http.get('data/talks.json').success(function(data) {
+      $scope.talks = data;
     });
   }])
 
