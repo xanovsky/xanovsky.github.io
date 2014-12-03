@@ -32,7 +32,7 @@
     { "date": "October 2013", "event": "Shonan NII Meeting on coinduction for computation structures and programming languages", "url": "https://sites.google.com/site/shonanmeeting026/", "location": "Shonan Village Center, Japan"},
     { "date": "September 2013", "event": "Workshop on quantitative analysis of interacting systems: foundations and algorithms", "url": "http://wiki.di.uminho.pt/twiki/bin/view/Research/QAIS/Workshops", "location": "Braga, Portugal"}
   ],
-  "download": [{ "text": "PDF Shonan", "url": "/files/talks/up-to-shonan.pdf"}]
+  "download": [{ "text": "PDF (Shonan)", "url": "/files/talks/up-to-shonan.pdf"}]
 },
 { "title": "Algebra-Coalgebra Duality: applications in automata theory (Invited talk)",
   "pres": [{ "date": "September 2013", "event": "TbiLLC 2013: Tenth International Tbilisi Symposium on Language, Logic and Computation", "url": "http://www.illc.uva.nl/Tbilisi/Tbilisi2013", "location": "Gudauri, Georgia"}],
@@ -64,7 +64,7 @@
     { "date": "April 2013", "event": "FSA seminar, Technical University Eindhoven", "url": "http://www.win.tue.nl/fsacolloquium/", "location": "Eindhoven, The Netherlands"},
     { "date": "February 2013", "event": "TCS seminar, Technical University Braunschweig, dedicated to Stefan Milius on the occasion of his habilitation", "location": "Braunschweig, Germany"}
   ],
-  "download": [{ "text": "PDF TU/e", "url": "/files/talks/eindhoven13.pdf"}]
+  "download": [{ "text": "PDF (TU/e)", "url": "/files/talks/eindhoven13.pdf"}]
 },
 { "title": "A tutorial on bisimulation",
   "pres": [{ "date": "March 2013", "event": "Coalgebras in Computation, Logic, Probability and Quantum Physics", "url": "http://www.cs.mcgill.ca/~prakash/wshop2013.html", "location": "Bellairs, Barbados (blackboard talk)"}]
@@ -91,8 +91,8 @@
     { "date": "April 2012", "event": "2012 Bellairs Workshop", "url": "http://www.cs.mcgill.ca/~prakash/wshop.html", "location": "Bellairs, Barbados (blackboard talk)"}
   ],
   "download": [
-    { "text": "PDF Erlangen", "url": "http://www8.informatik.uni-erlangen.de/DE/teaching/2012-SS/Ober/silva-slides.pdf"},
-    { "text": "PDF Dagstuhl (extended)", "url": "/files/talks/dagstuhl13.pdf"}
+    { "text": "PDF (Erlangen)", "url": "http://www8.informatik.uni-erlangen.de/DE/teaching/2012-SS/Ober/silva-slides.pdf"},
+    { "text": "PDF (Dagstuhl, extended)", "url": "/files/talks/dagstuhl13.pdf"}
   ]
 },
 { "title": "A coalgebraic perspective on minimization and determinization",
@@ -120,7 +120,7 @@
     { "date": "25 April 2011", "event": "Theory Seminar, Cornell University", "url": "http://www.cs.cornell.edu/courses/cs7890/2011sp/silva.htm", "location": "Ithaca, NY, USA"}
   ],
   "download": [
-    { "text": "PDF IBM", "url": "/files/ibm_talk.pdf"},
+    { "text": "PDF (IBM)", "url": "/files/ibm_talk.pdf"},
     { "text": "PDF", "url": "/files/talks/dmat.pdf"}
   ]
 },
@@ -153,8 +153,8 @@
     { "date": "November 2010", "event": "IPA Herfstdagen", "url": "http://www.win.tue.nl/ipa/archive/falldays2010/index.html", "location": "Veldhoven, The Netherlands"}
   ],
   "download": [
-    { "text": "PDF SBMF", "url": "/files/talks/sbmf10.pdf"},
-    { "text": "PDF IPA", "url": "/files/talks/ipa10.pdf"}
+    { "text": "PDF (SBMF)", "url": "/files/talks/sbmf10.pdf"},
+    { "text": "PDF (IPA)", "url": "/files/talks/ipa10.pdf"}
   ]
 },
 { "title": "Weighted automata, coalgebraically",
@@ -172,9 +172,9 @@
     { "date": "March 2010", "event": "CMCS'10", "url": "http://coalg.org/cmcs10/", "location": "Paphos, Cyprus"}
   ],
   "download": [
-    { "text": "PDF UvA", "url": "/files/talks/coalgday10.pdf"},
-    { "text": "PDF LiX", "url": "/files/talks/cmcs10.pdf"},
-    { "text": "PDF CMCS", "url": "/files/talks/cmcs10.pdf"}
+    { "text": "PDF (UvA)", "url": "/files/talks/coalgday10.pdf"},
+    { "text": "PDF (LiX)", "url": "/files/talks/cmcs10.pdf"},
+    { "text": "PDF (CMCS)", "url": "/files/talks/cmcs10.pdf"}
   ]
 },
 { "title": "Regular expressions for polynomial coalgebras",
@@ -188,9 +188,9 @@
     { "date": "May 2009", "event": "Arco meeting", "location": "Iasi, Romania"}
   ],
   "download": [
-    { "text": "PDF CoCoCo", "url": "/files/talks/cococo09.pdf"},
-    { "text": "PDF CONCUR", "url": "/files/talks/concur09.pdf"},
-    { "text": "PDF Arco", "url": "/files/talks/arco2009d.pdf"}
+    { "text": "PDF (CoCoCo)", "url": "/files/talks/cococo09.pdf"},
+    { "text": "PDF (CONCUR)", "url": "/files/talks/concur09.pdf"},
+    { "text": "PDF (Arco)", "url": "/files/talks/arco2009d.pdf"}
   ]
 },
 { "title": "Quantitative regular behaviours",
@@ -203,8 +203,8 @@
     { "date": "January 2009", "event": "Arco meeting", "location": "Amsterdam, The Netherlands"}
   ],
   "download": [
-    { "text": "PDF LICS", "url": "/files/talks/lics09.pdf"},
-    { "text": "PDF Arco", "url": "/files/talks/arco2009a.pdf"}
+    { "text": "PDF (LICS)", "url": "/files/talks/lics09.pdf"},
+    { "text": "PDF (Arco)", "url": "/files/talks/arco2009a.pdf"}
   ]
 },
 { "title": "A Kleene theorem for polynomial coalgebras",
@@ -215,10 +215,10 @@
     { "date": "March 2009", "event": "Coalgebra day", "location": "CWI, Amsterdam, The Netherlands"}
   ],
   "download": [
-    { "text": "PDF Duisburg", "url": "/files/talks/duisburg.pdf"},
-    { "text": "PDF Braga", "url": "/files/talks/cic09.pdf"},
-    { "text": "PDF FoSSaCS", "url": "/files/talks/fossacs09.pdf"},
-    { "text": "PDF Amsterdam", "url": "/files/talks/coalgday09.pdf"}
+    { "text": "PDF (Duisburg)", "url": "/files/talks/duisburg.pdf"},
+    { "text": "PDF (Braga)", "url": "/files/talks/cic09.pdf"},
+    { "text": "PDF (FoSSaCS)", "url": "/files/talks/fossacs09.pdf"},
+    { "text": "PDF (Amsterdam)", "url": "/files/talks/coalgday09.pdf"}
   ]
 },
 { "title": "From KAT expressions to automata",
@@ -251,8 +251,8 @@
     { "date": "March 2008", "event": "Coalgebra day", "url": "http://www.cs.ru.nl/~ichiro/coalgebraday08/", "location": "RU, Nijmegen, The Netherlands"}
   ],
   "download": [
-    { "text": "PDF FoSSaCS", "url": "/files/talks/fossacs08.pdf"},
-    { "text": "PDF Nijmegen", "url": "/files/talks/coalgday08.pdf"}
+    { "text": "PDF (FoSSaCS)", "url": "/files/talks/fossacs08.pdf"},
+    { "text": "PDF (Nijmegen)", "url": "/files/talks/coalgday08.pdf"}
   ]
 },
 { "title": "Regular expressions for polynomial coalgebras (joint talk with M. Bonsangue)",
@@ -265,8 +265,8 @@
     { "date": "May 2007", "event": "A|C seminar", "url": "http://staff.science.uva.nl/~yde/ac/seminar", "location": "Amsterdam, The Netherlands"}
   ],
   "download": [
-    { "text": "PDF CIC", "url": "/files/talks/cic2007.pdf"},
-    { "text": "PDF A|C", "url": "/files/talks/acseminar07.pdf"}
+    { "text": "PDF (CIC)", "url": "/files/talks/cic2007.pdf"},
+    { "text": "PDF (A|C)", "url": "/files/talks/acseminar07.pdf"}
   ]
 },
 { "title": "Bi-infinite streams coalgebraically",
