@@ -3,26 +3,24 @@
     <div class="pageheader">
       <div class="headercontent">
         <div class="section-container">
-          <h2 class="title">My Talks</h2>
+          <h2 class="title">My Talks
+            <small>
+              <form class="form-inline" role="search" id="pub-search">
+                <div class="form-group pull-right">
+                  <div class="input-group">
+                    <label class="sr-only" for="searchInput">Search</label>
+                    <input type="text" ng-model="search" class="form-control input-lg" id="searchInput" placeholder="Search">
+                    <span class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true"></span>
+                  </div>
+                </div>
+              </form>
+            </small>
+          </h2>
         </div>
       </div>
     </div>
 
     <div class="pagecontents">
-      <div class="section color-1" id="filters">
-        <div class="section-container">
-          <form class="form-inline col-md-6" role="search" id="pub-search">
-            <div class="form-group pull-right">
-              <div class="input-group">
-                <label class="sr-only" for="searchInput">Search</label>
-                <input type="text" ng-model="search" class="form-control input-lg" id="searchInput" placeholder="Search">
-                <span class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true"></span>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-
       <div class="section color-2" pub-grid="true">
         <div class="section-container">
           <div class="row">
