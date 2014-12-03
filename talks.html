@@ -33,7 +33,7 @@
                     <div class="pubassets">
                       <a ng-repeat="download in talk.download" ng-href="{{download.url}}" class="tooltips" title="{{download.text}}" target="_blank">
                         <i class="icon-cloud-download"></i>
-                        <span ng-bind="download.text"></span>
+                        <small ng-bind="download.text"></small>
                       </a>
                     </div>
                     <h4 class="pubtitle" ng-bind="talk.title"></h4>
