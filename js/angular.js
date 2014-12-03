@@ -24,6 +24,9 @@ angular.module('homepage', ['ngRoute', 'ngAnimate', 'ngSanitize'])
         .when('/calendar.html', {
           templateUrl: 'calendar.html'
         })
+        .when('/thesis.html', {
+          templateUrl: 'thesis.html'
+        })
 	.when('/cv.pdf', {
           redirectTo: '/cv.pdf'
         })
