@@ -1,0 +1,737 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+  <title>Abstracts</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <style type="text/css">
+  #g_title p, #g_footer p, #g_description p {
+    margin: 0;
+  }
+  /*
+
+    -- -- -- -- -- -- --
+    Browser Fixes
+    -- -- -- -- -- -- --
+    
+    This file uses CSS filtering methods to fix various
+    layout bugs.
+
+    Each of the following three imported files is a 
+    separate, browser-specific CSS file that keeps all 
+    hacks out of the main style sheet.
+    
+    Over time, as supporting these browsers no longer
+    remains a priority, cleaning up the hacks is as
+    easy as deleting the @import statement below, or
+    simply no longer linking this file from the HTML.
+    
+  */
+
+  /* 
+    fix ie6 "peekaboo bug" using the "holly hack". 
+    Note, this style only gets applied to ie6
+  */
+  * html .wrapper {
+    height: 0.1%;
+  }
+
+  /* 
+   * IE5 mac - overrides the IE/Win hack 
+   */
+
+  /*\*//*/
+
+  * html #threecolumn div {
+    height: auto;
+  }
+
+  /**/
+
+
+  /* 
+   * IE5/Win-specific CSS -ensures #container wraps all content on window resize
+   */
+
+  @media tty {
+   i{content:"\";/*" "*/}} * html #container { height: 1%; } /*";}
+  }/* */
+  /* Styling for editable elements. Eventually, this will be part of the style. */
+  .editable {
+    border: 1px dashed blue;
+  }
+  
+  #footer {
+    clear: both;
+  }
+  
+  /* Extra divs hidden by default. The custom CSS can override this though */
+  #extraDiv1, #extraDiv2, #extraDiv3, #extraDiv4, #extraDiv5, #extraDiv6 {
+    display: none;
+  }
+  
+  a img,:link img,:visited img {border: none;}
+
+  body {
+    text-align: center;
+  }
+  #container {
+    width: 718px;
+    text-align: left;
+    margin: 0 auto;
+  }
+  #main-content {
+    float: right;
+    width: 470px;
+  }
+  #sidebar {
+    float: right;
+    width: 230px;
+  }
+  #footer {
+    clear: both;
+  }
+  /** BEGIN CUSTOM SKIN **/
+  /*
+
+    -- -- -- -- -- -- --
+    Base CSS
+    -- -- -- -- -- -- --
+    
+    This file simply removes default styling on most HTML elements in 
+    order to reduce the need to later override them.
+    
+  */
+
+  h1,h2,h3,h4,h5,h6,pre,code,p {font-size: 1em;}
+  dl,li,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,input {margin: 0; padding: 0;}
+  a img,:link img,:visited img {border: none;}
+  address {font-style: normal;}/*
+
+    -- -- -- -- -- -- --
+    Type Scheme: Deco
+    -- -- -- -- -- -- --
+    
+  */
+
+  body {
+    font: 76% Verdana, sans-serif;
+  } 
+
+  h1, h2, h3, h4, h5, h6, p.description {
+    font-family: "Trebuchet MS", Trebuchet, sans-serif;
+  }
+  h1 {
+    font-size: 3em;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  h2 {
+    font-size: 2em;
+    font-weight: normal;
+  }
+  h3 {
+    font-size: 1.5em;
+  }
+  h4 {
+    font-size: 1.2em;
+    letter-spacing: 0.2em;
+  }
+  h5 {
+    font-size: 1.2em;
+  }
+  h6 {
+    font-size: 1em;
+    font-weight: bold;
+  }
+
+  p, td {
+    line-height: 1.8em;
+  }
+  code, kbd {
+    font-size: 1.25em;
+  }/*
+
+    -- -- -- -- -- -- --
+    STYLE: Micro
+    -- -- -- -- -- -- --
+
+  */
+
+
+
+
+  /* ie6win */
+
+  /* IE/Win fixes for various layouts
+  ----------------------------------------------- */
+  * html #onecolumn #header {
+    margin-right: -3px;
+  }
+  * html #onecolumn #header,
+  * html #twocolumn-left #header, * html #twocolumn-right #header,
+  * html #twocolumn-liquid-left #header, * html #twocolumn-liquid-right #header {
+    padding-bottom: 1px;
+  }
+  * html #twocolumn-left #main-content, * html #twocolumn-right #main-content {
+    width: 459px;
+  }
+  * html #threecolumn #main-content {
+    width: 409px;
+  }
+
+  /* ie5mac */
+
+  /*\*//*/
+  /* Undoing IE/Win fixes
+  ----------------------------------------------- */
+  * html #onecolumn #header {
+    margin-right: 0;
+  }
+  * html #twocolumn-left #header, * html #twocolumn-right #header,
+  * html #twocolumn-liquid-left #header, * html #twocolumn-liquid-right #header {
+    padding-bottom: 0;
+  }
+  * html #twocolumn-left #main-content, * html #twocolumn-right #main-content {
+    width: 479px;
+  }
+  * html #threecolumn #main-content {
+    width: 429px;
+  }
+  /**/
+
+  @media tty {
+   i{content:"\";/*" "*/}} td { font-size: 0.8em; } /*";}
+  }/* */
+
+
+
+  /* Basic HTML style
+  ----------------------------------------------- */
+  body {
+    font: 76% "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+    color: #000;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+  }
+  blockquote {
+    margin: 1em 2em;
+    font-style: italic;
+  }
+  caption {
+    font-weight: bold;
+    color: #444;
+    background: #ccc;
+    border-bottom: 0;
+    padding: 0.3em 1em;
+  }
+  dd {
+    margin: 1em 2em;
+  }
+  dl {
+    margin: 2em 0;
+  }
+  dt {
+    font-weight: bold;
+  }
+  hr {
+    margin: 2em 0;
+    color: #C7C7C7;
+    background: #C7C7C7;
+    border-color: #C7C7C7;
+    border-style: none;
+    height: 1px;
+  }
+  li {
+    margin: 1em 0;
+  }
+  table {
+    border: solid 1px #ccc;
+  }
+  td {
+    vertical-align: top;
+    padding: 0.5em;
+  }
+  th {
+    text-align: left;
+    color: #fff;
+    background: #777;
+    padding: 0.5em;
+  }
+  ol, ul {
+    margin: 2em 0;
+    padding-left: 1em;
+  }
+
+
+
+  /* Nested HTML elements, and basic classes
+  ----------------------------------------------- */
+  ol li {
+    list-style-type: decimal;
+    margin-left: 2em;
+  }
+  ul li {
+    margin-left: 2em;
+    list-style-type: square;
+  }
+  td p {
+    margin-top: 0;
+  }
+
+
+
+  /* Set the stage with main layout tweaks
+  ----------------------------------------------- */
+  #container {
+    border: solid 7px #999;
+    border-left: 0;
+    border-right: 0;
+    padding-top: 1px;
+  }
+  #header {
+    color: #04172D;
+    border-top: solid 3px #777;
+    padding: 0;
+    margin: 0 0 1.5em 0;
+  }
+  #main-content .wrapper {
+    margin: 0;
+  }
+  .description {
+    font: normal 1em "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+    color: #444;
+    background: #C7C7C7;
+    padding: 3px 25px 2.2em 25px;
+    margin: 0;
+    line-height: 1;
+  }
+  #footer {
+    clear: both;
+    color: #999;
+    padding: 0 1em 1em 1em;
+    border-bottom: solid 3px #777;
+    margin-bottom: 1px;
+  }
+
+
+  /* Content area offset
+  ----------------------------------------------- */
+  #main-content .wrapper {
+    padding: 0 25px;
+  }
+
+  #main-content td p {
+    margin: 0 0 1em 0;
+  }
+
+
+
+  /* Custom font definitions
+  ----------------------------------------------- */
+  p {
+    margin: 1em 0;
+    line-height: 1.5;
+  }
+  h1,h2,h3,h4,h5,h6 {
+    font-family: "Trebuchet MS", arial, sans-serif;
+  }
+  h1 {
+    color: #B2B2B2;
+    font-size: 2.4em;
+    letter-spacing: 0.2em;
+    font-weight: normal;
+    padding: 1em 25px 0 25px;
+  }
+  h2 {
+    margin: 0 0 0.5em 0;
+    color: #777;
+    font-size: 1.4em;
+    font-weight: normal;
+    border-bottom: double 3px #C7C7C7;
+    padding: 0 0 0.4em 0;
+  }
+  h3 {
+    font-size: 1.2em;
+    background: #eee;
+    border: dotted 1px #C7C7C7;
+    padding: 0.2em;
+  }
+  h4 {
+    font-size: 1.2em;
+    padding: 0 0 0.2em 0;
+    margin: 0.6em 0 0 0.4em;
+    color: #777;
+  }
+  h5 {
+    border-bottom: dotted 1px #C7C7C7;
+  }
+  h6 {
+    color: #777;
+    border-left: solid 1.2em #777;
+    padding-left: 0.6em;
+  }
+
+  a:link {
+    color: #9db2df;
+  }
+  a:hover {
+        text-decoration: none;
+    border-bottom: 1px dotted #bb242d;
+    background-color: #e0e0e0;
+   }
+
+
+  /* Sidebar
+  ----------------------------------------------- */
+  #sidebar h3, #sidebar-alternate h3 {
+    margin: 0;
+    color: #777;
+    background: none;
+    font-size: 1.4em;
+    font-weight: normal;
+    border: none;
+    padding: 0;
+  }
+
+  #sidebar blockquote, #sidebar blockquote p,
+  #sidebar-alternate blockquote, #sidebar-alternate blockquote p {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #sidebar blockquote {
+    margin: 1em 0;
+    padding: 0;
+  }
+  #adsense {
+    text-align: center;
+  }
+
+
+
+  .editable {
+    border: dashed 1px #c33;
+  }
+
+
+
+
+  /* Tweaks for Two-column Right layout
+  ----------------------------------------------- */
+  #twocolumn-right #sidebar .wrapper {
+    margin: 0 10px;
+  }
+
+
+
+  /* Tweaks for Two-column Left layout
+  ----------------------------------------------- */
+  #twocolumn-left #sidebar .wrapper {
+    margin: 0 10px;
+  }
+
+
+  /* Tweaks for Three-column layout
+  ----------------------------------------------- */
+  #threecolumn #sidebar .wrapper {
+    margin: 0 10px;
+  }
+  #threecolumn #sidebar-alternate .wrapper {
+    margin: 0 10px;
+  }
+  /*
+
+    -- -- -- -- -- -- --
+    COLOR SCHEME: Ghost
+    -- -- -- -- -- -- --
+
+  */
+
+
+  /* Basic HTML style
+  ----------------------------------------------- */
+  a:link {
+    color: #000;
+  }
+  a:visited {
+    color: #333;
+  }
+  a:hover {
+    color: #666;
+  }
+  body {
+    color: #444;
+    background: #fff;
+  }
+  caption {
+    color: inherit;
+    background: #eee;
+  }
+  hr {
+    color: #eee;
+    background: #eee;
+    border-color: #eee;
+  }
+  table {
+    border-color: #e6e6e6;
+  }
+  th {
+    color: #444;
+    background: #ccc;
+  }
+
+
+
+  /* Set the stage with main layout tweaks
+  ----------------------------------------------- */
+  #container {
+    background-color: #fff;
+    border-color: #fff;
+  }
+  #header {
+    color: #888;
+    border-top-color: #fff;
+  }
+  .description {
+    color: #666;
+    background: #e6e6e6;
+  }
+  #footer {
+    color: #888;
+    border-bottom-color: #fff;
+  }
+
+
+
+  /* Custom font definitions
+  ----------------------------------------------- */
+  h1 {
+    color: #C7C7C7;
+  }
+  h2 {
+    color: #888;
+    border-bottom-color: #eee;
+  }
+  h3 {
+    color: #666;
+    background: #eee;
+    border-color: #ddd;
+  }
+  h4 {
+    border-bottom-color: #888;
+    color: #444;
+  }
+  h5 {
+    color: #888;
+    border-bottom-color: #C7C7C7;
+  }
+  h6 {
+    color: #ccc;
+    border-left-color: #888;
+  }
+
+
+
+
+
+  /* Sidebar
+  ----------------------------------------------- */
+  #sidebar h3, #sidebar-alternate h3 {
+    color: #888;
+    background: none;
+  }
+
+  #sidebar a:link {
+    color: #666;
+  }
+  #sidebar a:visited {
+    color: #444;
+  }
+  #sidebar a:hover {
+    color: #999;
+  }
+  /** END CUSTOM SKIN **/
+  </style>
+
+  <!-- Hack to avoid flash of unstyled content in IE -->
+  <script> </script>
+
+</head>
+
+<body id="twocolumn-left">
+  <div id="container">
+    <div class="wrapper">
+      <div id="header">
+        <div class="wrapper">
+          <h1 id="page-title"><div id='g_title'>Abstracts</div></h1>
+          <div style="clear: both"></div>
+          <p class="description"><div id='g_description'> </div></p>
+
+          <div style="clear: both"></div>
+        </div>
+      </div>
+      <!-- /wrapper --><!-- /header -->
+      <div id="main-content">
+        <div class="wrapper">
+          <div class="content-item"><div id='g_body'><font size="2"><br style="font-family: arial,sans-serif;"></font><div style="margin: 0px; font-family: arial,sans-serif;"><font size="2"><b>Coalgebraic Logics and Synthesis of Mealy Machines (Alexandra Silva)</b><br></font>
+</div>
+<p style="text-align: left; font-family: arial,sans-serif;"><font size="2">We present a novel coalgebraic logic for deterministic Mealy machines that is sound, complete and expressive w.r.t. bisimulation. Every finite Mealy machine corresponds to a finite formula in the language. For the converse, we give a compositional synthesis algorithm which transforms every formula into a finite Mealy machine whose behaviour is exactly the set of causal functions satisfying the formula. </font></p><p style="font-family: arial,sans-serif;"><font size="2"><b>Cobases coalgebraically (Clemens Kupke)</b></font></p><p style="font-family: arial,sans-serif;"><font size="2">t.b.a</font></p><div style="margin: 0px; font-family: arial,sans-serif;"><font size="2"><b>Neighborhood semantics for role-based deontic and agency logics (Olga Pacheco)</b><br></font></div><div style="margin: 0px; min-height: 14px; font-family: arial,sans-serif;"><font size="2"><br></font></div><div style="margin: 0px; font-family: arial,sans-serif;"><font size="2">Deontic logics combined with agency logics have been used in computer science in formal specification and analysis of non-ideal systems (i.e. systems where failure may occur), supporting description of expected ideal behavior, detection of non-ideal behavior when it occurs and  identification of agents responsible for it. Roles played by agents when acting have been used to determine the relevant deontic context (set of obligations and permissions) to evaluate agents&#39; behavior.</font></div><div style="margin: 0px; font-family: arial,sans-serif;"><font size="2">Those logics are often non-normal modal logics and its semantics is usually defined using neighborhood structures.</font></div><div style="margin: 0px; font-family: arial,sans-serif;"><font size="2">The purpose of this talk is to characterize and discuss neighborhood</font></div><div style="margin: 0px; font-family: arial,sans-serif;"><font size="2">semantics suited for role-based deontic and agency logics.</font></div><div style="margin: 0px; font-family: arial,sans-serif;"><font size="2"> </font></div><div style="margin: 0px; font-family: arial,sans-serif;"><font size="2"><b>A comparison of coalgebraic and
+metric semantics of a CCS-like language (Elisabete Freire)<br></b></font></div><div style="margin: 0px; font-family: arial,sans-serif;"><font size="2">  <br></font></div><div style="margin: 0px; font-family: arial,sans-serif;"><font size="2">In this work we will explore two distinct
+techniques to study the
+
+<br></font><font size="2">semantics of a language with a simple
+structure but which illustrates
+</font><font size="2">quite well some of the aspects present
+in many common concurrent
+</font><font size="2">languages. The techniques we will use
+are, on the one hand, a variant </font><font size="2">of the metric approach based on sets
+with families of equivalences </font><font size="2">[Mon98], and on the other hand,
+the coalgebric representation
+</font><font size="2">of systems [Rut00].
+The study will be over a
+<br></font><font size="2">language presented by J. De Bakker and
+E. De Vink in
+</font><font size="2">[BV96] named Lsyn. A short comparison of the
+</font><font size="2">two techniques will be presented.  </font></div><div style="margin: 0px; font-family: arial,sans-serif;"><font size="2"><br></font></div><div style="margin: 0px; font-family: arial,sans-serif;"><font size="2">[BV96] Jaco De Bakker e Eric De Vink. Control Flow Semantics. Foundations of Computing Series. The MIT Press, 1996.<br>[Mon98] L. Monteiro. Semantic domains based on sets with families of equivalences. Em B. Jacobs, L. Moss, H. Reichel e J. Rutten, editores,<br>Coalgebraic Methods in Computer Science(CMCS&#39;98), vol. 11 in<br>Electronic Notes in Theoretical Computer Science, pg. 73-106. Elsevier, 1998.<br>[Rut00] J. Rutten. Universal coalgebra: a theory of systems. Theoretical Computer Science, 249(1):3{80, 2000. </font></div><p style="font-family: arial,sans-serif;">
+<font size="2"><b> </b></font></p><p style="font-family: arial,sans-serif;"><font size="2"><b><br></b><b>A Relational Model for Confined Separation Logic (J. N. Oliveira)</b><br></font></p><p style="font-family: arial,sans-serif;"><font size="2">Confined separation logic is a new extension to separation logic designed
+to deal with problems involving dangling references within shared mutable
+structures. In particular, it allows for reasoning  about confinement in
+object-oriented programs. In this paper, we discuss the semantics of such an extension by
+defining a relational model for the overall logic, parametric on the shapes
+of both the store and the heap. This model provides a simple
+and elegant interpretation of the new confinement connectives
+and helps in seeking for duals. A number of properties of this logic
+are proved calculationally. 
+</font></p><p style="font-family: arial,sans-serif;"><font size="2"><b>Generating connector laws (Dave Clarke)<br></b></font></p><pre style="font-family: arial,sans-serif;" wrap=""><font size="2"> </font></pre><pre style="font-family: arial,sans-serif;" wrap=""><font size="2">This talk describes an approach to finding laws for reasoning<br>about stateful connectors such as those found in Reo.<br><br><b>Towards Distributed Reo (Jose Proenca)</b><br> </font></pre><pre style="font-family: arial,sans-serif;" wrap=""><font size="2">Reo is an exogenous coordination language based on a calculus of
+connector composition. Complex connectors are built by composing simpler
+connectors, starting with a user-defined set of atomic connectors as
+primitives. Various semantic models exist to formalize Reo, each serving
+a different purpose. In this work we mainly focus on formal models
+suitable for deriving a distributed implementation.
+
+For our implementation platform, we assume a distributed environment
+where each (distributed) element knows about its own neighbors only. We
+propose an executable model to explicitly deal with distribution
+issues that is very close to this implementation layer. We present how
+the design and the implementation can be seen in a common architecture.
+Finally, we describe how synchronous constrains, imposed by Reo
+semantics, can be dealt with using asynchronous messages.  </font></pre><pre style="font-family: arial,sans-serif;" wrap=""><font size="2"> </font></pre><pre style="font-family: arial,sans-serif;" wrap=""><font size="2"><b>Eclipse Coordination Tools(Christian Koehler)</b><br><br>The Eclipse Coordination Tools project aims at integrating a number of existing development tools for Reo in the well-known Eclipse IDE. The tied integration of these tools allows to rapid prototype Reo connectors with <br>a graphical editor, simulate and model check these connectors and finally generate highly customized runnable code.<br><br>In this talk I will give an overview of the current status of the tools, followed by a short demo.<br>
+
+<br><br>
+<b>Bi-directional Transformations @ Uminho (Alcino Cunha)</b></font></pre><p style="font-family: arial,sans-serif;"><font size="2">t.b.a</font></p>
+
+<br><br>
+<p style="font-family: arial,sans-serif;"><font size="2"><b>Putting interactors together (Luis Barbosa)</b></font></pre><p style="font-family: arial,sans-serif;"><font size="2">
+Although presented with a variety of 'flavours', the notion of an interactor,
+as an abstract characterisation of an interactive component, is
+well-known among formal modelling techniques for interactive systems.
+
+This talk discusses how (Reo-like) exogenous coordination schemes can be 
+applied in this domain, replacing the traditional, hierarchical, 'tree-like'            
+composition of interactors in the specification of complex
+interactive systems. A modal logic whose modalities are indexed by
+fragments of sets of actions is introduced to provide the common modelling language
+for both interactors and the coordination layer. The approach is illustratedwith a few examples.
+<b> </b></font></p>
+
+<p style="font-family: arial,sans-serif;"><font size="2"><b> </b></font></p><p style="font-family: arial,sans-serif;"><font size="2"><b>Pre-Galois Connection on Coalgebras for Generic Component Refinement (Sun Meng)</b></font></p><p style="font-family: arial,sans-serif;"><font size="2"><br>The technique of Galois connections has been applied successfully in 
+many areas of computer science. By employing coalgebras as models for 
+software components, we claim that different forms of behavior model and 
+types of state transitions for components are instances of a single form 
+of coalgebra in a Kleisli category. Based on the Kleisli category, the 
+results on forward/backward morphisms and refinement of components in 
+Set are still satisfied in this more generic framework. We propose a 
+notion of pre-Galois connection in the context of coalgebras for 
+refinement of state-based software components which takes into 
+consideration not only the refinement ordering but also the dynamics of 
+the components, and we study its properties in the Kleisli category. 
+This notion is a powerful tool for relating a component to its 
+refinement and for relating a component to its abstraction. Thus
+it provides a basis for reasoning about state-based software designs and 
+reverse engineering.  </font></p><p style="font-family: arial,sans-serif;"><font size="2"><b>Discovering Coordination Patterns in Legacy Software (Nuno Rodrigues)</b></font></p>
+
+
+
+
+
+
+
+
+
+
+
+<p style="font-family: arial,sans-serif;" class="MsoNormal"><font size="2"><span lang="EN-US">Legacy software systems often contain non
+trivial coordination logic to accomplish its operations or even to provide third-party
+services. As real world software solutions, such systems are often composed of
+different software layers which in turn, usually make use of different programming languages
+according to specific aspects of each layer. Even more, it is often the case that there
+is no access to the source code and the original system developers are
+not available anymore. Targeting this heterogeneous scenario, we present a method
+to lift coordination patterns from Intermediate Language and represent </span>them in the orchestration language Orc, in
+which they become amenable to formal reasoning.</font></p><font size="2"><span style="font-family: arial,sans-serif;" lang="EN-US"></span></font><p style="font-family: arial,sans-serif;"><font size="2"><b></b></font></p><p style="font-family: arial,sans-serif;"><font size="2"><b>Flatten from/to Relational (Jacome Cunha)</b></font></p><pre style="font-family: arial,sans-serif;" wrap=""><font size="2">Spreadsheets are considered one of the largest programming<br>languages in the world. Moreover, spreadsheet languages/systems lack recent and powerful programming features available in modern programming languages, namely powerful modular and type systems. As a result, programming in a spreadsheet environment is an error prone task.<br><br>In this talk we present a technique to overcome some of these problems. The flatten model of a spreadsheet if mapped into a relational database model.<br><br>A map from the fatten to the relational model is also presented.<br><br><b>Intentional automata (David Costa)</b></font></pre><p style="font-family: arial,sans-serif;"><font size="2"> t.b.a.</font></p><p style="font-family: arial,sans-serif;"><font size="2"><b>Performance Analysis of Reo Circuits 
+(Chretien Verhoef) </b></font></p><p style="font-family: arial,sans-serif;"><font size="2">In this presentation a method is given to quantify the performance of 
+complex coordination systems using the Reo coordination language. 
+Quantifying the performance of complex coordination systems, for 
+instance communication networks or web based services, is a very complex 
+process. Hereby we want to take into account the stochastic behaviour of 
+such complex coordination systems. One way to quantify the performance 
+is by using Markov Chains (MC). Constructing the appropriate MC for 
+these systems is a complicated task, and regularly leads to state space 
+explosion of the MC. It is possible to model complex coordination 
+systems using the Reo coordination language. Reo allows compositional 
+construction of models for these systems using architecturally 
+meaningful primitives. By adding quality of service properties to these 
+functional primitives, we can compositionally construct the MC models 
+for complex systems.<br> </font></p><pre style="font-family: arial,sans-serif;" wrap=""><font size="2"><b><b>Translations from QIA to Markov Chains (Young-Joo Moon)</b></b></font></pre>
+
+<p><font size="2"><span style="font-family: arial,sans-serif;"> Reo language is a channel-based glue language for coordination models,
+and its operational semantics is given by Constraint Automata(CA).
+However, this semantics does not account for quantitative aspects
+derived from the environment, such as the requests arrival times,
+response times, and throughput rates. 
+Markov Chains(MCs) are well-known stochastic models that can specify
+these quantities, however, it is difficult to specify a Reo system
+directly as a MC. We consider a translation from quantitative Reo
+language to Quantitative Intentional Automtata(QICA)
+considering the environment, and then from there to MCs. Therefore, we
+can model a system with its environment information in the quantitative
+Reo language, and obtain performance evaluation from the derived MC. </span></font>
+</p><p><br></p></div></div>
+          <div style="clear: both"></div>
+        </div>
+      </div>
+      <!-- /wrapper --><!-- /main-content -->
+
+ <div id="sidebar">
+        <div class="wrapper">
+
+          <div class="links">                        
+            <div class="wrapper"><div id='g_sidebar'><p><a href="index.html">Home</a> </p><p><a href="directions.html">Directions</a> </p><p><a href="participants.html">Participants</a> </p><p><a href="program.html">Programme</a> </p> <p><a href="registration.html">Registration</a> </p></div></div>
+            <div style="clear: both"></div>
+          </div>
+    <!-- /wrapper --><!-- /links -->
+
+        </div>
+        
+      </div>
+      <!-- /wrapper --><!-- /sidebar -->
+
+      <div id="footer"><div class="wrapper">
+
+        <hr />
+        <p><div id='g_footer'> </div></p>
+        <div style="clear: both"></div>
+      </div></div>
+      <!-- /wrapper --><!-- /footer -->
+    </div>
+  </div>
+  <!-- /wrapper --><!-- /container -->
+
+<div id="extraDiv1"><span></span></div><div id="extraDiv2"><span></span></div>
+<div id="extraDiv3"><span></span></div><div id="extraDiv4"><span></span></div>
+<div id="extraDiv5"><span></span></div><div id="extraDiv6"><span></span></div>
+
+</body>
+</html>
+
