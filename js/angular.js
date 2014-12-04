@@ -93,8 +93,27 @@ angular.module('homepage', ['ngRoute', 'ngAnimate', 'ngSanitize'])
   .controller('CollabCtrl', ['$scope', '$http', function($scope, $http) {
     $scope.collaborators = [];
 
+    $scope.rowsPerSize = [
+      {size: 'xs', elems: 2},
+      {size: 'sm', elems: 3},
+      {size: 'md', elems: 4},
+      {size: 'lg', elems: 6}
+    ];
+
+    $scope.getCollaboratorRows = _.memoize(function(elemsPerRow) {
+      var res = [];
+      for (var i = 0; i < $scope.collaborators.length; i++) {
+        if (i % elemsPerRow == 0) {
+          res.push([]);
+        }
+        _.last(res).push($scope.collaborators[i]);
+      }
+      return res;
+    });
+
     $http.get('data/collaborators.json').success(function(data) {
       $scope.collaborators = data;
+      $scope.getCollaboratorRows.cache = {};
     });
   }])
 
