@@ -10,7 +10,8 @@ angular.module('homepage', ['ngRoute', 'ngAnimate', 'ngSanitize'])
         })
         .when('/publications.html', {
           templateUrl: 'publications.html',
-          controller: 'PubsCtrl'
+          controller: 'PubsCtrl',
+          reloadOnSearch: false
         })
         .when('/talks.html', {
           templateUrl: 'talks.html',
@@ -55,12 +56,17 @@ angular.module('homepage', ['ngRoute', 'ngAnimate', 'ngSanitize'])
     };
   }])
 
-  .controller('PubsCtrl', ['$scope', '$http', function($scope, $http) {
+  .controller('PubsCtrl', ['$scope', '$http', '$location', function($scope, $http, $location) {
     $scope.papers = [];
     $scope.pubTypeFilter = 'all';
+    $scope.search = $location.search().search;
 
     $scope.$watch(function() {
       $scope.pubTypeFilter = $('[name=cd-dropdown]').val();
+    });
+
+    $scope.$watch('search', function(search) {
+      $location.search('search', search);
     });
 
     $scope.filterByPubType = function() {
