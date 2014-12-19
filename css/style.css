@@ -1007,6 +1007,10 @@ ul.timeline li .data .text {
 	font-size: 18px;
 }
 
+.pitems .pubmain .pubauthor .emph {
+        font-weight: bold;
+}
+
 .pitems .pubcite emph {
 	font-size: 110%;
 	font-style: italic;

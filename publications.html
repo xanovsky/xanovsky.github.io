@@ -67,7 +67,7 @@
                     <h4 class="pubtitle" ng-bind="paper.title"></h4>
                     <div class="pubauthor">
                       <span ng-repeat="author in paper.authors">
-                        <span ng-bind="author"></span><span ng-hide="$last">,</span>
+                        <span ng-bind="author" ng-class="{'emph': author == search}"></span><span ng-hide="$last">,</span>
                       </span>
                     </div>
                     <div class="pubcite">

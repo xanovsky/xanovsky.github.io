@@ -78,6 +78,10 @@ angular.module('homepage', ['ngRoute', 'ngAnimate', 'ngSanitize'])
     $http.get('data/papers.json').success(function(data) {
       $scope.papers = data;
     });
+
+    $http.get('data/collaborators.json').success(function(data) {
+      $scope.collaborators = data;
+    });
   }])
 
   .controller('TalksCtrl', ['$scope', '$http', function($scope, $http) {
