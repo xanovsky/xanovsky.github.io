@@ -61,12 +61,31 @@ angular.module('homepage', ['ngRoute', 'ngAnimate', 'ngSanitize'])
     $scope.pubTypeFilter = 'all';
     $scope.search = $location.search().search;
 
+    $scope.selectedCollaborator = function(author) {
+      var authorNames = author.name.split(' ');
+      var matchesAuthor = function(searchTerm) {
+        return _.find(authorNames, function(name) {
+          return name.toUpperCase() == searchTerm.toUpperCase();
+        });
+      };
+      return _.every($scope.search.split(' '), matchesAuthor);
+    };
+
+    var findMatchingCollaborators = function() {
+      $scope.matchingCollaborators = _.filter($scope.collaborators, $scope.selectedCollaborator);
+    };
+
     $scope.$watch(function() {
       $scope.pubTypeFilter = $('[name=cd-dropdown]').val();
     });
 
     $scope.$watch('search', function(search) {
       $location.search('search', search);
+      findMatchingCollaborators();
+    });
+
+    $scope.$watch('collaborators', function() {
+      findMatchingCollaborators();
     });
 
     $scope.filterByPubType = function() {

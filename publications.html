@@ -40,6 +40,18 @@
               </div>
             </form>
           </div>
+          <div class="row">
+            <div class="col-sm-2 col-sm-offset-5"
+                 ng-repeat="author in matchingCollaborators" ng-if="matchingCollaborators.length == 1">
+              <div class="thumbnail">
+                <img ng-src="img/collaborators/{{author.img}}" alt="{{autor.name}}">
+                <div class="caption">
+                  <h4 class="text-center" ng-bind="author.name"></h4>
+                  <p class="text-center"><a ng-href="{{author.link}}" target="_blank"><i class="icon-home"></i> Homepage</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -67,7 +79,7 @@
                     <h4 class="pubtitle" ng-bind="paper.title"></h4>
                     <div class="pubauthor">
                       <span ng-repeat="author in paper.authors">
-                        <span ng-bind="author" ng-class="{'emph': author == search}"></span><span ng-hide="$last">,</span>
+                        <span ng-bind="author" ng-class="{'emph': selectedCollaborator({name: author})}"></span><span ng-hide="$last">,</span>
                       </span>
                     </div>
                     <div class="pubcite">

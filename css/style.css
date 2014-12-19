@@ -422,6 +422,10 @@ ul#navigation li .icon {
 	position: relative;
 }
 
+#publications.page .section  {
+        padding: 10px 0;
+}
+
 .section-container {
 	padding: 0 10%;
 }
