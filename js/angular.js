@@ -1,3 +1,58 @@
+angular.module('admin', [])
+  .controller('AdminCtrl', ['$http', '$scope', function($http, $scope) {
+    $scope.errors = [];
+    $scope.data = {
+      papers: {
+        url: 'data/papers.json',
+        text: 'Publications'
+      },
+      collaborators: {
+        url: 'data/collaborators.json',
+        text: 'Collaborators'
+      },
+      news: {
+        url: 'data/news.json',
+        text: 'News'
+      },
+      talks: {
+        url: 'data/talks.json',
+        text: 'Talks'
+      }
+    };
+
+    $scope.numPapers = _.memoize(function(author) {
+      return _.filter($scope.data.papers.entries, function(paper) {
+        return _.contains(paper.authors, author);
+      }).length;
+    });
+
+    var computeMissingCollaborators = function() {
+      var data = $scope.data;
+      var papers = data.papers.entries;
+      var collaborators = data.collaborators.entries;
+      if (!papers || !collaborators) return;
+      collaborators = _.map(collaborators, 'name');
+      collaborators.push('Alexandra Silva');
+      var authors = _.chain(papers)
+        .map('authors')
+        .flatten()
+        .uniq()
+        .value();
+      $scope.missingCollaborators = _.filter(authors, function(author) {
+        return !_.contains(collaborators, author);
+      });
+    };
+
+    _.each($scope.data, function(d) {
+      $http.get(d.url).success(function(data) {
+        d.entries = data;
+        computeMissingCollaborators();
+      }).error(function() {
+        $scope.errors.push('Could not load <b>' + d.text + '</b>; please check <pre>' + d.url + '</pre>');
+      });
+    });
+  }]);
+
 angular.module('homepage', ['ngRoute', 'ngAnimate', 'ngSanitize'])
   .config(['$routeProvider', '$locationProvider',
     function($routeProvider, $locationProvider) {
