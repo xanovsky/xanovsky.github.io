@@ -42,21 +42,6 @@ angular.module('admin', [])
       });
     };
 
-    var checkCollaborators = function() {
-      $scope.checking.collaboratorHomepages.toCheck = $scope.data.collaborators.length;
-      var done = function() {
-        $scope.checking.collaboratorHomepages.toCheck--;
-      };
-      _.each($scope.data.collaborators.entries, function(collaborator) {
-        $http.get(collaborator.link).success(function() {
-          done();
-        }).error(function(data, status) {
-          done();
-          $scope.errors.push('Wrong link to homepage of: ' + collaborator.name + ', <a href="' + collaborator.link + '">' + collaborator.link + '</a>');
-        });
-      });
-    };
-
     $scope.numPapers = _.memoize(function(author) {
       return _.filter($scope.data.papers.entries, function(paper) {
         return _.contains(paper.authors, author);
@@ -66,7 +51,6 @@ angular.module('admin', [])
     _.each($scope.data, function(d, key) {
       $http.get(d.url).success(function(data) {
         d.entries = data;
-        if (key == 'collaborators') checkCollaborators();
         if (key == 'collaborators' && $scope.data.papers.entries) computeMissingCollaborators();
         if (key == 'papers' && $scope.data.collaborators.entries) computeMissingCollaborators();
       }).error(function() {
