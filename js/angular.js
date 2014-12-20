@@ -1,5 +1,10 @@
 angular.module('admin', [])
+  .config(function($sceProvider) {
+    $sceProvider.enabled(false);
+  })
   .controller('AdminCtrl', ['$http', '$scope', function($http, $scope) {
+    var errorId = 0;
+
     $scope.errors = [];
     $scope.data = {
       papers: {
@@ -19,9 +24,13 @@ angular.module('admin', [])
         text: 'Talks'
       }
     };
+
     $scope.checking = {
-      collaboratorHomepages: {
-        text: 'Homepages of collaborators'
+      papers: {
+        text: 'Publications to download'
+      },
+      talks: {
+        text: 'Talks to download'
       }
     };
 
@@ -42,6 +51,44 @@ angular.module('admin', [])
       });
     };
 
+    var checkUrls = function(links, checking, desc) {
+      checking.toCheck = links.length;
+      checking.checked = 0;
+      var done = function() {
+        checking.checked++;
+      };
+      _.each(links, function(link) {
+        $http.get(link).success(function() {
+          done();
+        }).error(function(data, status) {
+          done();
+          $scope.errors.push({
+            text: 'Wrong ' + desc + ' link: <a href="' + link + '">' + link + '</a>',
+            id: errorId++
+          });
+        });
+      });
+    };
+
+    var checkPapers = function() {
+      var links = _.chain($scope.data.papers.entries)
+        .map('download')
+        .filter(function(c) { return c && c.indexOf('/files/') == 0; })
+        .value();
+      checkUrls(links, $scope.checking.papers, 'paper');
+    };
+
+    var checkTalks = function() {
+      var links = _.chain($scope.data.talks.entries)
+        .map('download')
+        .flatten()
+        .filter(function(c) { return c; })
+        .map('url')
+        .filter(function(c) { return c && c.indexOf('/files/') == 0; })
+        .value();
+      checkUrls(links, $scope.checking.talks, 'talk');
+    };
+
     $scope.numPapers = _.memoize(function(author) {
       return _.filter($scope.data.papers.entries, function(paper) {
         return _.contains(paper.authors, author);
@@ -51,10 +98,15 @@ angular.module('admin', [])
     _.each($scope.data, function(d, key) {
       $http.get(d.url).success(function(data) {
         d.entries = data;
+        if (key == 'papers') checkPapers();
+        if (key == 'talks') checkTalks();
         if (key == 'collaborators' && $scope.data.papers.entries) computeMissingCollaborators();
         if (key == 'papers' && $scope.data.collaborators.entries) computeMissingCollaborators();
       }).error(function() {
-        $scope.errors.push('Could not load <b>' + d.text + '</b>; please check <pre>' + d.url + '</pre>');
+        $scope.errors.push({
+          text: 'Could not load <b>' + d.text + '</b>; please check <pre>' + d.url + '</pre>',
+          id: errorId++
+        });
       });
     });
   }]);
