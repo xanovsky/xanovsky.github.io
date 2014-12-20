@@ -39,14 +39,14 @@
                       <ul ng-if="talk.pres.length > 1">
                         <li ng-repeat="pres in talk.pres">
                           <span ng-bind="pres.date"></span>,
-                          <a ng-if="pres.url" ng-href="pres.url" ng-bind="pres.event"></a>
+                          <a ng-if="pres.url" ng-href="{{pres.url}}" ng-bind="pres.event" target="_blank"></a>
                           <span ng-if="!pres.url" ng-bind="pres.event"></span>,
                           <span ng-bind="pres.location"></span>
                         </li>
                       </ul>
                       <div ng-if="talk.pres.length == 1" ng-repeat="pres in talk.pres">
                         <span ng-bind="pres.date"></span>,
-                        <a ng-if="pres.url" ng-href="pres.url" ng-bind="pres.event"></a>
+                        <a ng-if="pres.url" ng-href="{{pres.url}}" ng-bind="pres.event" target="_blank"></a>
                         <span ng-if="!pres.url" ng-bind="pres.event"></span>,
                         <span ng-bind="pres.location"></span>
                       </div>
