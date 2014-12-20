@@ -19,12 +19,11 @@ angular.module('admin', [])
         text: 'Talks'
       }
     };
-
-    $scope.numPapers = _.memoize(function(author) {
-      return _.filter($scope.data.papers.entries, function(paper) {
-        return _.contains(paper.authors, author);
-      }).length;
-    });
+    $scope.checking = {
+      collaboratorHomepages: {
+        text: 'Homepages of collaborators'
+      }
+    };
 
     var computeMissingCollaborators = function() {
       var data = $scope.data;
@@ -43,10 +42,33 @@ angular.module('admin', [])
       });
     };
 
-    _.each($scope.data, function(d) {
+    var checkCollaborators = function() {
+      $scope.checking.collaboratorHomepages.toCheck = $scope.data.collaborators.length;
+      var done = function() {
+        $scope.checking.collaboratorHomepages.toCheck--;
+      };
+      _.each($scope.data.collaborators.entries, function(collaborator) {
+        $http.get(collaborator.link).success(function() {
+          done();
+        }).error(function(data, status) {
+          done();
+          $scope.errors.push('Wrong link to homepage of: ' + collaborator.name + ', <a href="' + collaborator.link + '">' + collaborator.link + '</a>');
+        });
+      });
+    };
+
+    $scope.numPapers = _.memoize(function(author) {
+      return _.filter($scope.data.papers.entries, function(paper) {
+        return _.contains(paper.authors, author);
+      }).length;
+    });
+
+    _.each($scope.data, function(d, key) {
       $http.get(d.url).success(function(data) {
         d.entries = data;
-        computeMissingCollaborators();
+        if (key == 'collaborators') checkCollaborators();
+        if (key == 'collaborators' && $scope.data.papers.entries) computeMissingCollaborators();
+        if (key == 'papers' && $scope.data.collaborators.entries) computeMissingCollaborators();
       }).error(function() {
         $scope.errors.push('Could not load <b>' + d.text + '</b>; please check <pre>' + d.url + '</pre>');
       });
