@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Admin interface</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="author" content="Adam Koprowski">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!--CSS styles-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link id="theme-style" rel="stylesheet" href="css/styles/default.css">
+    <!--/CSS styles-->
+
+    <!--Javascript files-->
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular-sanitize.min.js"></script>
+    <script type="text/javascript" src="js/angular.js"></script>
+    <!--/Javascript files-->
+  </head>
+  <body ng-app="admin" ng-controller="AdminCtrl">
+    <ul>
+      <li ng-repeat="d in data">
+        <span ng-bind="d.text"></span>:
+        <span class="text-danger" ng-hide="d.entries">loading...</span>
+        <span ng-show="d.entries">loaded <span ng-bind="d.entries.length"></span> entries.</span>
+      <li ng-repeat="c in checking" ng-show="c.toCheck">
+        <span ng-bind="c.text"></span>: <span class="text-danger">{{c.toCheck}} left to check.</span>
+    </ul>
+    <div class="alert alert-danger" role="alert" ng-repeat="error in errors" ng-unsafe-bind="error"></div>
+    <div class="alert alert-danger" role="alert" ng-if="missingCollaborators.length">
+      Missing collaborators:
+      <ul>
+        <li ng-repeat="person in missingCollaborators | orderBy:numPapers:true">
+          <span ng-bind="person"></span>
+          (<span ng-bind="numPapers(person)"></span>)
+      </ul>
+    </div>
+  </body>
+</html>
