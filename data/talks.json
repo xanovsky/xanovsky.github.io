@@ -162,8 +162,7 @@
   "download": [{ "text": "PDF", "url": "/files/talks/braunsch10.pdf"}]
 },
 { "title": "Generalizing the powerset construction, coalgebraically",
-  "pres": [{ "date": "April 2010", "event": "Comète seminar, LiX, École Polytechnique", "url": "http://www.lix.polytechnique.fr/comete/seminar/", "location": "Paris, France"}],
-  "download": [{ "text": "PDF", "url": "/files/talks/lix10.pdf"}]
+  "pres": [{ "date": "April 2010", "event": "Comète seminar, LiX, École Polytechnique", "url": "http://www.lix.polytechnique.fr/comete/seminar/", "location": "Paris, France (blackboard talk)“}]
 },
 { "title": "Algebraic enriched coalgebras.",
   "pres": [
@@ -172,14 +171,11 @@
     { "date": "March 2010", "event": "CMCS'10", "url": "http://coalg.org/cmcs10/", "location": "Paphos, Cyprus"}
   ],
   "download": [
-    { "text": "PDF (UvA)", "url": "/files/talks/coalgday10.pdf"},
-    { "text": "PDF (LiX)", "url": "/files/talks/cmcs10.pdf"},
-    { "text": "PDF (CMCS)", "url": "/files/talks/cmcs10.pdf"}
+    { "text": "PDF (UvA)", "url": "/files/talks/coalgday10.pdf"}
   ]
 },
 { "title": "Regular expressions for polynomial coalgebras",
-  "pres": [{ "date": "November 2009", "event": "Arco meeting", "location": "Eindhoven, The Netherlands"}],
-  "download": [{ "text": "PDF", "url": "/files/talks/arco2009.pdf"}]
+  "pres": [{ "date": "November 2009", "event": "Arco meeting", "location": "Eindhoven, The Netherlands (blackboard talk)“}]
 },
 { "title": "Deriving syntax and axioms for quantitative regular behaviours",
   "pres": [
