@@ -99,7 +99,7 @@
   "journal": {
     "name": "Mathematical Structures in Computer Science"
   },
-  "download": "/files/new-dec-traces-mscs.pdf</url>",
+  "download": "/files/new-dec-traces-mscs.pdf",
   "abstract": "<p>In concurrency theory, various semantic equivalences on transition systems are based on traces decorated with some additional observations, generally referred to as decorated traces. Using the generalized powerset construction, recently introduced by a subset of the authors, we give a coalgebraic presentation of decorated trace semantics. The latter include ready, failure, (complete) trace, possible-futures, ready trace and failure trace semantics for labeled transition systems, and ready, (maximal) failure and (maximal) trace semantics for generative probabilistic systems.  This yields a uniform notion of minimal representatives for the various decorated trace equivalences, in terms of final Moore automata. As a consequence, proofs of decorated trace equivalence can be given by coinduction, using different types of (Moore-) bisimulation (up-to context).</p>"
 
 }, {
