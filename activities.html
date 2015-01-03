@@ -42,11 +42,11 @@
           <div ng-repeat="row in getCollaboratorRows(dim.elems)" class="row">
             <div ng-repeat="person in row" class="col-{{dim.size}}-{{12 / dim.elems}}">
               <div class="thumbnail">
-                <a ng-href="{{person.link}}">
+                <a ng-href="/#/publications.html?search={{person.name}}">
                   <img ng-src="img/collaborators/{{person.img}}" alt="{{person.name}}">
                 </a>
                 <div class="caption">
-                  <a ng-href="{{person.link}}">
+                  <a ng-href="/#/publications.html?search={{person.name}}">
                     <h4 ng-bind="person.name"></h4>
                   </a>
                 </div>

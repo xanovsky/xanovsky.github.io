@@ -422,6 +422,10 @@ ul#navigation li .icon {
 	position: relative;
 }
 
+#publications.page .section  {
+        padding: 10px 0;
+}
+
 .section-container {
 	padding: 0 10%;
 }
@@ -1005,6 +1009,10 @@ ul.timeline li .data .text {
 	padding: 5px 15px;
 	float: right;
 	font-size: 18px;
+}
+
+.pitems .pubmain .pubauthor .emph {
+        font-weight: bold;
 }
 
 .pitems .pubcite emph {

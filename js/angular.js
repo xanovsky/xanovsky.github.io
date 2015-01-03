@@ -123,7 +123,8 @@ angular.module('homepage', ['ngRoute', 'ngAnimate', 'ngSanitize'])
         })
         .when('/publications.html', {
           templateUrl: 'publications.html',
-          controller: 'PubsCtrl'
+          controller: 'PubsCtrl',
+          reloadOnSearch: false
         })
         .when('/talks.html', {
           templateUrl: 'talks.html',
@@ -168,12 +169,36 @@ angular.module('homepage', ['ngRoute', 'ngAnimate', 'ngSanitize'])
     };
   }])
 
-  .controller('PubsCtrl', ['$scope', '$http', function($scope, $http) {
+  .controller('PubsCtrl', ['$scope', '$http', '$location', function($scope, $http, $location) {
     $scope.papers = [];
     $scope.pubTypeFilter = 'all';
+    $scope.search = $location.search().search;
+
+    $scope.selectedCollaborator = function(author) {
+      var authorNames = author.name.split(' ');
+      var matchesAuthor = function(searchTerm) {
+        return _.find(authorNames, function(name) {
+          return name.toUpperCase() == searchTerm.toUpperCase();
+        });
+      };
+      return _.every($scope.search.split(' '), matchesAuthor);
+    };
+
+    var findMatchingCollaborators = function() {
+      $scope.matchingCollaborators = _.filter($scope.collaborators, $scope.selectedCollaborator);
+    };
 
     $scope.$watch(function() {
       $scope.pubTypeFilter = $('[name=cd-dropdown]').val();
+    });
+
+    $scope.$watch('search', function(search) {
+      $location.search('search', search);
+      findMatchingCollaborators();
+    });
+
+    $scope.$watch('collaborators', function() {
+      findMatchingCollaborators();
     });
 
     $scope.filterByPubType = function() {
@@ -184,6 +209,10 @@ angular.module('homepage', ['ngRoute', 'ngAnimate', 'ngSanitize'])
 
     $http.get('data/papers.json').success(function(data) {
       $scope.papers = data;
+    });
+
+    $http.get('data/collaborators.json').success(function(data) {
+      $scope.collaborators = data;
     });
   }])
 
