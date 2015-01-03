@@ -879,7 +879,7 @@ ul.timeline li .data .text {
 }
 
 .cd-dropdown > span:after {
-	content: '';
+	content: '\25BC';
 	position: absolute;
 	right: 0px;
 	top: 0px;
