@@ -1012,7 +1012,7 @@
 }, {
   "year": 2008,
   "id": "BOS08",
-  "authors": ["Luís Barbosa", "José Nuno Oliveira", "Alexandra Silva"],
+  "authors": ["Luís Barbosa", "Nuno Oliveira", "Alexandra Silva"],
   "title": "Calculating invariants as coreflexive bisimulations",
   "conference": {
     "name": "Proceedings of the 12th International Conference on Algebraic Methodology and Software Technology",
