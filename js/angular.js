@@ -41,6 +41,7 @@ angular.module('admin', [])
       if (!papers || !collaborators) return;
       collaborators = _.map(collaborators, 'name');
       collaborators.push('Alexandra Silva');
+      collaborators.push('Davide Grohmann');
       var authors = _.chain(papers)
         .map('authors')
         .flatten()
