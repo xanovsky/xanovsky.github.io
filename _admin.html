@@ -26,7 +26,15 @@
         <span class="text-danger" ng-hide="d.entries">loading...</span>
         <span ng-show="d.entries">loaded <span ng-bind="d.entries.length"></span> entries.</span>
       <li ng-repeat="c in checking" ng-show="c.toCheck">
-        <span ng-bind="c.text"></span>: checked <span ng-class="{'text-danger': c.toCheck != c.checked}">{{c.checked}}/{{c.toCheck}}.</span>
+        <span ng-bind="c.text"></span>
+        <div class="progress" ng-show="c.checked != c.toCheck">
+          <div class="progress-bar" role="progressbar" aria-valuenow="{{c.checked}}" aria-valuemin="0" aria-valuemax="{{c.toCheck}" style="width: {{100. * c.checked / c.toCheck}}%;">
+            {{c.checked}}/{{c.toCheck}}
+          </div>
+        </div>
+        <span ng-show="c.checked == c.toCheck">
+          All checked.
+        </span>
     </ul>
     <div class="alert alert-danger" role="alert" ng-repeat="error in errors track by error.id" ng-bind-html="error.text"></div>
     <div class="alert alert-danger" role="alert" ng-if="missingCollaborators.length">
