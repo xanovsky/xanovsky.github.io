@@ -235,6 +235,7 @@ angular.module('homepage', ['ngRoute', 'ngAnimate', 'ngSanitize'])
 
   .controller('CollabCtrl', ['$scope', '$http', function($scope, $http) {
     $scope.collaborators = [];
+    $scope.publications = [];
 
     $scope.rowsPerSize = [
       {size: 'xs', elems: 2},
@@ -243,7 +244,25 @@ angular.module('homepage', ['ngRoute', 'ngAnimate', 'ngSanitize'])
       {size: 'lg', elems: 6}
     ];
 
+    var isAuthor = function(author, paper) {
+      return _.contains(paper.authors, author.name);
+    };
+
+    $scope.getNumPubForAuthor = function(author) {
+      return _.filter($scope.papers, function(paper) {
+        var publicationCounts = paper.edited || paper.journal || paper.conference;
+        return publicationCounts && isAuthor(author, paper);
+      }).length;
+    };
+
+    var sortCollaborators = function() {
+      if (!$scope.collaborators || !$scope.papers) return;
+      $scope.collaborators = _.sortBy($scope.collaborators, $scope.getNumPubForAuthor).reverse();
+    };
+
     $scope.getCollaboratorRows = _.memoize(function(elemsPerRow) {
+      if (!$scope.papers) return [];
+
       var res = [];
       for (var i = 0; i < $scope.collaborators.length; i++) {
         if (i % elemsPerRow == 0) {
@@ -256,6 +275,13 @@ angular.module('homepage', ['ngRoute', 'ngAnimate', 'ngSanitize'])
 
     $http.get('data/collaborators.json').success(function(data) {
       $scope.collaborators = data;
+      sortCollaborators();
+      $scope.getCollaboratorRows.cache = {};
+    });
+
+    $http.get('data/papers.json').success(function(data) {
+      $scope.papers = data;
+      sortCollaborators();
       $scope.getCollaboratorRows.cache = {};
     });
   }])

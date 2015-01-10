@@ -47,7 +47,10 @@
                 </a>
                 <div class="caption">
                   <a ng-href="/#/publications.html?search={{person.name}}">
-                    <h4 ng-bind="person.name"></h4>
+                    <h4>
+                      <span ng-bind="person.name"></span>
+                      <small>({{getNumPubForAuthor(person)}})</small>
+                    </h4>
                   </a>
                 </div>
               </div>
