@@ -190,6 +190,10 @@ angular.module('homepage', ['ngRoute', 'ngAnimate', 'ngSanitize'])
       $scope.matchingCollaborators = _.filter($scope.collaborators, $scope.selectedCollaborator);
     };
 
+    $scope.searchFor = function(searchTerm) {
+      $scope.search = searchTerm;
+    };
+
     $scope.$watch(function() {
       $scope.pubTypeFilter = $('[name=cd-dropdown]').val();
     });
@@ -307,7 +311,7 @@ angular.module('homepage', ['ngRoute', 'ngAnimate', 'ngSanitize'])
     return {
       restrict: 'A',
       link: function(scope, element) {
-        element.on('click', 'div.pubmain', function() {
+        element.on('click', 'div.pubmain .pubcollapse', function() {
           var $this = $(this);
           var $item = $this.closest('.item');
 

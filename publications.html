@@ -66,7 +66,7 @@
                 <div ng-repeat="paper in papers | filter: filterByPubType(pubTypeFilter) | filter: search" class="item" ng-class="{'has-details': paper.abstract}">
                   <div class="pubmain">
                     <div class="pubassets">
-                      <a class="pubcollapse" ng-if="paper.abstract">
+                      <a class="pubcollapse" ng-if="paper.abstract" href="">
                         <i class="icon-expand-alt"></i>
                       </a>
                       <a ng-if="paper.conference.url" ng-href="{{paper.conference.url}}" class="toooltips" title="Conference page" target="_blank">
@@ -82,7 +82,8 @@
                     <h4 class="pubtitle" ng-bind="paper.title"></h4>
                     <div class="pubauthor">
                       <span ng-repeat="author in paper.authors">
-                        <span ng-bind="author" ng-class="{'emph': selectedCollaborator({name: author})}"></span><span ng-hide="$last">,</span>
+                        <span ng-bind="author" ng-class="{'emph': selectedCollaborator({name: author}), 'clickable': author != 'Alexandra Silva'}" ng-click="author != 'Alexandra Silva' ? searchFor(author) : null"></span>
+                        <span ng-hide="$last">,</span>
                       </span>
                     </div>
                     <div class="pubcite">

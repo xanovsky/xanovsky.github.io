@@ -977,10 +977,6 @@ ul.timeline li .data .text {
 	box-shadow: 0px 3px 3px -3px #ccc;
 }
 
-.pitems .has-details .pubmain {
-	cursor: pointer;
-}
-
 .pitems .pubtitle {
 	margin: 0;
 	padding: 0 0 15px 0;
@@ -1238,6 +1234,10 @@ ul.grid li a,ul.grid li img {
 	opacity: 0.3;
 	display: block;
 	padding-top: 30px;
+}
+
+.clickable {
+        cursor: pointer;
 }
 
 @media (max-width: 500px) {
