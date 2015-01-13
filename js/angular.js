@@ -176,6 +176,7 @@ angular.module('homepage', ['ngRoute', 'ngAnimate', 'ngSanitize'])
     $scope.search = $location.search().search;
 
     $scope.selectedCollaborator = function(author) {
+      if (!$scope.search) return false;
       var authorNames = author.name.split(' ');
       var matchesAuthor = function(searchTerm) {
         return _.find(authorNames, function(name) {
