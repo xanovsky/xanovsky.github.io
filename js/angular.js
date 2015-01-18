@@ -171,7 +171,7 @@ angular.module('homepage', ['ngRoute', 'ngAnimate', 'ngSanitize'])
   }])
 
   .controller('PubsCtrl', ['$scope', '$http', '$location', function($scope, $http, $location) {
-    $scope.papers = [];
+    $scope.papersByYear = [];
     $scope.pubTypeFilter = 'all';
     $scope.search = $location.search().search;
 
@@ -214,7 +214,11 @@ angular.module('homepage', ['ngRoute', 'ngAnimate', 'ngSanitize'])
     };
 
     $http.get('data/papers.json').success(function(data) {
-      $scope.papers = data;
+      $scope.papersByYear = _.chain(data)
+           .groupBy('year')
+           .pairs()
+           .map(function(e) { return { year: e[0], papers: e[1] }; })
+           .value();
     });
 
     $http.get('data/collaborators.json').success(function(data) {
