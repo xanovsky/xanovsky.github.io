@@ -170,7 +170,7 @@ angular.module('homepage', ['ngRoute', 'ngAnimate', 'ngSanitize'])
     };
   }])
 
-  .controller('PubsCtrl', ['$scope', '$http', '$location', function($scope, $http, $location) {
+  .controller('PubsCtrl', ['$scope', '$http', '$location', 'filterFilter', function($scope, $http, $location, filterFilter) {
     $scope.papersByYear = [];
     $scope.pubTypeFilter = 'all';
     $scope.search = $location.search().search;
@@ -190,6 +190,16 @@ angular.module('homepage', ['ngRoute', 'ngAnimate', 'ngSanitize'])
       $scope.matchingCollaborators = _.filter($scope.collaborators, $scope.selectedCollaborator);
     };
 
+    $scope.getPapersToDisplay = function(yearPapers) {
+      var papers = filterFilter(yearPapers.papers, $scope.search);
+
+      var filterByPubType = function(paper) {
+        return $scope.pubTypeFilter === 'all' || paper.hasOwnProperty($scope.pubTypeFilter);
+      };
+
+      return _.filter(papers, filterByPubType);
+    };
+
     $scope.searchFor = function(searchTerm) {
       $scope.search = searchTerm;
     };
@@ -206,12 +216,6 @@ angular.module('homepage', ['ngRoute', 'ngAnimate', 'ngSanitize'])
     $scope.$watch('collaborators', function() {
       findMatchingCollaborators();
     });
-
-    $scope.filterByPubType = function() {
-      return function(item) {
-        return $scope.pubTypeFilter === 'all' || item.hasOwnProperty($scope.pubTypeFilter);
-      };
-    };
 
     $http.get('data/papers.json').success(function(data) {
       $scope.papersByYear = _.chain(data)

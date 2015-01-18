@@ -63,8 +63,10 @@
           <div class="row">
             <div class="col-md-12">
               <div class="pitems">
-                <h1 ng-repeat-start="yearPapers in papersByYear | orderBy:'year':true" ng-bind="yearPapers.year"></h1>
-                <div ng-repeat-end ng-repeat="paper in yearPapers.papers | filter: filterByPubType(pubTypeFilter) | filter: search" class="item" ng-class="{'has-details': paper.abstract}">
+                <h1 ng-repeat-start="yearPapers in papersByYear | orderBy:'year':true"
+                    class="year" ng-bind="yearPapers.year" ng-show="getPapersToDisplay(yearPapers).length">
+                </h1>
+                <div ng-repeat-end ng-repeat="paper in getPapersToDisplay(yearPapers)" class="item" ng-class="{'has-details': paper.abstract}">
                   <div class="pubmain">
                     <div class="pubassets">
                       <a class="pubcollapse" ng-if="paper.abstract" href="">
