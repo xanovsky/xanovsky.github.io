@@ -170,8 +170,8 @@ angular.module('homepage', ['ngRoute', 'ngAnimate', 'ngSanitize'])
     };
   }])
 
-  .controller('PubsCtrl', ['$anchorScroll', '$scope', '$http', '$location', 'filterFilter',
-                           function($anchorScroll, $scope, $http, $location, filterFilter) {
+  .controller('PubsCtrl', ['$anchorScroll', '$scope', '$http', '$location', 'filterFilter', '$timeout',
+                           function($anchorScroll, $scope, $http, $location, filterFilter, $timeout) {
     $scope.papersByYear = [];
     $scope.pubTypeFilter = 'all';
     $scope.search = $location.search().search;
@@ -183,6 +183,14 @@ angular.module('homepage', ['ngRoute', 'ngAnimate', 'ngSanitize'])
       $anchorScroll();
       $location.hash(old);
     };
+
+    var refreshScrollSpy = function() {  // TODO hacky...
+      $('[data-spy="scroll"]').each(function () {
+        var $spy = $(this).scrollspy('refresh');
+      });
+    };
+
+    $timeout(refreshScrollSpy);
 
     $scope.selectedCollaborator = function(author) {
       if (!$scope.search) return false;
@@ -220,10 +228,12 @@ angular.module('homepage', ['ngRoute', 'ngAnimate', 'ngSanitize'])
     $scope.$watch('search', function(search) {
       $location.search('search', search);
       findMatchingCollaborators();
+      refreshScrollSpy();
     });
 
     $scope.$watch('collaborators', function() {
       findMatchingCollaborators();
+      refreshScrollSpy();
     });
 
     $http.get('data/papers.json').success(function(data) {
@@ -340,4 +350,15 @@ angular.module('homepage', ['ngRoute', 'ngAnimate', 'ngSanitize'])
 	});
       }
     };
-  });
+  })
+
+    .directive('preventDefault', function() {
+      return {
+        restrict: 'A',
+        link: function(scope, elem, attrs) {
+          elem.on('click', function(e) {
+            e.preventDefault();
+          });
+        }
+      };
+    });

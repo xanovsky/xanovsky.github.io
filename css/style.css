@@ -114,6 +114,7 @@ body {
 	font-family: 'Lato', sans-serif;
 	font-weight: 400;
 	background: #4D4D4D;
+	position: relative;
 }
 
 a,a:hover,a:focus {
@@ -163,7 +164,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
 	user-select: none;
 	width: 250px;
 	background: #2b2b2b;
-	position: absolute;
+	position: fixed;
 	left: 0;
 	top: 0;
 	bottom: 0;
@@ -171,7 +172,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
 }
 
 #main {
-	position: absolute;
+	position: fixed;
 	left: 250px;
 	right: 0;
 	top: 0;
@@ -431,6 +432,14 @@ h1.year {
     font-family: Impact, Charcoal, sans-serif;
     opacity: .5;
     margin-bottom: -5px;        
+}
+
+#publications {
+
+}
+
+#publications .pagecontents {
+    overflow: auto;
 }
 
 #publications.page .section  {

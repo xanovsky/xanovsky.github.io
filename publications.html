@@ -1,4 +1,4 @@
-<div id="publications" class="page">
+<div id="publications" class="page" data-spy="scroll" data-target="#side-nav">
   <div class="page-container">
     <div class="pageheader">
       <div class="headercontent">
@@ -129,10 +129,10 @@
                 </div>
               </div>
             </div>
-            <div id="#pubs-nav" class="col-md-2 hidden-sm" style="position: relative">
+            <div id="#side-nav" class="col-md-2 hidden-sm" style="position: relative">
               <ul class="nav nav-pills nav-stacked" style="position: fixed">
                 <li ng-repeat="yearPapers in papersByYear | orderBy:'year':true" role="presentation">
-                  <a href="" ng-click="gotoYear(yearPapers.year)" ng-bind="yearPapers.year"></a>
+                  <a ng-href="#pubs-in-{{yearPapers.year}}" prevent-default ng-click="gotoYear(yearPapers.year)" ng-bind="yearPapers.year"></a>
                 </li>
               </ul>
             </div>
