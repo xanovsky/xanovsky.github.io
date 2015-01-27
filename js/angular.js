@@ -170,10 +170,19 @@ angular.module('homepage', ['ngRoute', 'ngAnimate', 'ngSanitize'])
     };
   }])
 
-  .controller('PubsCtrl', ['$scope', '$http', '$location', 'filterFilter', function($scope, $http, $location, filterFilter) {
+  .controller('PubsCtrl', ['$anchorScroll', '$scope', '$http', '$location', 'filterFilter',
+                           function($anchorScroll, $scope, $http, $location, filterFilter) {
     $scope.papersByYear = [];
     $scope.pubTypeFilter = 'all';
     $scope.search = $location.search().search;
+
+    $scope.gotoYear = function(year) {
+      var old = $location.hash();
+      var id = 'pubs-in-' + year;
+      $location.hash(id);
+      $anchorScroll();
+      $location.hash(old);
+    };
 
     $scope.selectedCollaborator = function(author) {
       if (!$scope.search) return false;
