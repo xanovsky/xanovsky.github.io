@@ -184,9 +184,17 @@ angular.module('homepage', ['ngRoute', 'ngAnimate', 'ngSanitize'])
       $location.hash(old);
     };
 
+    var affixOffset = $('.pageheader').height() + $('#filters').height() + 100;
+    $('#pub-year-nav').affix({
+      offset: {
+        top: affixOffset
+      },
+      target: $('#publications')
+    });
+
     var refreshScrollSpy = function() {  // TODO hacky...
       $('[data-spy="scroll"]').each(function () {
-        var $spy = $(this).scrollspy('refresh');
+        $(this).scrollspy('refresh');
       });
     };
 
