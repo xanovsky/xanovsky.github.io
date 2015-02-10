@@ -146,9 +146,6 @@ angular.module('homepage', ['ngRoute', 'ngAnimate', 'ngSanitize'])
         .when('/thesis.html', {
           templateUrl: 'thesis.html'
         })
-	.when('/cv.pdf', {
-          redirectTo: '/files/cv.pdf'
-        })
         .otherwise('/main.html');
       $locationProvider.html5Mode(false);
   }])
@@ -163,7 +160,7 @@ angular.module('homepage', ['ngRoute', 'ngAnimate', 'ngSanitize'])
       { href: '#/activities.html', icon: 'tasks', text: 'Activities' },
       { href: '#/teaching.html', icon: 'time', text: 'Teaching' },
       { href: '#/calendar.html', icon: 'calendar', text: 'Calendar' },
-      { href: 'cv.pdf', icon: 'download-alt', text: 'Download CV' }
+      { href: 'files/cv.pdf', icon: 'download-alt', text: 'Download CV' }
     ];
     $scope.isCurrent = function(menuItem) {
       return $location.absUrl().indexOf(menuItem.href) !== -1;
