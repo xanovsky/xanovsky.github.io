@@ -147,7 +147,7 @@ angular.module('homepage', ['ngRoute', 'ngAnimate', 'ngSanitize'])
           templateUrl: 'thesis.html'
         })
 	.when('/cv.pdf', {
-          redirectTo: '/cv.pdf'
+          redirectTo: '/files/cv.pdf'
         })
         .otherwise('/main.html');
       $locationProvider.html5Mode(false);
