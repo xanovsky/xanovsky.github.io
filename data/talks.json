@@ -1,6 +1,6 @@
 [
 { "title": "Coalgebras for Concurrency",
-  "pres": [{ "date": "September 2014", "event": "Coalgebras for Concurrency", "url": "http://ceres.hh.se/mediawiki/index.php/TRENDS_2014/", "location": "Rome, Italy"}],
+  "pres": [{ "date": "September 2014", "event": “TRENDS 2014“, "url": "http://ceres.hh.se/mediawiki/index.php/TRENDS_2014/", "location": "Rome, Italy"}],
   "download": [{ "text": "PDF", "url": "/files/talks/trends.pdf" }]
 },
 { "title": "Coinduction up-to: from concurrency to coalgebra and back",
