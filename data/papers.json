@@ -13,8 +13,8 @@
 
 },{
   "year": 2015,
-  "id": “KMPS15”,
-  "authors": [“Konstantinos Mamouras“, "Dexter Kozen", “Daniela Petrisan”, ”Alexandra Silva"],
+  "id": "KMPS15",
+  "authors": ["Konstantinos Mamouras", "Dexter Kozen", "Daniela Petrisan", "Alexandra Silva"],
   "title": "Nominal Kleene Coalgebra",
   "techreport": {
     "type": "Technical Report",
