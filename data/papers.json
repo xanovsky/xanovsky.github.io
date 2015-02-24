@@ -1,5 +1,5 @@
 [{
-  "year": 2014,
+  "year": 2015,
   "id": "FKMST14",
   "authors": ["Nate Foster", "Dexter Kozen", "Matthew Milano", "Alexandra Silva", "Laure Thompson"],
   "title": "A coalgebraic decision procedure for NetKAT.",
@@ -10,6 +10,19 @@
   },
   "download": "/files/popl265-foster.pdf",
   "abstract": "<p>NetKAT is a domain-specific language and logic for specifying and verifying network packet-processing functions. It consists of Kleene algebra with tests (KAT) augmented with primitives for testing and modifying packet headers and encoding network topologies. Previous work developed the design of the language and its standard semantics, proved the soundness and completeness of the logic, defined a PSPACE algorithm for deciding equivalence, and presented several practical applications.</p><p>This paper develops the coalgebraic theory of NetKAT, including a specialized version of the Brzozowski derivative, and presents a new efficient algorithm for deciding the equational theory using bisimulation. The coalgebraic structure admits an efficient sparse representation that results in a significant reduction in the size of the state space. We discuss the details of our implementation and optimizations that exploit NetKAT's equational axioms and coalgebraic structure to yield significantly improved performance. We present results from experiments demonstrating that our tool is competitive with state-of-the-art tools on several benchmarks including all-pairs connectivity, loop-freedom, and translation validation.</p>"
+
+},{
+  "year": 2015,
+  "id": “KMPS15”,
+  "authors": [“Konstantinos Mamouras“, "Dexter Kozen", “Daniela Petrisan”, ”Alexandra Silva"],
+  "title": "Nominal Kleene Coalgebra",
+  "techreport": {
+    "type": "Technical Report",
+    "number": "1813/39108”,
+    "institution": "Cornell University"
+  },
+  "download": "http://hdl.handle.net/1813/39108",
+  "abstract": "<p>We develop the coalgebraic theory of nominal Kleene algebra, including an alternative language-theoretic semantics, a nominal extension of the Brzozowski derivative, and a bisimulation-based decision procedure for the equational theory.</p>"
 
 }, {
   "year": 2014,
