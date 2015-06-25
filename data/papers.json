@@ -1,4 +1,21 @@
- [{
+[{
+ "year": 2015,
+ "id": "KMPS15",
+ "authors": ["Konstantinos Mamouras", "Dexter Kozen", "Daniela Petrisan", "Alexandra Silva"],
+ "title": "Nominal Kleene Coalgebra",
+ "conference": {
+ "name": "ICALP 2015, 42nd International Colloquium on Automata, Languages, and Programming",
+ "location": "Kyoto, Japan",
+ "series": "LNCS",
+ "volume": 9135,
+ "pages": "286-298",
+ "url": "http://www.kurims.kyoto-u.ac.jp/icalp2015/"
+ },
+ "download": "http://link.springer.com/chapter/10.1007%2F978-3-662-47666-6_23",
+ "abstract": "<p>We develop the coalgebraic theory of nominal Kleene algebra, including an alternative language-theoretic semantics, a nominal extension of the Brzozowski derivative, and a bisimulation-based decision procedure for the equational theory.</p>"
+ 
+ },
+ {
   "year": 2015,
   "id": "EHHPS15",
   "authors": ["Joerg Endrullis", "Helle Hansen", "Dimitri Hendriks", "Andrew Polonsky", "Alexandra Silva"],
@@ -114,7 +131,7 @@
   "journal": {
     "name": "Journal of Computer and System Sciences",
     "volume":  81,
-  "issue" : 5,
+  "number" : 5,
   "pages" : "859-879",
     "note": "This is an extended version of our homonimous CMCS 2012 paper (see below)"
   },
