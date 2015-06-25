@@ -9,16 +9,9 @@
   "url": "http://rdp15.mimuw.edu.pl/index.php?site=rta"
   },
   "download": "http://arxiv.org/abs/1505.01128",
-  "abstract": "<p>We present a coinductive framework for defining infinitary analogues of equational reasoning and rewriting in a uniform way. We define the relation =^infty, notion of infinitary equational reasoning, and ->^infty, the standard notion of infinitary rewriting as follows:
-  =^infty := nu R. ( <-_root + ->_root + lift(R) )^*
-  ->^infty := mu R. nu S. ( ->_root + lift(R) )^* ; lift(S)
-  where
-  lift(R) := { (f(s_1,...,s_n), f(t_1,...,t_n)) | s_1 R t_1,...,s_n R t_n } + id ,
-  and where mu is the least fixed point operator and nu is the greatest fixed point operator.
-  The setup captures rewrite sequences of arbitrary ordinal length, but it has neither the need for ordinals nor for metric convergence. This makes the framework especially suitable for formalizations in theorem provers.</p>",
+  "abstract": "<p>We present a coinductive framework for defining infinitary analogues of equational reasoning and rewriting in a uniform way. We define the relation =^infty, notion of infinitary equational reasoning, and ->^infty, the standard notion of infinitary rewriting as follows: =^infty := nu R. ( <-_root + ->_root + lift(R) )^* ->^infty := mu R. nu S. ( ->_root + lift(R) )^* ; lift(S) where lift(R) := { (f(s_1,...,s_n), f(t_1,...,t_n)) | s_1 R t_1,...,s_n R t_n } + id , and where mu is the least fixed point operator and nu is the greatest fixed point operator. The setup captures rewrite sequences of arbitrary ordinal length, but it has neither the need for ordinals nor for metric convergence. This makes the framework especially suitable for formalizations in theorem provers.</p>",
   "note": "Best paper award"
   },
-
  {
   "year": 2015,
   "id": "FKMST14",
