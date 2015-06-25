@@ -30,6 +30,32 @@
   "note": "Best paper award"
   },
  {
+ "year": 2015,
+ "id": "BMSZ15",
+ "authors": ["Filippo Bonchi", "Stefan Milius", "Alexandra Silva", "Fabio Zanasi"],
+ "title": "Killing epsilons with a dagger: A coalgebraic study of systems with algebraic label structure",
+ "journal": {
+ "name": "Theoretical Computer Science",
+ "note": "This is an extended version of our CMCS 2014 paper (see below)."
+ },
+ "download": "http://www.sciencedirect.com/science/article/pii/S0304397515002406",
+ "abstract": "<p>We propose an abstract framework for modelling state-based systems with internal behaviour as e.g. given by silent or ϵ-transitions. Our approach employs monads with a parametrized fixpoint operator † to give a semantics to those systems and implement a sound procedure of abstraction of the internal transitions, whose labels are seen as the unit of a free monoid. More broadly, our approach extends the standard coalgebraic framework for state-based systems by taking into account the algebraic structure of the labels of their transitions. This allows to consider a wide range of other examples, including Mazurkiewicz traces for concurrent systems and non-deterministic transducers.</p>"
+ 
+ },
+ ,
+ {
+ "year": 2015,
+ "id": "AS15",
+ "authors": ["Alexandra Silva"],
+ "title": "A short introduction to the coalgebraic method."
+ "journal":
+     { "name": "ACM SIGLOG News",
+ "volume" : 2,
+ "number" :2,
+ "pages" : "16-27"
+ }
+ },
+ {
   "year": 2015,
   "id": "FKMST14",
   "authors": ["Nate Foster", "Dexter Kozen", "Matthew Milano", "Alexandra Silva", "Laure Thompson"],
@@ -82,8 +108,24 @@
  "series": "Science of Computer Programming",
  "volume": 100
  }
+ },
+ {
+ "year": 2015,
+ "id": "OSB15",
+ "authors": ["Nuno Oliveira", "Alexandra Silva", "Luís Barbosa"],
+ "title": "IMC-Reo: Interactive Markov Chains for stochastic Reo.",
+ "journal": {
+ "name": "Journal of Internet Services and Information Security",
+ "volume" : 5,
+ "number" : 1,
+ "pages" : "3-28",
+ "note": "This is an extended version of our ACM SAC 2014 paper (see below)"
+ },
+ "download": "/files/jisisOSB_final.pdf",
+ "abstract": "<p>The study of composed software and its properties is in itself a great challenge. Bringing quantitative aspects into the picture increases the complexity of the analysis and entails the need for reconciling both the classical and the stochastic analyses. The quest herein is to provide constructs for composition of building blocks and semantic models thereof which enable both analyses and allow for modeling and verification.</p><p>Stochastic Reo offers constructs for component and service coordination and provides means for specification of stochastic values for software connectors. Interactive Markov chains (IMC) on the other hand, are a stochastic, compositional, extension of classical models of concurrency, integrating classical and stochastic aspects.</p><p>This paper discusses how IMC can be effectively used as a compositional semantic model for Stochastic Reo, avoiding to resort to a separate automaton model, often lacking full compositionality, as intermediate semantics. A tool chain integrating available tool support for IMC, is described and applied in the analysis of a case study dealing with performance and resource allocation of a mediation system.</p>"
  
- },{
+ },
+ {
   "year": 2014,
   "id": "MGS14",
   "authors": ["Stefan Milius", "Sergey Goncharov", "Alexandra Silva"],
@@ -128,19 +170,7 @@
   "download": "/files/prakash.pdf",
   "abstract": "Automata learning is a known technique to infer a finite state machine from a set of observations. In this paper, we revisit Angluin’s original algorithm from a categorical perspective. This abstract view on the main ingredients of the algorithm lays a uniform framework to derive algorithms for other types of automata. We show a straightforward generalization to Moore and Mealy machines, which yields an algorithm already know in the literature, and we discuss generalizations to other types of automata, including weighted automata."
 
-}, {
-  "year": 2014,
-  "id": "OSB14a",
-  "authors": ["Nuno Oliveira", "Alexandra Silva", "Luís Barbosa"],
-  "title": "IMC-Reo: Interactive Markov Chains for stochastic Reo.",
-  "journal": {
-    "name": "Journal of Internet Services and Information Security",
-    "note": "This is an extended version of our ACM SAC 2014 paper (see below)"
-  },
-  "download": "/files/jisisOSB_final.pdf",
-  "abstract": "<p>The study of composed software and its properties is in itself a great challenge. Bringing quantitative aspects into the picture increases the complexity of the analysis and entails the need for reconciling both the classical and the stochastic analyses. The quest herein is to provide constructs for composition of building blocks and semantic models thereof which enable both analyses and allow for modeling and verification.</p><p>Stochastic Reo offers constructs for component and service coordination and provides means for specification of stochastic values for software connectors. Interactive Markov chains (IMC) on the other hand, are a stochastic, compositional, extension of classical models of concurrency, integrating classical and stochastic aspects.</p><p>This paper discusses how IMC can be effectively used as a compositional semantic model for Stochastic Reo, avoiding to resort to a separate automaton model, often lacking full compositionality, as intermediate semantics. A tool chain integrating available tool support for IMC, is described and applied in the analysis of a case study dealing with performance and resource allocation of a mediation system.</p>"
-
-},  {
+},   {
   "year": 2014,
   "id": "BBCRS14",
   "authors": ["Filippo Bonchi", "Marcello Bonsangue", "Georgiana Caltais", "Jan Rutten", "Alexandra Silva"],
