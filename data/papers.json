@@ -1,4 +1,25 @@
-[{
+ [{
+  "year": 2015,
+  "id": "EHHPS15",
+  "authors": ["Joerg Endrullis", "Helle Hansen", "Dimitri Hendriks", "Andrew Polonsky", "Alexandra Silva"],
+  "title": "AA Coinductive Framework for Infinitary Rewriting and Equational Reasoning (Extended Version)",
+  "conference": {
+  "name": "RTA 2015, 26th International Conference on Rewriting Techniques and Applications",
+  "location": "Warsaw, Poland",
+  "url": "http://rdp15.mimuw.edu.pl/index.php?site=rta"
+  },
+  "download": "http://arxiv.org/abs/1505.01128",
+  "abstract": "<p>We present a coinductive framework for defining infinitary analogues of equational reasoning and rewriting in a uniform way. We define the relation =^infty, notion of infinitary equational reasoning, and ->^infty, the standard notion of infinitary rewriting as follows:
+  =^infty := nu R. ( <-_root + ->_root + lift(R) )^*
+  ->^infty := mu R. nu S. ( ->_root + lift(R) )^* ; lift(S)
+  where
+  lift(R) := { (f(s_1,...,s_n), f(t_1,...,t_n)) | s_1 R t_1,...,s_n R t_n } + id ,
+  and where mu is the least fixed point operator and nu is the greatest fixed point operator.
+  The setup captures rewrite sequences of arbitrary ordinal length, but it has neither the need for ordinals nor for metric convergence. This makes the framework especially suitable for formalizations in theorem provers.</p>",
+  "note": "Best paper award"
+  },
+
+ {
   "year": 2015,
   "id": "FKMST14",
   "authors": ["Nate Foster", "Dexter Kozen", "Matthew Milano", "Alexandra Silva", "Laure Thompson"],
@@ -41,14 +62,14 @@
   "abstract": "<p>The Chomsky hierarchy plays a prominent role in the foundations of the theoretical computer science relating classes of formal languages of primary importance. In this paper we use recent developments on coalgebraic and monad-based semantics to obtain a generic notion of a T-automaton, where T is a monad, which allows the uniform study of various notions of machines (e.g. finite state machines, multi-stack machines, Turing machines, valence automata, weighted automata). We use the generalized powerset construction to define a generic (trace) semantics for T-automata, and we show by numerous examples that it correctly instantiates for the known classes of machines/languages captured by the Chomsky hierarchy. Moreover, our approach provides new generic techniques for proving expressivity bounds of various machine-based models.</p>"
 
 }, {
-  "year": 2014,
+  "year": 2015,
   "id": "CLSS14",
   "authors": ["Marco Carbone", "Ivan Lanese", "Alexandra Silva", "Ana Sokolova"],
   "title": "Special issue with selected contributions of the 5th Interaction and Concurrency Experience.",
   "edited": {
     "publisher": "Elsevier",
     "series": "Science of Computer Programming",
-    "note": "To appear"
+  "volume": 100
   }
 
 }, {
