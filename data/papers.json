@@ -115,7 +115,7 @@
     "name": "Journal of Computer and System Sciences",
     "volume":  81,
   "issue" : 5,
-  "pages" : 859-879,
+  "pages" : "859-879",
     "note": "This is an extended version of our homonimous CMCS 2012 paper (see below)"
   },
   "download": "/files/determinization-journal.pdf",
