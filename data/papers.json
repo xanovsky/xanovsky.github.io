@@ -1,4 +1,22 @@
- [{
+ [
+  {
+  "year": 2015,
+  "id": "KMS15",
+  "authors": ["Konstantinos Mamouras", "Dexter Kozen", "Alexandra Silva"],
+  "title": "Completeness and incompleteness in nominal Kleene algebra",
+  "conference": {
+  "name": "RAMICS 2015, 15th International Conference on Relational and Algebraic Methods in Computer Science",
+  "location": "Braga, Portugal",
+  "series": "LNCS",
+  "volume": 0,
+  "pages": "",
+  "url": "http://ramics2015.di.uminho.pt"
+  },
+  "download": "http://link.springer.com/chapter/10.1007%2F978-3-662-47666-6_23",
+  "abstract": "<p>Gabbay and Ciancia (2011) presented a nominal extension of Kleene algebra as a framework for trace semantics with dynamic allocation of resources, along with a semantics consisting of nominal languages. They also provided an axiomatization that captures the behavior of the scoping operator and its interaction with the Kleene algebra operators and proved soundness over nominal languages. In this paper we show that the axioms are complete and describe the free language models.</p>"
+  
+  },
+  {
  "year": 2015,
  "id": "KMPS15",
  "authors": ["Konstantinos Mamouras", "Dexter Kozen", "Daniela Petrisan", "Alexandra Silva"],
@@ -27,7 +45,7 @@
   },
   "download": "http://arxiv.org/abs/1505.01128",
   "abstract": "<p>We present a coinductive framework for defining infinitary analogues of equational reasoning and rewriting in a uniform way. We define the relation =^infty, notion of infinitary equational reasoning, and ->^infty, the standard notion of infinitary rewriting as follows: =^infty := nu R. ( <-_root + ->_root + lift(R) )^* ->^infty := mu R. nu S. ( ->_root + lift(R) )^* ; lift(S) where lift(R) := { (f(s_1,...,s_n), f(t_1,...,t_n)) | s_1 R t_1,...,s_n R t_n } + id , and where mu is the least fixed point operator and nu is the greatest fixed point operator. The setup captures rewrite sequences of arbitrary ordinal length, but it has neither the need for ordinals nor for metric convergence. This makes the framework especially suitable for formalizations in theorem provers.</p>",
-  "note": "Best paper award"
+  "note": "Best paper award."
   },
  {
  "year": 2015,
