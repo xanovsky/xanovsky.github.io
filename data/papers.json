@@ -1,16 +1,4 @@
  [{
-  "year": 2015,
-  "id": "KMPS15",
-  "authors": ["Konstantinos Mamouras", "Dexter Kozen", "Daniela Petrisan", "Alexandra Silva"],
-  "title": "Nominal Kleene Coalgebra",
-  "conference": {
-  "name": "ICALP 2015, 42nd International Colloquium on Automata, Languages, and Programming",
-  "location": "Kyoto, Japan",
-  "series": "LNCS",
-  "volume": 9135,
-  "pages": "286-298",
-  "url": "http://www.kurims.kyoto-u.ac.jp/icalp2015/"
-  },{
  "year": 2015,
  "id": "KMPS15",
  "authors": ["Konstantinos Mamouras", "Dexter Kozen", "Daniela Petrisan", "Alexandra Silva"],
@@ -65,8 +53,7 @@
  "volume" : 2,
  "number" :2,
  "pages" : "16-27"
-   }
- },
+   },
  {
   "year": 2015,
   "id": "FKMST14",
