@@ -46,7 +46,7 @@
  "year": 2015,
  "id": "AS15",
  "authors": ["Alexandra Silva"],
- "title": "A short introduction to the coalgebraic method."
+ "title": "A short introduction to the coalgebraic method.",
  "journal":
      {
  "name": "ACM SIGLOG News",
@@ -54,8 +54,8 @@
  "number" :2,
  "pages" : "16-27"
    },
-  "download": "http://www.sciencedirect.com/science/article/pii/S0304397515002406",
-  "abstract": "<p>We propose an abstract framework for modelling state-based systems with internal behaviour as e.g. given by silent or ϵ-transitions. Our approach employs monads with a parametrized fixpoint operator † to give a semantics to those systems and implement a sound procedure of abstraction of the internal transitions, whose labels are seen as the unit of a free monoid. More broadly, our approach extends the standard coalgebraic framework for state-based systems by taking into account the algebraic structure of the labels of their transitions. This allows to consider a wide range of other examples, including Mazurkiewicz traces for concurrent systems and non-deterministic transducers.</p>"
+  "download": "http://dl.acm.org/citation.cfm?id=2766193",
+  "abstract": "<p>This article contains a brief introduction to coalgebra and an overview of a recent proof of correctness for Brzozowski's algorithm which uses coalgebraic techniques. In the discussion section we briefly discuss the most active research lines in the coalgebra community and take a personal outlook at what future might bring for the field.</p>"
   
   },
  {
