@@ -8,7 +8,7 @@
  "download": [{ "text": "PDF", "url": "/files/talks/wollic15.pdf" }]
  },
  { "title": "Automata learning: a categorical perspective",
- "pres": [{ "date": "January 2015", "event": "Groupe de travail Equipe Plume (ENS)", "location": "Lyon, France (blackboard talk)" },{ "date": "May 2015", "event": "McGill automata group (informal seminar Panangaden group)", "location": "Montreal, Canada (blackboard talk)" }]]
+ "pres": [{ "date": "January 2015", "event": "Groupe de travail Equipe Plume (ENS)", "location": "Lyon, France (blackboard talk)" },{ "date": "May 2015", "event": "McGill automata group (informal seminar Panangaden group)", "location": "Montreal, Canada (blackboard talk)" }]
  },
  { "title": "NetKAT: a formal system for the verification of networks.",
  "pres": [{ "date": "April 2015", "event": "SRI International", "url": "http://www.sri.com", "location": "Menlo Park, CA, USA" },{ "date": "May 2015", "event": "Oxford OASIS seminar", "url": "http://www.cs.ox.ac.uk/seminars/oasis/", "location": "Oxford, UK" },{ "date": "June 2015", "event": "TCS seminar Erlangen", "url": "http://svn8.cs.fau.de/ss15:ober", "location": "Erlangen, Germany" },{ "date": "July 2015", "event": "Logic seminar IU", "url": "http://www.math.indiana.edu/seminars/seminar.phtml?id=7", "location": "Bloomington, IN, United States" }],
