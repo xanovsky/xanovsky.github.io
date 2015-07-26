@@ -1,4 +1,18 @@
  [
+{
+  "year": 2015,
+  "id": "FKMRS15",
+  "authors": ["Nate Foster", "Dexter Kozen", "Konstantinos Mamouras", "Mark Reitblatt","Alexandra Silva"],
+  "title": " Probabilistic NetKAT.",
+  "techreport": {
+  "type": "Technical Report",
+  "number": "1813/40335",
+  "institution": "Cornell University"
+  },
+  "download": "http://hdl.handle.net/1813/40335",
+  "abstract": "<p>This paper develops a new language for programming software-defined networks based on a probabilistic semantics. We extend the NetKAT language with new primitives for expressing probabilistic behaviors and enrich the semantics from one based on deterministic functions to one based on measures and measurable functions on sets of packet histories. We establish fundamental properties of the semantics, prove that it is a conservative extension of the deterministic semantics, and show that it satisfies a number of natural equations. We present case studies that show how the language can be used to model a diverse collection of scenarios drawn from real-world networks.</p>"
+  
+  },
   {
   "year": 2015,
   "id": "KMS15",
