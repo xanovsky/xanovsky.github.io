@@ -1,4 +1,19 @@
 [
+ { "title": "Algebra-Coalgebra Duality: applications in automata theory (invited tutorial)",
+ "pres": [{ "date": "July 2015", "event": "WoLLIC 2015", "url": "http://www.indiana.edu/~iulg/wollic", "location": "Bloomington, Indiana" }],
+ "download": [{ "text": "PDF", "url": "/files/talks/wollic15-tutorial.pdf" }]
+ },
+ { "title": "Towards a nominal Chomsky hierarchy (invited talk)",
+ "pres": [{ "date": "July 2015", "event": "WoLLIC 2015", "url": "http://www.indiana.edu/~iulg/wollic", "location": "Bloomington, Indiana" }],
+ "download": [{ "text": "PDF", "url": "/files/talks/wollic15.pdf" }]
+ },
+ { "title": "Automata learning: a categorical perspective",
+ "pres": [{ "date": "January 2015", "event": "Groupe de travail Equipe Plume (ENS)", "location": "Lyon, France (blackboard talk)" },{ "date": "May 2015", "event": "McGill automata group (informal seminar Panangaden group)", "location": "Montreal, Canada (blackboard talk)" }]]
+ },
+ { "title": "NetKAT: a formal system for the verification of networks.",
+ "pres": [{ "date": "April 2015", "event": "SRI International", "url": "http://www.sri.com", "location": "Menlo Park, CA, USA" },{ "date": "May 2015", "event": "Oxford OASIS seminar", "url": "http://www.cs.ox.ac.uk/seminars/oasis/", "location": "Oxford, UK" },{ "date": "June 2015", "event": "TCS seminar Erlangen", "url": "http://svn8.cs.fau.de/ss15:ober", "location": "Erlangen, Germany" },{ "date": "July 2015", "event": "Logic seminar IU", "url": "http://www.math.indiana.edu/seminars/seminar.phtml?id=7", "location": "Bloomington, IN, United States" }],
+ "download": [{ "text": "PDF Oxford", "url": "/files/talks/OASIS.pdf" }]
+ },
 { "title": "Coalgebras for Concurrency",
   "pres": [{ "date": "September 2014", "event": "TRENDS 2014", "url": "http://ceres.hh.se/mediawiki/index.php/TRENDS_2014/", "location": "Rome, Italy"}],
   "download": [{ "text": "PDF", "url": "/files/talks/trends.pdf" }]
