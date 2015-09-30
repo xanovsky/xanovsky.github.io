@@ -26,7 +26,7 @@
   "pages": "",
   "url": "http://ramics2015.di.uminho.pt"
   },
-  "download": "http://link.springer.com/chapter/10.1007%2F978-3-662-47666-6_23",
+  "download": "http://alexandrasilva.org/files/NKA-RAMiCS-Final.pdf”,
   "abstract": "<p>Gabbay and Ciancia (2011) presented a nominal extension of Kleene algebra as a framework for trace semantics with dynamic allocation of resources, along with a semantics consisting of nominal languages. They also provided an axiomatization that captures the behavior of the scoping operator and its interaction with the Kleene algebra operators and proved soundness over nominal languages. In this paper we show that the axioms are complete and describe the free language models.</p>"
   
   },
