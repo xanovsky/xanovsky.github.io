@@ -1,5 +1,7 @@
 [
-{"date": "4 December 2015", "note": "I was awarded an <a href='https://erc.europa.eu/sites/default/files/document/file/erc_2015_stg_results_pe.pdf'>ERC starting</a> grant!"
+[{"date": "15 Dec 2015", "note": "I am hiring! Two phd positions open: see <a href='https://www.prism.ucl.ac.uk/#!/?project=163'>here</a> and <a href='https://www.prism.ucl.ac.uk/#!/?project=162'>here</a>. Two post-doc positions to be announced soon to work on foundations, semantics, and verification of networks."
+},
+{"date": "4 Dec 2015", "note": "I was awarded an <a href='https://erc.europa.eu/sites/default/files/document/file/erc_2015_stg_results_pe.pdf'>ERC starting</a> grant!"
 },
  { "date": "20 June 2015", "note": "In the fall I will be joining the  <a href='http://pplv.cs.ucl.ac.uk'>Programming principles, logic and verification group</a>, at University College London. I will be soon advertising two PhD positions, let me know if you are interested or know someone who might be!" },
  { "date": "10 June 2015", "note": "I will be teaching a course on formal languages and coinduction in the <a href='http://camerino2015.topdrim.eu'>TOPDRIM</a> summer school (Understanding COMPLEXITY and CONCURRENCY through  TOPOLOGY of DATA)." },
