@@ -137,6 +137,9 @@ angular.module('homepage', ['ngRoute', 'ngAnimate', 'ngSanitize'])
         .when('/activities.html', {
           templateUrl: 'activities.html'
         })
+           .when('/programcommittees.html', {
+                 templateUrl: 'programcommittees.html'
+                 })
         .when('/teaching.html', {
           templateUrl: 'teaching.html'
         })
