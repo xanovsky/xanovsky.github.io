@@ -1,4 +1,12 @@
 [
+ { "title": "Completeness and Incompleteness in Nominal Kleene Algebra",
+ "pres": [{ "date": "September 2015", "event": "WoLLIC 2015", "url": "http://ramics2015.di.uminho.pt", "location": "Braga, Portugal" }],
+ "download": [{ "text": "PDF", "url": "/files/talks/ramics15.pdf" }]
+ },
+ { "title": "Applications of Automata and Concurrency Theory in Networks (invited talk)",
+ "pres": [{ "date": "September 2015", "event": "CONCUR 2015", "url": "http://mafalda.fdi.ucm.es/concur2015/", "location": "Madrid, Spain" }],
+ "download": [{ "text": "PDF", "url": "/files/talks/concur-2015.pdf" }]
+ },
  { "title": "Algebra-Coalgebra Duality: applications in automata theory (invited tutorial)",
  "pres": [{ "date": "July 2015", "event": "WoLLIC 2015", "url": "http://www.indiana.edu/~iulg/wollic", "location": "Bloomington, Indiana" }],
  "download": [{ "text": "PDF", "url": "/files/talks/wollic15-tutorial.pdf" }]
