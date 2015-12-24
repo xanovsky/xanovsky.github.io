@@ -1,6 +1,6 @@
 [
  { "title": "Completeness and Incompleteness in Nominal Kleene Algebra",
- "pres": [{ "date": "September 2015", "event": "WoLLIC 2015", "url": "http://ramics2015.di.uminho.pt", "location": "Braga, Portugal" }],
+ "pres": [{ "date": "September 2015", "event": "RAMICS 2015", "url": "http://ramics2015.di.uminho.pt", "location": "Braga, Portugal" }],
  "download": [{ "text": "PDF", "url": "/files/talks/ramics15.pdf" }]
  },
  { "title": "Applications of Automata and Concurrency Theory in Networks (invited talk)",
