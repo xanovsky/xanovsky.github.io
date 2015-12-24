@@ -99,7 +99,7 @@
                         <span ng-if="paper.edited.pages">pp. <emph ng-bind="paper.edited.pages"></emph>,</span>
                         <span ng-if="paper.edited.note"><span ng-bind="paper.edited.note"></span>,</span>
                       </span>,
-                      <span ng-if="paper.conference.note"><span ng-bind="paper.conference.note"></span>
+                      <span ng-if="paper.conference.note"> <span ng-bind="paper.conference.note">.</span>
                       <span ng-if="paper.journal">
                         <span class="label label-danger">Journal Paper</span>
                         <emph ng-bind="paper.journal.name"></emph>,
