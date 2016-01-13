@@ -114,6 +114,7 @@ body {
 	font-family: 'Lato', sans-serif;
 	font-weight: 400;
 	background: #4D4D4D;
+	position: relative;
 }
 
 a,a:hover,a:focus {
@@ -163,7 +164,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
 	user-select: none;
 	width: 250px;
 	background: #2b2b2b;
-	position: absolute;
+	position: fixed;
 	left: 0;
 	top: 0;
 	bottom: 0;
@@ -171,7 +172,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
 }
 
 #main {
-	position: absolute;
+	position: fixed;
 	left: 250px;
 	right: 0;
 	top: 0;
@@ -228,6 +229,13 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
 
 /* sidebar
  **************************************************/
+#pub-year-nav.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
 #nav-container {
 	position: relative;
 	height: 100%;
@@ -421,6 +429,16 @@ ul#navigation li .icon {
 .page .section {
 	padding: 70px 0;
 	position: relative;
+}
+
+h1.year {
+    display: block;
+    font-size: 600%;
+    margin-left: -5%;
+    font-variant: small-caps;
+    font-family: Impact, Charcoal, sans-serif;
+    opacity: .5;
+    padding-top: 50px;
 }
 
 #publications.page .section  {

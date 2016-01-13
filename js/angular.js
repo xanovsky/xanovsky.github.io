@@ -170,10 +170,35 @@ angular.module('homepage', ['ngRoute', 'ngAnimate', 'ngSanitize'])
     };
   }])
 
-  .controller('PubsCtrl', ['$scope', '$http', '$location', function($scope, $http, $location) {
-    $scope.papers = [];
+  .controller('PubsCtrl', ['$anchorScroll', '$scope', '$http', '$location', 'filterFilter', '$timeout',
+                           function($anchorScroll, $scope, $http, $location, filterFilter, $timeout) {
+    $scope.papersByYear = [];
     $scope.pubTypeFilter = 'all';
     $scope.search = $location.search().search;
+
+    $scope.gotoYear = function(year) {
+      var old = $location.hash();
+      var id = 'pubs-in-' + year;
+      $location.hash(id);
+      $anchorScroll();
+      $location.hash(old);
+    };
+
+    var affixOffset = $('.pageheader').height() + $('#filters').height() + 100;
+    $('#pub-year-nav').affix({
+      offset: {
+        top: affixOffset
+      },
+      target: $('#publications')
+    });
+
+    var refreshScrollSpy = function() {  // TODO hacky...
+      $('[data-spy="scroll"]').each(function () {
+        $(this).scrollspy('refresh');
+      });
+    };
+
+    $timeout(refreshScrollSpy);
 
     $scope.selectedCollaborator = function(author) {
       if (!$scope.search) return false;
@@ -190,6 +215,16 @@ angular.module('homepage', ['ngRoute', 'ngAnimate', 'ngSanitize'])
       $scope.matchingCollaborators = _.filter($scope.collaborators, $scope.selectedCollaborator);
     };
 
+    $scope.getPapersToDisplay = function(yearPapers) {
+      var papers = filterFilter(yearPapers.papers, $scope.search);
+
+      var filterByPubType = function(paper) {
+        return $scope.pubTypeFilter === 'all' || paper.hasOwnProperty($scope.pubTypeFilter);
+      };
+
+      return _.filter(papers, filterByPubType);
+    };
+
     $scope.searchFor = function(searchTerm) {
       $scope.search = searchTerm;
     };
@@ -201,20 +236,20 @@ angular.module('homepage', ['ngRoute', 'ngAnimate', 'ngSanitize'])
     $scope.$watch('search', function(search) {
       $location.search('search', search);
       findMatchingCollaborators();
+      refreshScrollSpy();
     });
 
     $scope.$watch('collaborators', function() {
       findMatchingCollaborators();
+      refreshScrollSpy();
     });
 
-    $scope.filterByPubType = function() {
-      return function(item) {
-        return $scope.pubTypeFilter === 'all' || item.hasOwnProperty($scope.pubTypeFilter);
-      };
-    };
-
     $http.get('data/papers.json').success(function(data) {
-      $scope.papers = data;
+      $scope.papersByYear = _.chain(data)
+           .groupBy('year')
+           .pairs()
+           .map(function(e) { return { year: e[0], papers: e[1] }; })
+           .value();
     });
 
     $http.get('data/collaborators.json').success(function(data) {
@@ -323,4 +358,15 @@ angular.module('homepage', ['ngRoute', 'ngAnimate', 'ngSanitize'])
 	});
       }
     };
-  });
+  })
+
+    .directive('preventDefault', function() {
+      return {
+        restrict: 'A',
+        link: function(scope, elem, attrs) {
+          elem.on('click', function(e) {
+            e.preventDefault();
+          });
+        }
+      };
+    });
