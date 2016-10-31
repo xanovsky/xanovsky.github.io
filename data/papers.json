@@ -150,7 +150,18 @@
  "download": "/files/determinization-journal.pdf",
  "abstract": "<p>This paper takes a fresh look at the topic of trace semantics in the theory of coalgebras. In the last few years, two approaches, somewhat incomparable at first sight, captured successfully in a coalgebraic setting trace semantics for various types of transition systems. The first development of coalgebraic trace semantics used final coalgebras in Kleisli categories and required some non-trivial assumptions, which do not always hold, even in cases where one can reasonably speak of traces (like for weighted automata). The second development stemmed from the observation that trace semantics can also arise by performing a determinization construction and used final coalgebras in Eilenberg-Moore categories. In this paper, we develop a systematic study in which the two approaches can be studied and compared. Notably, we show that the two different views on trace semantics are equivalent, in the examples where both approaches are applicable.</p>"
  
- },
+  }, {
+  "year": 2015,
+  "id": "RBBPRS15",
+  "authors": ["Jurriaan Rot", "Filippo Bonchi", "Marcello Bonsangue", "Damien Pous", "Jan Rutten", "Alexandra Silva"],
+  "title": "Enhanced Coalgebraic Bisimulation",
+  "journal": {
+  "name": "Mathematical Structures in Computer Science"
+  },
+  "download": "/files/up-to.pdf",
+  "abstract": "<p>Theoretical models of recursion schemes have been well studied under the names well-founded coalgebras, recursive coalgebras, corecursive algebras, and Elgot algebras. Much of this work focuses on conditions ensuring unique or canonical solutions, e.g. when the coalgebra is well-founded. If the coalgebra is not well-founded, then there can be multiple solutions. The standard semantics of recursive programs gives a particular solution, namely the least solution in a flat Scott domain, which may not be the desired one. We have recently proposed programming language constructs to allow the specification of alternative solutions and methods to compute them. We have implemented these new constructs as an extension of OCaml. In this paper, we prove some theoretical results characterizing well-founded coalgebras that slightly extend results of Adamek, Luecke, and Milius (2007), along with several examples for which this extension is useful. We also give several examples that are not well-founded but still have a desired solution. In each case, the function would diverge under the standard semantics of recursion, but can be specified and computed with the programming language constructs we have proposed.</p>"
+  
+  },
  {
  "year": 2015,
  "id": "CLSS14",
@@ -291,17 +302,6 @@
   },
   "download": "http://www.sciencedirect.com/science/article/pii/S0167642311002073?via=ihub",
   "abstract": "<p>In this paper we present a compositional semantics for the channel-based coordination language Reo which enables the analysis of quality of service (QoS) properties of service compositions. For this purpose, we annotate Reo channels with stochastic delay rates and explicitly model data-arrival rates at the boundary of a connector, to capture its interaction with the services that comprise its environment. We propose Stochastic Reo automata as an extension of Reo automata, in order to compositionally derive a QoS-aware semantics for Reo. We further present a translation of Stochastic Reo automata to Continuous-Time Markov Chains (CTMCs). This translation enables us to use third- party CTMC verification tools to do an end-to-end performance analysis of service compositions.</p>"
-
-}, {
-  "year": 2014,
-  "id": "RBBPRS14",
-  "authors": ["Jurriaan Rot", "Filippo Bonchi", "Marcello Bonsangue", "Damien Pous", "Jan Rutten", "Alexandra Silva"],
-  "title": "Enhanced Coalgebraic Bisimulation",
-  "journal": {
-    "name": "Mathematical Structures in Computer Science"
-  },
-  "download": "/files/up-to.pdf",
-  "abstract": "<p>Theoretical models of recursion schemes have been well studied under the names well-founded coalgebras, recursive coalgebras, corecursive algebras, and Elgot algebras. Much of this work focuses on conditions ensuring unique or canonical solutions, e.g. when the coalgebra is well-founded. If the coalgebra is not well-founded, then there can be multiple solutions. The standard semantics of recursive programs gives a particular solution, namely the least solution in a flat Scott domain, which may not be the desired one. We have recently proposed programming language constructs to allow the specification of alternative solutions and methods to compute them. We have implemented these new constructs as an extension of OCaml. In this paper, we prove some theoretical results characterizing well-founded coalgebras that slightly extend results of Adamek, Luecke, and Milius (2007), along with several examples for which this extension is useful. We also give several examples that are not well-founded but still have a desired solution. In each case, the function would diverge under the standard semantics of recursion, but can be specified and computed with the programming language constructs we have proposed.</p>"
 
 }, {
   "year": 2014,
