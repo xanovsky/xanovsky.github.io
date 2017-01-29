@@ -1,5 +1,43 @@
- [
-  {
+[
+ {
+ "year":2017,
+ "id": "SKFKS17",
+ "authors": ["Steffen Smolka", "Praveen Kumar", "Nate Foster", "Dexter Kozen","Alexandra Silva"],
+   "title": " Cantor meets Scott: Domain-theoretic foundations for probabilistic network programming.",
+ "conference": {
+ "name": "POPL 2017: 44th ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages",
+ "location": "Paris, France",
+ "url": "http://popl.mpi-sws.org/2017"
+ },
+ "download": "https://arxiv.org/pdf/1607.05830.pdf",
+ "abstract": "<p>ProbNetKAT is a probabilistic extension of NetKAT with a denotational semantics based on Markov kernels. The language is expressive enough to generate continuous distributions, which raises the question of how to compute effectively in the language. This paper gives an new characterization of ProbNetKAT’s semantics using domain theory, which provides the foundation needed to build a practical implementation. We show how to use the semantics to approximate the behavior of arbitrary ProbNetKAT programs using distributions with finite support. We develop a prototype implemen- tation and show how to use it to solve a variety of problems including characterizing the expected congestion induced by different rout- ing schemes and reasoning probabilistically about reachability in a network.</p>"
+ },
+ {
+ "year":2017,
+ "id": "MSSKS17",
+ "authors": ["Joshua Moerman", "Matteo Sammartino", "Alexandra Silva", "Bartek Klin", "Michal Szynwelski"],
+ "title": "Learning nominal automata.",
+ "conference": {
+ "name": "POPL 2017: 44th ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages",
+ "location": "Paris, France",
+ "url": "http://popl.mpi-sws.org/2017"
+ },
+ "download": "https://arxiv.org/pdf/1607.06268.pdf",
+ "abstract": "<p>We present an Angluin-style algorithm to learn nominal automata, which are acceptors of languages over infinite (structured) alphabets. The abstract approach we take allows us to seamlessly extend known variations of the algorithm to this new setting. In particular we can learn a subclass of nominal non-deterministic automata. An implementation using a recently developed Haskell library for nominal computation is provided for preliminary experiments.</p>"
+ },
+ {
+ "year":2016,
+ "id": "KPS16",
+ "authors": ["Robbert Krebbers", "Louis Parlant", "Alexandra Silva"],
+ "title": "Moessner's Theorem: An Exercise in Coinductive Reasoning in Coq.",
+ "conference": {
+ "name": "Theory and Practice of Formal Methods 2016 (in honor of Frank de Boer's 60th birthday)",
+ "pages": "309--324"
+ },
+ "download": "http://discovery.ucl.ac.uk/1492921/1/moessner.pdf",
+ "abstract": "<p>Moessner's Theorem describes a construction of the sequence of powers (1^n, 2^n, 3^n, ...), by repeatedly dropping and summing elements from the sequence of positive natural numbers. The theorem was presented by Moessner in 1951 without a proof and later proved and gen- eralized in several directions. More recently, a coinductive proof of the original theorem was given by Niqui and Rutten. We present a formaliza- tion of their proof in the Coq proof assistant. This formalization serves as a non-trivial illustration of the use of coinduction in Coq. During the formalization, we discovered that Long and Sali ́e’s generalizations could also be proved using (almost) the same bisimulation.</p>"
+ },
+ {
   "year": 2016,
   "id": "FKMRS16",
   "authors": ["Nate Foster", "Dexter Kozen", "Konstantinos Mamouras", "Mark Reitblatt","Alexandra Silva"],
@@ -9,8 +47,8 @@
   "location": "Eindhoven, The Netherlands",
   "url": "http://www.etaps.org/index.php/2016/esop",
   "series": "LNCS",
-  "volume": "",
-  "pages": "",
+  "volume": "9632",
+  "pages": "282--309",
   "note": "An earlier version of this paper appeared as Cornell Technical report (see below)"
   },
   "download": "",
