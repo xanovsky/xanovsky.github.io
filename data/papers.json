@@ -1,16 +1,30 @@
 [
  {
+ "year": 2017,
+ "id": "JKS17",
+ "authors": ["Jean-Baptiste Jeannin", "Dexter Kozen", "Alexandra Silva"],
+ "title": "CoCaml: Functional Programming with Regular Coinductive Types",
+ "journal": {
+ "name": "Fundamenta Informaticae",
+ "volume" : 150,
+ "pages" : "347-377"
+ },
+ "download": "https://pdfs.semanticscholar.org/cce1/d08165dab790b8f242ba057e9c9ae1432c5f.pdf",
+ "abstract": "<p>Functional languages offer a high level of abstraction, which results in programs that are elegant and easy to understand. Central to the development of functional programming are inductive and coinductive types and associated programming constructs, such as pattern-matching. Whereas inductive types have a long tradition and are well supported in most languages, coinduc- tive types are subject of more recent research and are less mainstream.</p><p>We present CoCaml, a functional programming language extending OCaml, which allows us to define recursive functions on regular coinductive datatypes. These functions are defined like usual recursive functions, but parameterized by an equation solver. We present a full implementation of all the constructs and solvers and show how these can be used in a variety of examples, including operations on infinite lists, infinitary lambda-terms, and p-adic numbers.</p>"
+ 
+ },
+ {
  "year":2017,
  "id": "SKFKS17",
  "authors": ["Steffen Smolka", "Praveen Kumar", "Nate Foster", "Dexter Kozen","Alexandra Silva"],
-   "title": " Cantor meets Scott: Domain-theoretic foundations for probabilistic network programming.",
+ "title": " Cantor meets Scott: Domain-theoretic foundations for probabilistic network programming.",
  "conference": {
  "name": "POPL 2017: 44th ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages",
  "location": "Paris, France",
  "url": "http://popl.mpi-sws.org/2017"
  },
  "download": "https://arxiv.org/pdf/1607.05830.pdf",
- "abstract": "<p>ProbNetKAT is a probabilistic extension of NetKAT with a denotational semantics based on Markov kernels. The language is expressive enough to generate continuous distributions, which raises the question of how to compute effectively in the language. This paper gives an new characterization of ProbNetKAT’s semantics using domain theory, which provides the foundation needed to build a practical implementation. We show how to use the semantics to approximate the behavior of arbitrary ProbNetKAT programs using distributions with finite support. We develop a prototype implemen- tation and show how to use it to solve a variety of problems including characterizing the expected congestion induced by different rout- ing schemes and reasoning probabilistically about reachability in a network.</p>"
+ "abstract": "<p>ProbNetKAT is a probabilistic extension of NetKAT with a denotational semantics based on Markov kernels. The language is expressive enough to generate continuous distributions, which raises the question of how to compute effectively in the language. This paper gives an new characterization of ProbNetKAT’s semantics using domain theory, which provides the foundation needed to build a practical implementation. We show how to use the semantics to approximate the behavior of arbitrary ProbNetKAT programs using distributions with finite support. We develop a prototype implemen- tation and show how to use it to solve a variety of problems including characterizing the expected congestion induced by different routing schemes and reasoning probabilistically about reachability in a network.</p>"
  },
  {
  "year":2017,
@@ -26,13 +40,55 @@
  "abstract": "<p>We present an Angluin-style algorithm to learn nominal automata, which are acceptors of languages over infinite (structured) alphabets. The abstract approach we take allows us to seamlessly extend known variations of the algorithm to this new setting. In particular we can learn a subclass of nominal non-deterministic automata. An implementation using a recently developed Haskell library for nominal computation is provided for preliminary experiments.</p>"
  },
  {
+ "year": 2016,
+ "id": "BCS16",
+ "authors": ["Luís Barbosa", "Alcino Cunha", "Alexandra Silva"],
+ "title": "Quien sabe por Algebra, sabe scientificamente. Special issue with selected contributions dedicated to José Nuno Oliveira on the occasion of his 60th birthday.",
+ "edited": {
+ "publisher": "Elsevier",
+ "series": "Journal of Logical and Algebraic Methods in Programming",
+ "volume": 5,
+ "issue": 85
+ }
+ },
+ {
+ "year": 2016,
+ "id": "BBCRS14",
+ "authors": ["Filippo Bonchi", "Marcello Bonsangue", "Georgiana Caltais", "Jan Rutten", "Alexandra Silva"],
+ "title": "A coalgebraic view on decorated traces.",
+ "journal": {
+ "name": "Mathematical Structures in Computer Science",
+ "volume" : 26,
+ "issue": 7,
+ "pages" : "1234-1268"
+ },
+ "download": "/files/new-dec-traces-mscs.pdf",
+ "abstract": "<p>In concurrency theory, various semantic equivalences on transition systems are based on traces decorated with some additional observations, generally referred to as decorated traces. Using the generalized powerset construction, recently introduced by a subset of the authors, we give a coalgebraic presentation of decorated trace semantics. The latter include ready, failure, (complete) trace, possible-futures, ready trace and failure trace semantics for labeled transition systems, and ready, (maximal) failure and (maximal) trace semantics for generative probabilistic systems.  This yields a uniform notion of minimal representatives for the various decorated trace equivalences, in terms of final Moore automata. As a consequence, proofs of decorated trace equivalence can be given by coinduction, using different types of (Moore-) bisimulation (up-to context).</p>"
+ 
+ },
+ {
+ "year": 2016,
+ "id": "AS16",
+ "authors": ["Alexandra Silva"],
+ "title": "Report on the POPL mentoring workshop (PLMW 2016)",
+ "journal":
+ {
+ "name": "ACM SIGLOG News",
+ "volume" : 3,
+ "number" : 2,
+ "pages" : "82-83"
+ },
+ "download": "http://dl.acm.org/citation.cfm?id=2948909"
+ },
+ {
  "year":2016,
  "id": "KPS16",
  "authors": ["Robbert Krebbers", "Louis Parlant", "Alexandra Silva"],
  "title": "Moessner's Theorem: An Exercise in Coinductive Reasoning in Coq.",
  "conference": {
  "name": "Theory and Practice of Formal Methods 2016 (in honor of Frank de Boer's 60th birthday)",
- "pages": "309--324"
+ "pages": "309--324",
+ "location": "Eindhoven, The Netherlands"
  },
  "download": "http://discovery.ucl.ac.uk/1492921/1/moessner.pdf",
  "abstract": "<p>Moessner's Theorem describes a construction of the sequence of powers (1^n, 2^n, 3^n, ...), by repeatedly dropping and summing elements from the sequence of positive natural numbers. The theorem was presented by Moessner in 1951 without a proof and later proved and gen- eralized in several directions. More recently, a coinductive proof of the original theorem was given by Niqui and Rutten. We present a formaliza- tion of their proof in the Coq proof assistant. This formalization serves as a non-trivial illustration of the use of coinduction in Coq. During the formalization, we discovered that Long and Sali ́e’s generalizations could also be proved using (almost) the same bisimulation.</p>"
@@ -255,7 +311,6 @@
     "pages": "1-2",
     "url": "http://www.sciencedirect.com/science/article/pii/S1571066114000681"
   }
-
 }, {
   "year": 2014,
   "id": "JS14b",
@@ -272,18 +327,8 @@
   "download": "/files/prakash.pdf",
   "abstract": "Automata learning is a known technique to infer a finite state machine from a set of observations. In this paper, we revisit Angluin’s original algorithm from a categorical perspective. This abstract view on the main ingredients of the algorithm lays a uniform framework to derive algorithms for other types of automata. We show a straightforward generalization to Moore and Mealy machines, which yields an algorithm already know in the literature, and we discuss generalizations to other types of automata, including weighted automata."
 
-},   {
-  "year": 2014,
-  "id": "BBCRS14",
-  "authors": ["Filippo Bonchi", "Marcello Bonsangue", "Georgiana Caltais", "Jan Rutten", "Alexandra Silva"],
-  "title": "A coalgebraic view on decorated traces.",
-  "journal": {
-    "name": "Mathematical Structures in Computer Science"
-  },
-  "download": "/files/new-dec-traces-mscs.pdf",
-  "abstract": "<p>In concurrency theory, various semantic equivalences on transition systems are based on traces decorated with some additional observations, generally referred to as decorated traces. Using the generalized powerset construction, recently introduced by a subset of the authors, we give a coalgebraic presentation of decorated trace semantics. The latter include ready, failure, (complete) trace, possible-futures, ready trace and failure trace semantics for labeled transition systems, and ready, (maximal) failure and (maximal) trace semantics for generative probabilistic systems.  This yields a uniform notion of minimal representatives for the various decorated trace equivalences, in terms of final Moore automata. As a consequence, proofs of decorated trace equivalence can be given by coinduction, using different types of (Moore-) bisimulation (up-to context).</p>"
-
-}, {
+},
+ {
   "year": 2014,
   "id": "BMSZ14",
   "authors": ["Filippo Bonchi", "Stefan Milius", "Alexandra Silva", "Fabio Zanasi"],
@@ -392,7 +437,6 @@
     "volume": 8222,
     "pages": "211-234"
   }
-
 }, {
   "year": 2013,
   "id": "BCPS13",
