@@ -110,7 +110,7 @@
   "year": 2016,
   "id": "FKMRS16",
   "authors": ["Nate Foster", "Dexter Kozen", "Konstantinos Mamouras", "Mark Reitblatt","Alexandra Silva"],
-  "title": " Probabilistic NetKAT.",
+  "title": "Probabilistic NetKAT.",
   "conference": {
   "name": "25th European Symposium on Programming, ESOP 2016",
   "location": "Eindhoven, The Netherlands",
@@ -120,7 +120,7 @@
   "pages": "282--309",
   "note": "An earlier version of this paper appeared as Cornell Technical report (see below)"
   },
-  "download": "",
+  "download": "https://www.cs.cornell.edu/~kozen/papers/probnetkat.pdf",
   "abstract": "<p>This paper develops a new language for programming software-defined networks based on a probabilistic semantics. We extend the NetKAT language with new primitives for expressing probabilistic behaviors and enrich the semantics from one based on deterministic functions to one based on measures and measurable functions on sets of packet histories. We establish fundamental properties of the semantics, prove that it is a conservative extension of the deterministic semantics, and show that it satisfies a number of natural equations. We present case studies that show how the language can be used to model a diverse collection of scenarios drawn from real-world networks.</p>"
   
   },
@@ -138,7 +138,20 @@
   "abstract": "<p>This paper develops a new language for programming software-defined networks based on a probabilistic semantics. We extend the NetKAT language with new primitives for expressing probabilistic behaviors and enrich the semantics from one based on deterministic functions to one based on measures and measurable functions on sets of packet histories. We establish fundamental properties of the semantics, prove that it is a conservative extension of the deterministic semantics, and show that it satisfies a number of natural equations. We present case studies that show how the language can be used to model a diverse collection of scenarios drawn from real-world networks.</p>"
   
   },
-  {
+ {
+ "year":2015,
+ "id": "AS15",
+ "authors": ["Alexandra Silva"],
+ "title": "Applications of Automata and Concurrency Theory in Networks (Invited Talk)",
+ "conference": {
+ "name": "26th International Conference on Concurrency Theory (CONCUR 2015)",
+ "location": "Madrid, Spain",
+ "url": "http://drops.dagstuhl.de/opus/volltexte/2015/5399/pdf/39.pdf"
+ },
+ "download": "http://drops.dagstuhl.de/opus/volltexte/2016/6545/pdf/LIPIcs-CSL-2016-5.pdf",
+ "abstract": "<p>Networks have received widespread attention in recent years as a target for domain-specific language design. The emergence of software-defined networking (SDN) as a popular paradigm for network programming has led to the appearance of a number of SDN programming languages seeking to provide high-level abstractions to simplify the task of specifying the packet-processing behavior of a network.</p><p>Previous work by Anderson et al. [1] introduced NetKAT, a language and logic for specifying and verifying the packet-processing behavior of networks. NetKAT provides general-purpose pro- gramming constructs such as parallel and sequential composition, conditional tests, and iteration, as well as special-purpose primitives for querying and modifying packet headers and encoding network topologies. In contrast to competing approaches, NetKAT has a formal mathematical semantics and an equational deductive system that is sound and complete over that semantics, as well as a PSPACE decision procedure. It is based on Kleene algebra with tests (KAT), an algebraic system for propositional program verification that has been extensively studied for nearly two decades [3]. Several practical applications of NetKAT have been developed, including algorithms for testing reachability and non-interference and a syntactic correctness proof for a compiler that translates programs to hardware instructions for SDN switches.</p><p> In a follow-up paper [2], the coalgebraic theory of NetKAT was developed and a bisimulation- based algorithm for deciding equivalence was devised. The new algorithm was shown to be significantly more efficient than the previous naive algorithm [1], which was PSPACE in the best case and the worst case, as it was based on the determinization of a nondeterministic algorithm. Along with the coalgebraic model of NetKAT, the authors presented a specialized version of the Brzozowski derivative in both semantic and syntactic forms. They also also proved a version of Kleene’s theorem for NetKAT that shows that the coalgebraic model is equivalent to the standard packet-processing and language models introduced previously [1]. They demonstrated the real- world applicability of the tool by using it to decide common network verification questions such as all-pairs connectivity, loop-freedom, and translation validation – all pressing questions in modern networks.</p><p>This talk will survey applications of automata theory, concurrency theory and coalgebra to problems in networking. We will suggest directions for exploring the bridge between the two communities and ways to deliver new synergies. On the one hand, this will lead to new insights and techniques that will enable the development of rigorous semantic foundations for networks. On the other hand, the idysiocransies of networks will provide new challenges for the automata and concurrency community.</p>"
+ },
+ {
   "year": 2015,
   "id": "KMS15",
   "authors": ["Konstantinos Mamouras", "Dexter Kozen", "Alexandra Silva"],
@@ -148,7 +161,6 @@
   "location": "Braga, Portugal",
   "series": "LNCS",
   "volume": 0,
-  "pages": "",
   "url": "http://ramics2015.di.uminho.pt"
   },
   "download": "http://alexandrasilva.org/files/NKA-RAMiCS-Final.pdf",
