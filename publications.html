@@ -55,78 +55,7 @@
         </div>
       </div>
     </div>
-<<<<<<< HEAD
 
-
-      <div class="section color-2" pub-grid="true">
-        <div class="section-container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="pitems">
-                <div ng-repeat="paper in papers | filter: filterByPubType(pubTypeFilter) | filter: search" class="item" ng-class="{'has-details': paper.abstract}">
-                  <div class="pubmain">
-                    <div class="pubassets">
-                      <a class="pubcollapse" ng-if="paper.abstract" href="">
-                        <i class="icon-expand-alt"></i>
-                      </a>
-                      <a ng-if="paper.conference.url" ng-href="{{paper.conference.url}}" class="toooltips" title="Conference page" target="_blank">
-                        <i class="icon-external-link"></i>
-                      </a>
-                      <a ng-if="paper.edited.url" ng-href="{{paper.edited.url}}" class="toooltips" title="Journal page" target="_blank">
-                        <i class="icon-external-link"></i>
-                      </a>
-                      <a ng-if="paper.download" ng-href="{{paper.download}}" class="tooltips" title="Download PDF" target="_blank">
-                        <i class="icon-cloud-download"></i>
-                      </a>
-                    </div>
-                    <h4 class="pubtitle" ng-bind="paper.title"></h4>
-                    <div class="pubauthor">
-                      <span ng-repeat="author in paper.authors">
-                        <span ng-bind="author" ng-class="{'emph': selectedCollaborator({name: author}), 'clickable': author != 'Alexandra Silva'}" ng-click="author != 'Alexandra Silva' ? searchFor(author) : null"></span>
-                        <span ng-hide="$last">,</span>
-                      </span>
-                    </div>
-                    <div class="pubcite">
-                      <span ng-if="paper.conference">
-                        <span class="label label-warning">Conference Paper</span>
-                        In <emph ng-bind="paper.conference.name"></emph>,
-                        <span ng-bind="paper.conference.location"></span>,
-                        <span ng-if="paper.conference.note"> <b><span ng-bind="paper.conference.note"></span></b>, </span>
-                      </span>
-                      <span ng-if="paper.edited">
-                        <span class="label label-info">Edited</span>
-                        <emph ng-bind="paper.edited.series"></emph>,
-                        <span ng-if="paper.edited.volume">vol. <emph ng-bind="paper.edited.volume"></emph>,</span>
-                        <span ng-if="paper.edited.pages">pp. <emph ng-bind="paper.edited.pages"></emph>,</span>
-                        <span ng-if="paper.edited.note"><span ng-bind="paper.edited.note"></span>,</span>
-                      </span>
-                      <span ng-if="paper.journal">
-                        <span class="label label-danger">Journal Paper</span>
-                        <emph ng-bind="paper.journal.name"></emph>,
-                        <span ng-if="paper.journal.note"><span ng-bind="paper.journal.note"></span>, </span>
-                      </span>
-                      <span ng-if="paper.techreport">
-                        <span class="label label-default">Technical Report</span>
-                        Technical Report
-                        <span ng-if="paper.techreport.number"><emph ng-bind="paper.techreport.number"></emph>,</span>
-                        <span ng-if="paper.techreport.institution"><span ng-bind="paper.techreport.institution"></span>,</span>
-                      </span>
-                      <span ng-if="paper.unpublished">
-                        <span class="label label-default">Unpublished</span>
-                        <span ng-if="paper.unpublished"><emph ng-bind="paper.unpublished"></emph>,</span>
-                      </span>
-                      <span ng-bind="paper.year"></span>
-                    </div>
-                  </div>
-                  <div ng-if="paper.abstract" class="pubdetails">
-                    <h4>Abstract</h4>
-                    <p ng-bind-html="paper.abstract"></p>
-                  </div>
-                </div>
-
-=======
-
->>>>>>> akoprow/master
     <div id="pub-year-nav" class="navbar navbar-default">
       <div class="container">
         <a class="navbar-brand">By year:</a>
