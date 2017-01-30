@@ -67,6 +67,19 @@
  
  },
  {
+ "year":2016,
+ "id": "AS16b",
+ "authors": ["Alexandra Silva"],
+ "title": "Coalgebraic Learning (Invited Talk)",
+ "conference": {
+ "name": "25th EACSL Annual Conference on Computer Science Logic (CSL 2016)",
+ "location": "Marseille, France",
+ "url": "http://csl16.lif.univ-mrs.fr"
+ },
+ "download": "http://drops.dagstuhl.de/opus/volltexte/2016/6545/pdf/LIPIcs-CSL-2016-5.pdf",
+ "abstract": "<p>The area of automata learning was pioneered by Angluin in the 80's. Her original algorithm, which applied to regular languages and deterministic automata, has been extended to various types of automata and used in software and hardware verification. In this talk, we will take an abstract perspective at automata learning. We show how the correctness of the original algorithm and many extensions can be captured in one proof using coalgebraic techniques. We also show that a novel algorithm for nominal automata can be derived from the abstract framework.</p>"
+ },
+ {
  "year": 2016,
  "id": "AS16",
  "authors": ["Alexandra Silva"],
