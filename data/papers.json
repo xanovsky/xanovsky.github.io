@@ -21,7 +21,7 @@
  "conference": {
  "name": "POPL 2017: 44th ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages",
  "location": "Paris, France",
- "url": "http://popl.mpi-sws.org/2017"
+ "url": "http://conf.researchr.org/home/POPL-2017"
  },
  "download": "https://arxiv.org/pdf/1607.05830.pdf",
  "abstract": "<p>ProbNetKAT is a probabilistic extension of NetKAT with a denotational semantics based on Markov kernels. The language is expressive enough to generate continuous distributions, which raises the question of how to compute effectively in the language. This paper gives an new characterization of ProbNetKAT’s semantics using domain theory, which provides the foundation needed to build a practical implementation. We show how to use the semantics to approximate the behavior of arbitrary ProbNetKAT programs using distributions with finite support. We develop a prototype implemen- tation and show how to use it to solve a variety of problems including characterizing the expected congestion induced by different routing schemes and reasoning probabilistically about reachability in a network.</p>"
@@ -34,7 +34,7 @@
  "conference": {
  "name": "POPL 2017: 44th ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages",
  "location": "Paris, France",
- "url": "http://popl.mpi-sws.org/2017"
+ "url": "http://conf.researchr.org/home/POPL-2017"
  },
  "download": "https://arxiv.org/pdf/1607.06268.pdf",
  "abstract": "<p>We present an Angluin-style algorithm to learn nominal automata, which are acceptors of languages over infinite (structured) alphabets. The abstract approach we take allows us to seamlessly extend known variations of the algorithm to this new setting. In particular we can learn a subclass of nominal non-deterministic automata. An implementation using a recently developed Haskell library for nominal computation is provided for preliminary experiments.</p>"
