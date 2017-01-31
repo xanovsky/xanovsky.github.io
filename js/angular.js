@@ -184,7 +184,7 @@ angular.module('homepage', ['ngRoute', 'ngAnimate', 'ngSanitize'])
       $location.hash(old);
     };
 
-    var affixOffset = $('.pageheader').height() ;
+    var affixOffset = $('.pageheader').height() + $('#filters').height() + 200 ;
     $('#pub-year-nav').affix({
       offset: {
         top: affixOffset
