@@ -438,8 +438,8 @@ h1.year {
     font-variant: small-caps;
     font-family: Impact, Charcoal, sans-serif;
     opacity: .5;
-    margin-top: -60px;
-    padding-top: 60px;
+    margin-top: -50px;
+    padding-top: 50px;
 }
 
 #publications.page .section  {
