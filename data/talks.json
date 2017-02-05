@@ -8,10 +8,12 @@
   },
  { "title": "Coalgebraic Learning (invited talk)",
  "pres": [{ "date": "September 2016", "event": "CSL 2016", "url": "http://csl16.lif.univ-mrs.fr", "location": "Marseille, France" }],
- "download": [{ "text": "PDF", "url": "/files/talks/csl16.pdf" }],
+ "download": [{ "text": "PDF", "url": "/files/talks/csl16.pdf" }]
+ },
  { "title": "(Co)-Algebraic and Analytic Aspects of Weighted Automata Minimization and Equivalence, Part I. (invited tutorial)",
  "pres": [{ "date": "April 2016", "event": "CMCS 2016", "url": "http://coalg.org/cmcs16", "location": "Eindhoven, The Netherlands" }],
- "download": [{ "text": "PDF", "url": "/files/talks/cmcs16.pdf" }],
+ "download": [{ "text": "PDF", "url": "/files/talks/cmcs16.pdf" }]
+ },
  { "title": "Probabilistic NetKAT",
  "pres": [{ "date": "March 2016", "event": "IFIP WG 1.3", "url": "http://ifipwg13.cs.ovgu.de", "location": "Eindhoven, The Netherlands" },{ "date": "April 2016", "event": "ESOP 2016", "url": "http://www.etaps.org/index.php/2016/esop", "location": "Eindhoven, The Netherlands" },{ "date": "April 2016", "event": "Verified Trustworthy Software Systems (specialist meeting)", "url": "https://verificationinstitute.org/event/verified-trustworthy-software-systems-specialist-meeting/", "location": "London, United Kingdom" },{ "date": "April 2016", "event": "Workshop on Information and processes", "url": "https://www.irif.fr/~jkrivine/conferences/WIP2016/WIP_2016.html", "location": "Fontainebleau, France" },{ "date": "June 2016", "event": "ICE 2016", "url": "http://2016.discotec.org/index713e.html?MG=110&Mid=25&sub1=1?MG=60&Mid=25&sub1=1", "location": "Heraklion, Greece" }],
  "download": [{ "text": "PDF London meeting", "url": "/files/talks/probnetkat-london.pdf" }]
