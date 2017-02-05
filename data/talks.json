@@ -6,7 +6,6 @@
   "pres": [{ "date": "September 2016", "event": "BLC 2016", "url": "http://conferences.inf.ed.ac.uk/blc/", "location": "Edinburgh, Scotland" }, { "date": "November 2016", "event": "CWI Lectures in honour of Adriaan van Wijngaarden", "url": "https://www.cwi.nl/lectures2016", "location": "Amsterdam, The Netherlands" },{ "date": "December 2016", "event": "Cambridge Logic and Semantics Seminar", "url": "http://talks.cam.ac.uk/talk/index/68429", "location": "Cambridge, United Kingdom" }],
   "download": [{ "text": "PDF BLC", "url": "/files/talks/blc.pdf" }]
   },
- ,
  { "title": "Coalgebraic Learning (invited talk)",
  "pres": [{ "date": "September 2016", "event": "CSL 2016", "url": "http://csl16.lif.univ-mrs.fr", "location": "Marseille, France" }],
  "download": [{ "text": "PDF", "url": "/files/talks/csl16.pdf" }],
