@@ -488,7 +488,7 @@ h1.year {
 	bottom: 0;
 	background-color: black;
 	background-color: rgba(0,0,0,0.5);
-	padding:10px;
+	padding:6px;
 }
 .biothumb .overlay h1{
 	font-size: 45px;
