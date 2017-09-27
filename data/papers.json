@@ -41,7 +41,7 @@
  {
  "year": 2016,
  "id": "BKKSW",
- "authors": ["Harsh Beohar", "Sebastian Küper", "Barbara König", "Alexandra Silva","Thorsten Wißmann"],
+ "authors": ["Harsh Beohar", "Sebastian Küper", "Barbara König", "Alexandra Silva","Thorsten Wissmann"],
  "title": "A coalgebraic treatment of conditional transition systems with upgrades",
  "journal": {
  "name": "CoRR",
