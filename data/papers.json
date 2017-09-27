@@ -2,7 +2,7 @@
  {
  "year":2017,
  "id": "SKFKS17",
- "authors": ["Steffen Smolka", David Kahn","Praveen Kumar", "Nate Foster", "Dexter Kozen","Alexandra Silva"],
+ "authors": ["Steffen Smolka", "David Kahn","Praveen Kumar", "Nate Foster", "Dexter Kozen","Alexandra Silva"],
  "title": "Deciding probabilistic program equivalence in NetKAT.",
  "journal": {
  "name": "CoRR",
