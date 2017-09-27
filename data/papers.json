@@ -1,5 +1,136 @@
 [
  {
+ "year":2017,
+ "id": "SKFKS17",
+ "authors": ["Steffen Smolka", David Kahn","Praveen Kumar", "Nate Foster", "Dexter Kozen","Alexandra Silva"],
+ "title": "Deciding probabilistic program equivalence in NetKAT.",
+ "journal": {
+ "name": "CoRR",
+ "volume": "arXiv:1707.02772",
+ "note": "Draft"
+ },
+ "download": "http://arxiv.org/abs/1707.02772",
+ "abstract": "<p>We tackle the problem of deciding whether a pair of probabilistic programs are equivalent in the context of Probabilistic NetKAT, a formal language for reasoning about the behavior of packet-switched networks. We show that the problem is decidable for the history-free fragment of the language. The main challenge lies in reasoning about iteration, which we address by a reduction to finite-state absorbing Markov chains. This approach naturally leads to an effective decision procedure based on stochastic matrices that we have implemented in an OCaml prototype. We demonstrate how to use this prototype to reason about probabilistic network programs.</p>"
+ },
+ {
+ "year": 2017,
+ "id": "KMS17",
+ "authors": ["Konstantinos Mamouras", "Dexter Kozen", "Alexandra Silva"],
+ "title": "Completeness and incompleteness in nominal Kleene algebra",
+ "journal": {
+ "name": "J. Logical and Algebraic Methods in Programming",
+ "volume":="91",
+ "pages":""17--32",
+ "note": "Special issue RAMICS 2015."
+ },
+ "download": "http://www.cs.cornell.edu/~kozen/papers/NKA.pdf",
+ "abstract": "<p>Gabbay and Ciancia (2011) presented a nominal extension of Kleene algebra as a framework for trace semantics with statically scoped allocation of resources, along with a semantics consisting of nominal languages. They also provided an axiomatization that captures the behavior of the scoping operator and its interaction with the Kleene algebra operators and proved soundness over nominal languages. In this paper, we show that the axioms proposed by Gabbay and Ciancia are not complete over the semantic interpretation they propose. We then identify a slightly wider class of language models over which they are sound and complete.</p>"
+ 
+ },
+ {
+ "year": 2017,
+ "id": "BKKS",
+ "authors": ["Harsh Beohar", "Sebastian Küper", "Barbara König", "Alexandra Silva"],
+ "title": "Conditional Transition Systems with Upgrades",
+ "conference": {
+ "name": "11th Theoretical Aspects of Software Engineering Conference (TASE 2017)",
+ "location": "Nice, France",
+ "url": "http://tase2017.unice.fr/"
+ },
+ "download": "https://arxiv.org/abs/1706.02526",
+ "abstract": "<p>We introduce a variant of transition systems, where activation of transitions depends on conditions of the environment and upgrades during runtime potentially create additional transitions. Using a cornerstone result in lattice theory, we show that such transition systems can be modelled in two ways: as conditional transition systems (CTS) with a partial order on conditions, or as lattice transition systems (LaTS), where transitions are labelled with the elements from a distributive lattice. We define equivalent notions of bisimilarity for both variants and characterise them via a bisimulation game. We explain how conditional transition systems are related to featured transition systems for the modelling of software product lines. Furthermore, we show how to compute bisimilarity symbolically via BDDs by defining an operation on BDDs that approximates an element of a Boolean algebra into a lattice. We have implemented our procedure and provide runtime results.</p>"
+ },
+        {
+             "year": 2017,
+             "id": "BS17",
+             "authors": ["Ahmed Bouajjani", "Alexandra Silva"],
+             "title": "Proceedings of Formal Techniques for Distributed Objects, Components, and Systems - 37th IFIP WG 6.1 International Conference, FORTE 2017, Held as Part of the 12th International Federated Conference on Distributed Computing Techniques, DisCoTec 2017, Neuchâtel, Switzerland, June 19-22, 2017",
+             "edited": {
+             "publisher": "Springer",
+             "series": "Lecture Notes in Computer Science",
+             "volume": 10321,
+             "pages": "1-2",
+             "url": "https://link.springer.com/book/10.1007%2F978-3-319-60225-7"
+             }
+             },
+ {
+ "year":2017,
+ "id": "HSS17",
+ "authors": ["Gerco van Heerdt","Matteo Sammartino", "Alexandra Silva"],
+ "title": "Learning Automata with Side-Effects.",
+ "journal": {
+ "name": "CoRR",
+ "volume": "arXiv:1704.08055",
+ "note": "Draft"
+ },
+ "download": "https://arxiv.org/abs/1704.08055",
+ "abstract": "<p>Automata learning has been successfully applied in the verification of hardware and software. The size of the automaton model learned is a bottleneck for scalability and hence optimizations that enable learning of compact representations are important. In this paper, we continue the development of a general framework for automata learning based on category theory and develop a class of optimizations and an accompanying correctness proof for learning algorithms. The new algorithm is parametric on a monad, which provides a rich algebraic structure to capture non-determinism and other side-effects. These side-effects are used to learn more compact automaton models and the abstract categorical approach enables us to capture several possible optimizations under the same (p)roof.</p>"
+ },
+  {
+  "year":2017,
+  "id": "HSS17",
+  "authors": ["Filippo Bonchi", "Alexandra Silva", "Ana Sokolova"],
+  "title": "The Power of Convex Algebras.",
+  "conference": {
+  "name": "28th International Conference on Concurrency Theory (CONCUR 2017)",
+  "location": "Berlin, Germany",
+  "url": "https://www.concur2017.tu-berlin.de/"
+  },
+  "download": "https://arxiv.org/abs/1707.02344",
+  "abstract": "<p>Probabilistic automata (PA) combine probability and nondeterminism. They can be given different semantics, like strong bisimilarity, convex bisimilarity, or (more recently) distribution bisimilarity. The latter is based on the view of PA as transformers of probability distributions, also called belief states, and promotes distributions to first-class citizens. We give a coalgebraic account of the latter semantics, and explain the genesis of the belief-state transformer from a PA. To do so, we make explicit the convex algebraic structure present in PA and identify belief-state transformers as transition systems with state space that carries a convex algebra. As a consequence of our abstract approach, we can give a sound proof technique which we call bisimulation up-to convex hull.</p>"
+  },
+  {
+  "year":2017,
+  "id": "HSS17",
+  "authors": ["Tobias Kappe","Paul Brunet", "Bas Luttik", "Alexandra Silva", "Fabio Zanasi"],
+  "title": "Brzozowski Goes Concurrent-A Kleene Theorem for Pomset Languages.",
+  "conference": {
+  "name": "28th International Conference on Concurrency Theory (CONCUR 2017)",
+  "location": "Berlin, Germany",
+  "url": "https://www.concur2017.tu-berlin.de/"
+  },
+  "download": "https://arxiv.org/abs/1704.07199",
+  "abstract": "<p>Concurrent Kleene Algebra (CKA) is a mathematical formalism to study programs that exhibit concurrent behaviour. As with previous extensions of Kleene Algebra, characterizing the free model is crucial in order to develop the foundations of the theory and potential applications. For CKA, this has been an open question for a few years and this paper makes an important step towards an answer. We present a new automaton model and a Kleene-like theorem that relates a relaxed version of CKA to series-parallel pomset languages, which are a natural candidate for the free model. There are two substantial differences with previous work: from expressions to automata, we use Brzozowski derivatives, which enable a direct construction of the automaton; from automata to expressions, we provide a syntactic characterization of the automata that denote valid CKA behaviours.</p>"
+  },
+  {
+  "year":2017,
+  "id": "HSS17",
+  "authors": ["Gerco van Heerdt","Matteo Sammartino", "Alexandra Silva"],
+  "title": "CALF: Categorical Automata Learning Framework.",
+  "conference": {
+  "name": "26th EACSL Annual Conference on Computer Science Logic (CSL 2017)",
+  "location": "Stockholm, Sweden",
+  "url": "https://www.math-stockholm.se/konferenser-och-akti/logic-in-stockholm-2/26th-eacsl-annual-co/computer-science-logic-2017-august-20-24-1.717663"
+  },
+  "download": "https://arxiv.org/abs/1704.05676",
+  "abstract": "<p>Automata learning is a technique that has successfully been applied in verification, with the automaton type varying depending on the application domain. Adaptations of automata learning algorithms for increasingly complex types of automata have to be developed from scratch because there was no abstract theory offering guidelines. This makes it hard to devise such algorithms, and it obscures their correctness proofs. We introduce a simple category-theoretic formalism that provides an appropriately abstract foundation for studying automata learning. Furthermore, our framework establishes formal relations between algorithms for learning, testing, and minimization. We illustrate its generality with two examples: deterministic and weighted automata.</p>"
+  },
+ {
+ "year":2017,
+ "id": "AS17",
+ "authors": ["Alexandra Silva"],
+ "title": "Brzozowski Goes Concurrent-A Kleene Theorem for Pomset Languages (Invited Talk)",
+ "conference": {
+ "name": "2nd International Conference on Formal Structures for Computation and Deduction (FSCD 2017)",
+ "location": "Oxford, UK",
+ "url": "https://www.cs.ox.ac.uk/conferences/fscd2017/"
+ },
+ "download": "http://drops.dagstuhl.de/opus/volltexte/2017/7744/pdf/LIPIcs-FSCD-2017-3.pdf",
+ "abstract": "<p>Concurrent Kleene Algebra (CKA) is a mathematical formalism to study programs that exhibit concurrent behaviour. As with previous extensions of Kleene Algebra, characterizing the free model is crucial in order to develop the foundations of the theory and potential applications. For CKA, this has been an open question for a few years and this talk will overview why the problem is so difficult. We will then pave the way towards a solution, by presenting a new automaton model and a Kleene-like theorem for CKA. More precisely, we connect a relaxed version of CKA to series-parallel pomset languages, which are a natural candidate for the free model. There are two substantial differences with previous work: from expressions to automata, we use Brzozowski derivatives, which enable a direct construction of the automaton; from automata to expressions, we provide a syntactic characterization of the automata that denote valid CKA behaviours. We also survey how the present work can be used to to extend the network specification language  NetKAT with primitives for concurrency so as to model and reason about concurrency within networks. This is joint work with Tobias Kappe, Paul Brunet, Bas Luttik, and Fabio Zanasi.</p>"
+ },
+ {
+ "year": 2017,
+ "id": "EHHPS17",
+ "authors": ["Joerg Endrullis", "Helle Hansen", "Dimitri Hendriks", "Andrew Polonsky", "Alexandra Silva"],
+ "title": "Coinductive Foundations of Infinitary Rewriting and Infinitary Equational Logic",
+ "journal": {
+ "name": "Logical Methods in Computer Science",
+ "note": "Special issue RTA 2015"
+ },
+ "download": "https://arxiv.org/abs/1706.00677",
+ "abstract": "<p>We present a coinductive framework for defining and reasoning about the infinitary analogues of equational logic and term rewriting in a uniform, coinductive way. The setup captures rewrite sequences of arbitrary ordinal length, but it has neither the need for ordinals nor for metric convergence. This makes the framework especially suitable for formalizations in theorem provers.</p>"
+ },
+ {
  "year": 2017,
  "id": "JKS17",
  "authors": ["Jean-Baptiste Jeannin", "Dexter Kozen", "Alexandra Silva"],
@@ -42,7 +173,7 @@
  {
  "year": 2016,
  "id": "BKKSW",
- "authors": ["Harsh Behoar", "Sebastian Küper", "Barbara König", "Alexandra Silva","Thorsten Wißmann"],
+ "authors": ["Harsh Beohar", "Sebastian Küper", "Barbara König", "Alexandra Silva","Thorsten Wißmann"],
  "title": "A coalgebraic treatment of conditional transition systems with upgrades",
  "journal": {
  "name": "CoRR",
