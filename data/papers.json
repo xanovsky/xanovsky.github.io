@@ -41,6 +41,20 @@
  },
  {
  "year": 2016,
+ "id": "BKKSW",
+ "authors": ["Harsh Behoar", "Sebastian Küper", "Barbara König", "Alexandra Silva","Thorsten Wißmann"],
+ "title": "A coalgebraic treatment of conditional transition systems with upgrades",
+ "journal": {
+ "name": "CoRR",
+ "volume": "arXiv:1612.05002",
+ "note": "Draft"
+ },
+ "download": "https://arxiv.org/pdf/1612.05002.pdf",
+ "abstract": "<p>We consider conditional transition systems, that allow to model software product lines with upgrades, in a coalgebraic setting. We show that, by using Birkhoff's duality for distributive lattices, we obtain two equivalent Kleisli categories in which these coalgebras live: Kleisli categories based on the reader and on the so-called lattice monad over 𝖯𝗈𝗌𝖾𝗍. We study two different functors describing the branching type of the coalgebra and investigate the resulting behavioural equivalence. Furthermore we show how an existing algorithm for coalgebra minimisation can be instantiated to derive behavioural equivalences in this setting.</p>"
+ 
+ },
+ {
+ "year": 2016,
  "id": "BCS16",
  "authors": ["Luís Barbosa", "Alcino Cunha", "Alexandra Silva"],
  "title": "Quien sabe por Algebra, sabe scientificamente. Special issue with selected contributions dedicated to José Nuno Oliveira on the occasion of his 60th birthday.",
