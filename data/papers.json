@@ -1,4 +1,17 @@
- [
+ [{
+  "year":2017,
+  "id": “KBSZ17",
+  "authors": ["Tobias Kappe","Paul Brunet", "Alexandra Silva", "Fabio Zanasi"],
+  "title": " Concurrent Kleene Algebra: Free Model and Completeness.”,
+   "journal": {
+  "name": "CoRR",
+  "volume": “arxiv:1710.02787",
+  "note": "Draft"
+  },
+  "download": "https://arxiv.org/pdf/1710.02787",
+  "abstract": "<p>Concurrent Kleene Algebra (CKA) was introduced by Hoare, Moeller, Struth and Wehrman in 2009 as a framework to reason about concurrent programs. We prove that the semantics proposed in the original paper is the free model of CKA with bounded parallel iteration, meaning the completeness of these axioms. This result settles a conjecture of Hoare and collaborators. Moreover, it allows us to establish a Kleene Theorem for CKA, extending an earlier Kleene Theorem for a fragment of CKA.</p>"
+  },
+
   {
   "year":2017,
   "id": "SKFKS17",
@@ -55,7 +68,7 @@
   },
   {
   "year":2017,
-  "id": "HSS17",
+  "id": "HSS17b”,
   "authors": ["Gerco van Heerdt","Matteo Sammartino", "Alexandra Silva"],
   "title": "Learning Automata with Side-Effects.",
   "journal": {
@@ -68,7 +81,7 @@
   },
   {
   "year":2017,
-  "id": "HSS17",
+  "id": “BSS17",
   "authors": ["Filippo Bonchi", "Alexandra Silva", "Ana Sokolova"],
   "title": "The Power of Convex Algebras.",
   "conference": {
@@ -81,7 +94,7 @@
   },
   {
   "year":2017,
-  "id": "HSS17",
+  "id": “KBLSZ17",
   "authors": ["Tobias Kappe","Paul Brunet", "Bas Luttik", "Alexandra Silva", "Fabio Zanasi"],
   "title": "Brzozowski Goes Concurrent-A Kleene Theorem for Pomset Languages.",
   "conference": {
