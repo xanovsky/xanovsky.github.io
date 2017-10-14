@@ -68,7 +68,7 @@
   },
   {
   "year":2017,
-  "id": "HSS17b”,
+  "id": "HSS17b",
   "authors": ["Gerco van Heerdt","Matteo Sammartino", "Alexandra Silva"],
   "title": "Learning Automata with Side-Effects.",
   "journal": {
@@ -94,7 +94,7 @@
   },
   {
   "year":2017,
-  "id": “KBLSZ17",
+  "id": "KBLSZ17",
   "authors": ["Tobias Kappe","Paul Brunet", "Bas Luttik", "Alexandra Silva", "Fabio Zanasi"],
   "title": "Brzozowski Goes Concurrent-A Kleene Theorem for Pomset Languages.",
   "conference": {
