@@ -3,7 +3,7 @@
   "year":2017,
   "id": "KBSZ17",
   "authors": ["Tobias Kappe","Paul Brunet", "Alexandra Silva", "Fabio Zanasi"],
-  "title": " Concurrent Kleene Algebra: Free Model and Completeness.”,
+  "title": "Concurrent Kleene Algebra: Free Model and Completeness.",
    "journal": {
   "name": "CoRR",
   "volume": "arxiv:1710.02787",
