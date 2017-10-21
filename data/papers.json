@@ -1,6 +1,32 @@
  [
   {
   "year":2017,
+  "id": "AGRSS17",
+  "authors": ["Elvira Albert", "Miguel Gomez-Zamalloa", "Albert Rubio", "Matteo Sammartino", "Alexandra Silva"],
+  "title": "SDN-Actors: Modeling and Verification of SDN Programs",
+  "journal": {
+  "name": "CoRR",
+  "volume": "arxiv:",
+  "note": "Draft"
+  },
+  "download": "",
+  "abstract": "<p>Software-Defined Networking (SDN) is a recent networking paradigm that has become increasingly popular in the last decade. It gives unprecedented control over the global behavior of the network and provides a new opportunity for formal methods. Much work has appeared in the last few years on providing bridges between SDN and verification. This paper advances this research line and provides a link between SDN and traditional work on formal methods for verification of distributed software—actor-based modelling. We show how SDN programs can be seamlessly modelled using actors, and thus existing advanced model checking techniques developed for actors can be directly applied to verify a range of properties of SDN networks, including consistency of flow tables, violation of safety policies, and forwarding loops.</p>"
+  },
+  {
+  "year":2017,
+  "id": "DPS17",
+  "authors": ["Fredrik Dahlqvist", "Louis Parlant", "Alexandra Silva"],
+  "title": "Layer by Layer – Combining Monads",
+  "journal": {
+  "name": "CoRR",
+  "volume": "arxiv:",
+  "note": "Draft"
+  },
+  "download": "",
+  "abstract": "<p>We develop a method to incrementally construct programming languages. Our approach is categorical: each layer of the language is described as a monad. Our method either (i) concretely builds a distributive law between two monads, i.e. layers of the language, which then provides a monad structure to the composition of layers, or (ii) identifies precisely the algebraic obstacles to the existence of a distributive law and gives a ‘best approximant’ language. The running example will involve three layers: a basic imperative language enriched first by adding non-determinism and then probabilistic choice. The first extension works seamlessly, but the second encounters an obstacle, which results in a ‘best approximant’ language structurally very similar to the probabilistic network specification language ProbNetKAT.</p>"
+  },
+  {
+  "year":2017,
   "id": "KBSZ17",
   "authors": ["Tobias Kappe","Paul Brunet", "Alexandra Silva", "Fabio Zanasi"],
   "title": "Concurrent Kleene Algebra: Free Model and Completeness.",

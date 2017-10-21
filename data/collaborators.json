@@ -1,5 +1,6 @@
 [
   { "name": "Jirí Adámek", "img": "jadamek.png", "link": "http://www.tu-braunschweig.de/iti/mitarbeiter/adamek" },
+ { "name": "Elvira Albert", "img": "ealbert.jpg", "link": "http://costa.ls.fi.upm.es/~elvira/"},
   { "name": "Farhad Arbab", "img": "farbab.jpg", "link": "http://www.cwi.nl/~farhad" },
   { "name": "Luís Barbosa", "img": "lbarbosa.jpg", "link": "http://www.di.uminho.pt/~lsb" },
   { "name": "Simon Bliudze", "img": "sbliudze.jpg", "link": "http://www.bliudze.me/simon/" },
@@ -15,7 +16,8 @@
   { "name": "Dave Clarke", "img": "dclarke.jpg", "link": "http://www.cs.kuleuven.be/~dave/" },
   { "name": "Robert L. Constable", "img": "rconstable.jpg", "link": "http://www.cs.cornell.edu/home/rc/" },
  { "name": "Alcino Cunha", "img": "acunha.jpg", "link": "http://www4.di.uminho.pt/~mac/" },
-  { "name": "Joerg Endrullis", "img": "jendrullis.jpg", "link": "http://joerg.endrullis.de/" },
+ { "name": "Fredrik Dahlqvist", "img": "fdahlqvist.jpg", "link": "https://fredrikdahlqvist.wordpress.com"},
+ { "name": "Joerg Endrullis", "img": "jendrullis.jpg", "link": "http://joerg.endrullis.de/" },
   { "name": "Nate Foster", "img": "nfoster.jpg", "link": "http://www.cs.cornell.edu/~jnfoster/" },
   { "name": "Sergey Goncharov", "img": "sgoncharov.jpg", "link": "https://www8.cs.fau.de/sergey" },
   { "name": "Eugen Goriac", "img": "egoriac.jpg", "link": "http://eugen.goriac.info/" },
@@ -52,6 +54,7 @@
   { "name": "Damien Pous", "img": "dpous.jpg", "link": "http://sardes.inrialpes.fr/~pous/" },
   { "name": "Mark Reitblatt", "img": "reitblatt.jpg", "link": "http://www.cs.cornell.edu/~reitblatt/" },
   { "name": "Jurriaan Rot", "img": "jrot.jpg", "link": "http://jurriaan.me/" },
+ { "name": "Albert Rubio", "img": "arubio.jpg", "link": "http://www.cs.upc.edu/~albert/" },
   { "name": "Jan Rutten", "img": "jrutten.jpg", "link": "http://homepages.cwi.nl/~janr/" },
 { "name": "Matteo Sammartino", "img": "msammartino.jpg", "link": "http://www.ucl.ac.uk/~ucacsam" },
 { "name": "Michal Szynwelski", "img": "nophoto.png", "link": "" },
@@ -66,5 +69,6 @@
   { "name": "Joost Visser", "img": "jvisser.jpg", "link": "http://www.di.uminho.pt/~joost/" },
   { "name": "Bram Westerbaan", "img": "bwesterbaan.png", "link": "http://bram.westerbaan.name/home/" },
  { "name": "Thorsten Wissmann", "img": "twissmann.png", "link": "https://www8.cs.fau.de/thorsten" },
+ { "name": "Miguel Gomez-Zamalloa", "img": "mzamalloa.jpg", "link": "http://costa.ls.fi.upm.es/~mzamalloa/" }
   { "name": "Fabio Zanasi", "img": "fzanasi.jpg", "link": "http://www.zanasi.com/fabio/" }
 ]
