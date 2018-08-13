@@ -16,20 +16,18 @@
   "abstract": "<p>Software-Defined Networking (SDN) is a recent networking paradigm that has become increasingly popular in the last decade. It gives unprecedented control over the global behavior of the network and provides a new opportunity for formal methods. Much work has appeared in the last few years on providing bridges between SDN and verification. This paper advances this research line and provides a link between SDN and traditional work on formal methods for verification of distributed software—actor-based modelling. We show how SDN programs can be seamlessly modelled using actors, and thus existing advanced model checking techniques developed for actors can be directly applied to verify a range of properties of SDN networks, including consistency of flow tables, violation of safety policies, and forwarding loops.</p>"
   },
   {
-  "year":2018,
-  "id": "AGRSS18",
-  "authors": ["Elvira Albert", "Miguel Gomez-Zamalloa", "Albert Rubio", "Matteo Sammartino", "Alexandra Silva"],
-  "title": "SDN-Actors: Modeling and Verification of SDN Programs",
-  "conference": {
-  "name": "22nd International Symposium on Formal Methods (FM 2018)",
-  "location": "Oxford, UK",
-  "series": "LNCS",
-  "volume": 10951,
-  "pages": "550-567",
-  "url": "http://www.fm2018.org"
+  "year": 2018,
+  "id": "EHHPS18",
+  "authors": ["Joerg Endrullis", "Helle Hansen", "Dimitri Hendriks", "Andrew Polonsky", "Alexandra Silva"],
+  "title": "Coinductive Foundations of Infinitary Rewriting and Infinitary Equational Logic",
+  "journal": {
+  "name": "Logical Methods in Computer Science",
+  "volume":14,
+  "issue": 1,
+  "note": "Special issue RTA 2015"
   },
-  "download": "https://doi.org/10.1007/978-3-319-95582-7\_33",
-  "abstract": "<p>Software-Defined Networking (SDN) is a recent networking paradigm that has become increasingly popular in the last decade. It gives unprecedented control over the global behavior of the network and provides a new opportunity for formal methods. Much work has appeared in the last few years on providing bridges between SDN and verification. This paper advances this research line and provides a link between SDN and traditional work on formal methods for verification of distributed software—actor-based modelling. We show how SDN programs can be seamlessly modelled using actors, and thus existing advanced model checking techniques developed for actors can be directly applied to verify a range of properties of SDN networks, including consistency of flow tables, violation of safety policies, and forwarding loops.</p>"
+  "download": "https://arxiv.org/abs/1706.00677",
+  "abstract": "<p>We present a coinductive framework for defining and reasoning about the infinitary analogues of equational logic and term rewriting in a uniform, coinductive way. The setup captures rewrite sequences of arbitrary ordinal length, but it has neither the need for ordinals nor for metric convergence. This makes the framework especially suitable for formalizations in theorem provers.</p>"
   },
   {
   "year":2018,
@@ -49,7 +47,7 @@
   },
   {
   "year":2018,
-  "id": "HHOS",
+  "id": "HJKS18",
   "authors": ["Gerco van Heerdt", "Bart Jacobs", "Tobias Kappe","Alexandra Silva"],
   "title": "Learning to Coordinate",
   "conference": {
@@ -281,20 +279,6 @@
  },
  "download": "http://drops.dagstuhl.de/opus/volltexte/2017/7744/pdf/LIPIcs-FSCD-2017-3.pdf",
  "abstract": "<p>Concurrent Kleene Algebra (CKA) is a mathematical formalism to study programs that exhibit concurrent behaviour. As with previous extensions of Kleene Algebra, characterizing the free model is crucial in order to develop the foundations of the theory and potential applications. For CKA, this has been an open question for a few years and this talk will overview why the problem is so difficult. We will then pave the way towards a solution, by presenting a new automaton model and a Kleene-like theorem for CKA. More precisely, we connect a relaxed version of CKA to series-parallel pomset languages, which are a natural candidate for the free model. There are two substantial differences with previous work: from expressions to automata, we use Brzozowski derivatives, which enable a direct construction of the automaton; from automata to expressions, we provide a syntactic characterization of the automata that denote valid CKA behaviours. We also survey how the present work can be used to to extend the network specification language  NetKAT with primitives for concurrency so as to model and reason about concurrency within networks. This is joint work with Tobias Kappe, Paul Brunet, Bas Luttik, and Fabio Zanasi.</p>"
- },
- {
- "year": 2018,
- "id": "EHHPS18",
- "authors": ["Joerg Endrullis", "Helle Hansen", "Dimitri Hendriks", "Andrew Polonsky", "Alexandra Silva"],
- "title": "Coinductive Foundations of Infinitary Rewriting and Infinitary Equational Logic",
- "journal": {
- "name": "Logical Methods in Computer Science",
-  "volume":14,
-  "issue": 1,
- "note": "Special issue RTA 2015"
- },
- "download": "https://arxiv.org/abs/1706.00677",
- "abstract": "<p>We present a coinductive framework for defining and reasoning about the infinitary analogues of equational logic and term rewriting in a uniform, coinductive way. The setup captures rewrite sequences of arbitrary ordinal length, but it has neither the need for ordinals nor for metric convergence. This makes the framework especially suitable for formalizations in theorem provers.</p>"
  },
  {
  "year": 2017,
