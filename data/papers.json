@@ -145,7 +145,7 @@
   "url": "http://www.etaps.org/index.php/2018/esop",
   "series": "LNCS",
   "volume": "10801",
-  "pages": "856-882",
+  "pages": "856-882"
   },
   "download": "https://arxiv.org/pdf/1710.02787",
   "abstract": "<p>Concurrent Kleene Algebra (CKA) was introduced by Hoare, Moeller, Struth and Wehrman in 2009 as a framework to reason about concurrent programs. We prove that the semantics proposed in the original paper is the free model of CKA with bounded parallel iteration, meaning the completeness of these axioms. This result settles a conjecture of Hoare and collaborators. Moreover, it allows us to establish a Kleene Theorem for CKA, extending an earlier Kleene Theorem for a fragment of CKA.</p>"
