@@ -1,42 +1,167 @@
  [
   {
-  "year":2017,
-  "id": "AGRSS17",
+  "year":2018,
+  "id": "AGRSS18",
   "authors": ["Elvira Albert", "Miguel Gomez-Zamalloa", "Albert Rubio", "Matteo Sammartino", "Alexandra Silva"],
   "title": "SDN-Actors: Modeling and Verification of SDN Programs",
-  "journal": {
-  "name": "CoRR",
-  "volume": "arxiv:",
-  "note": "Draft"
+  "conference": {
+  "name": "International Symposium on Formal Methods (FM 2018)",
+  "location": "Oxford, UK",
+  "series": "LNCS",
+  "volume": 10951,
+  "pages": "550-567",
+  "url": "http://www.fm2018.org"
   },
-  "download": "",
+  "download": "https://doi.org/10.1007/978-3-319-95582-7\_33",
   "abstract": "<p>Software-Defined Networking (SDN) is a recent networking paradigm that has become increasingly popular in the last decade. It gives unprecedented control over the global behavior of the network and provides a new opportunity for formal methods. Much work has appeared in the last few years on providing bridges between SDN and verification. This paper advances this research line and provides a link between SDN and traditional work on formal methods for verification of distributed software—actor-based modelling. We show how SDN programs can be seamlessly modelled using actors, and thus existing advanced model checking techniques developed for actors can be directly applied to verify a range of properties of SDN networks, including consistency of flow tables, violation of safety policies, and forwarding loops.</p>"
   },
   {
-  "year":2017,
-  "id": "DPS17",
-  "authors": ["Fredrik Dahlqvist", "Louis Parlant", "Alexandra Silva"],
-  "title": "Layer by Layer – Combining Monads",
-  "journal": {
-  "name": "CoRR",
-  "volume": "arxiv:",
-  "note": "Draft"
+  "year":2018,
+  "id": "AGRSS18",
+  "authors": ["Elvira Albert", "Miguel Gomez-Zamalloa", "Albert Rubio", "Matteo Sammartino", "Alexandra Silva"],
+  "title": "SDN-Actors: Modeling and Verification of SDN Programs",
+  "conference": {
+  "name": "22nd International Symposium on Formal Methods (FM 2018)",
+  "location": "Oxford, UK",
+  "series": "LNCS",
+  "volume": 10951,
+  "pages": "550-567",
+  "url": "http://www.fm2018.org"
   },
-  "download": "",
-  "abstract": "<p>We develop a method to incrementally construct programming languages. Our approach is categorical: each layer of the language is described as a monad. Our method either (i) concretely builds a distributive law between two monads, i.e. layers of the language, which then provides a monad structure to the composition of layers, or (ii) identifies precisely the algebraic obstacles to the existence of a distributive law and gives a ‘best approximant’ language. The running example will involve three layers: a basic imperative language enriched first by adding non-determinism and then probabilistic choice. The first extension works seamlessly, but the second encounters an obstacle, which results in a ‘best approximant’ language structurally very similar to the probabilistic network specification language ProbNetKAT.</p>"
+  "download": "https://doi.org/10.1007/978-3-319-95582-7\_33",
+  "abstract": "<p>Software-Defined Networking (SDN) is a recent networking paradigm that has become increasingly popular in the last decade. It gives unprecedented control over the global behavior of the network and provides a new opportunity for formal methods. Much work has appeared in the last few years on providing bridges between SDN and verification. This paper advances this research line and provides a link between SDN and traditional work on formal methods for verification of distributed software—actor-based modelling. We show how SDN programs can be seamlessly modelled using actors, and thus existing advanced model checking techniques developed for actors can be directly applied to verify a range of properties of SDN networks, including consistency of flow tables, violation of safety policies, and forwarding loops.</p>"
   },
   {
-  "year":2017,
-  "id": "KBSZ17",
+  "year":2018,
+  "id": "HHOS",
+  "authors": ["Gerco van Heerdt", "Justin Hsu", "Joel Ouaknine","Alexandra Silva"],
+  "title": "Convex Language Semantics for Nondeterministic Probabilistic Automata",
+  "conference": {
+  "name": "15th International Colloquium on Theoretical Aspects of Computing (ICTAC 2018)",
+  "location": "Stellenbosch, South Africa",
+  "series": "LNCS",
+  "volume": 0,
+  "pages": "",
+  "url": "https://www.ictac.org.za"
+  },
+  "download": "https://arxiv.org/pdf/1805.11550",
+  "abstract": "<p>We explore language semantics for automata combining probabilistic and nondeterministic behavior. We first show that there are precisely two natural semantics for probabilistic automata with nondeterminism. For both choices, we show that these automata are strictly more expressive than deterministic probabilistic automata, and we prove that the problem of checking language equivalence is undecidable by reduction from the threshold problem. However, we provide a discounted metric that can be computed to arbitrarily high precision.</p>"
+  },
+  {
+  "year":2018,
+  "id": "HHOS",
+  "authors": ["Gerco van Heerdt", "Bart Jacobs", "Tobias Kappe","Alexandra Silva"],
+  "title": "Learning to Coordinate",
+  "conference": {
+  "name": "It's All About Coordination",
+  "location": "Amsterdam, The Netherlands",
+  "series": "LNCS",
+  "volume": 10865,
+  "pages": "139-159"
+  },
+  "download": "https://link.springer.com/chapter/10.1007/978-3-319-90089-6_10",
+  "abstract": "<p>Reo is a visual language of connectors that originated in component-based software engineering. It is a flexible and intuitive language, yet powerful and capable of expressing complex patterns of composition. The intricacies of the language resulted in many semantic models proposed for Reo, including several automata-based ones. In this paper, we show how to generalize a known active automata learning algorithm—Angluin’s L*—to Reo automata. We use recent categorical insights on Angluin’s original algorithm to devise this generalization, which turns out to require a change of base category.</p>"
+  },
+  {
+  "year":2018,
+  "id": "DPS18",
+  "authors": ["Fredrik Dahlqvist", "Louis Parlant", "Alexandra Silva"],
+  "title": "Layer by Layer – Combining Monads",
+  "conference": {
+  "name": "15th International Colloquium on Theoretical Aspects of Computing (ICTAC 2018)",
+  "location": "Stellenbosch, South Africa",
+  "series": "LNCS",
+  "volume": 0,
+  "pages": "",
+  "url": "https://www.ictac.org.za"
+  },
+  "download": "",
+  "abstract": "<p>We develop a modular method to build algebraic structures. Our approach is categorical: we describe the layers of our construct as monads, and combine them using distributive laws. Finding such laws is known to be difficult and our method identifies precise sufficient conditions for two monads to distribute. We either (i) concretely build a distributive law which then provides a monad structure to the composition of layers, or (ii) pinpoint the algebraic obstacles to the existence of a distributive law and suggest a weakening of one layer that ensures distributivity. This method can be applied to a step-by-step construction of a programming language. Our running example will involve three layers: a basic imperative language enriched first by adding non-determinism and then probabilistic choice. The first extension works seamlessly, but the second encounters an obstacle, resulting in an ‘approximate’ language very similar to the probabilistic network specification language ProbNetKAT.</p>"
+  },
+  {
+  "year":2018,
+  "id": "DPS18",
+  "authors": ["Fredrik Dahlqvist", "Vincent Danos", "Ilias Garnier", "Alexandra Silva"],
+  "title": "Borel Kernels and their Approximation, Categorically.",
+  "conference": {
+  "name": "34th International Conference on the Mathematical Foundations of Programming Semantics (MFPS XXXIV)",
+  "location": "Halifax, Canada",
+  "series": "ENTCS",
+  "volume": 0,
+  "pages": "",
+  "url": "https://www.mathstat.dal.ca/mfps2018/"
+  },
+  "download": "",
+  "abstract": "<p>This paper introduces a categorical framework to study the exact and approximate semantics of probabilistic programs. We construct a dagger symmetric monoidal category of Borel kernels where the dagger-structure is given by Bayesian inversion. We show functorial bridges between this category and categories of Banach lattices which formalize the move from kernel-based semantics to predicate transformer (backward) or state transformer (forward) semantics. These bridges are related by natural transformations, and we show in particular that the Radon-Nikodym and Riesz representation theorems-two pillars of probability theory-define natural transformations. With the mathematical infrastructure in place, we present a generic and endogenous approach to approximating kernels on standard Borel spaces which exploits the involutive structure of our category of kernels. The approximation can be formulated in several equivalent ways by using the functorial bridges and natural transformations described above. Finally, we show that for sensible discretization schemes, every Borel kernel can be approximated by kernels on finite spaces, and that these approximations converge for a natural choice of topology.</p>"
+  },
+  {
+  "year":2018,
+  "id": "ABHS18",
+  "authors": ["Alejandro Aguirre", "Gilles Barthe", "Justin Hsu", "Alexandra Silva"],
+  "title": "Almost Sure Productivity",
+  "conference": {
+  "name": "45th International Colloquium on Automata, Languages, and Programming (ICALP 2018)",
+  "location": "Prague, Czech Republic",
+  "url": "https://iuuk.mff.cuni.cz/~icalp2018/"
+  },
+  "download": "https://doi.org/10.4230/LIPIcs.ICALP.2018.113",
+  "abstract": "<p>We define Almost Sure Productivity (ASP), a probabilistic generalization of the productivity condition for coinductively defined structures. Intuitively, a probabilistic coinductive stream or tree is ASP if it produces infinitely many outputs with probability 1. Formally, we define almost sure productivity using a final coalgebra semantics of programs inspired from Kerstan and K\" onig. Then, we introduce a core language for probabilistic streams and trees, and provide two approaches to verify ASP: a sufficient syntactic criterion, and a reduction to model-checking pCTL* formulas on probabilistic pushdown automata. The reduction shows that ASP is decidable for our core language. </p>"
+  },
+  {
+  "year": 2018,
+  "id": "BKKSW18",
+  "authors": ["Harsh Beohar", "Sebastian Küper", "Barbara König", "Alexandra Silva","Thorsten Wissmann"],
+  "title": "A coalgebraic treatment of conditional transition systems with upgrades",
+  "journal": {
+  "name": "Logical Methods in Computer Science",
+  "volume":14,
+  "issue": 1
+  },
+  "download": "https://lmcs.episciences.org/4330",
+  "abstract": "<p>We consider conditional transition systems, that allow to model software product lines with upgrades, in a coalgebraic setting. We show that, by using Birkhoff's duality for distributive lattices, we obtain two equivalent Kleisli categories in which these coalgebras live: Kleisli categories based on the reader and on the so-called lattice monad over 𝖯𝗈𝗌𝖾𝗍. We study two different functors describing the branching type of the coalgebra and investigate the resulting behavioural equivalence. Furthermore we show how an existing algorithm for coalgebra minimisation can be instantiated to derive behavioural equivalences in this setting.</p>"
+  
+  },
+  {
+  "year":2018,
+  "id": "KBLSZ18",
+  "authors": ["Tobias Kappe","Paul Brunet", "Bas Luttik", "Alexandra Silva", "Fabio Zanasi"],
+  "title": "Equivalence checking for weak bi-Kleene algebra.",
+  "journal": {
+  "name": "CoRR",
+  "volume": "arxiv:1807.02102",
+  "note": "Draft"
+  },
+  "download": "https://arxiv.org/pdf/1807.02102",
+  "abstract": "<p>Pomset automata are an operational model of weak bi-Kleene algebra, which describes program that can fork an execution into parallel threads, upon completion of which execution can join to resume as a single thread. We characterize a fragment of pomset automata that admits a decision procedure for language equivalence. Furthermore, we prove that this fragment corresponds precisely to series-rational expressions, ie, rational expressions with an additional operator for bounded parallelism. As a consequence, we obtain a new proof that equivalence of series-rational expressions is decidable.</p>"
+  },
+  {
+  "year":2018,
+  "id": "KBSZ18",
   "authors": ["Tobias Kappe","Paul Brunet", "Alexandra Silva", "Fabio Zanasi"],
   "title": "Concurrent Kleene Algebra: Free Model and Completeness.",
-   "journal": {
-  "name": "CoRR",
-  "volume": "arxiv:1710.02787",
-  "note": "Draft"
+  "conference": {
+  "name": "27th European Symposium on Programming, ESOP 2018",
+  "location": "Thessaloniki, Greece",
+  "url": "http://www.etaps.org/index.php/2018/esop",
+  "series": "LNCS",
+  "volume": "10801",
+  "pages": "856-882",
   },
   "download": "https://arxiv.org/pdf/1710.02787",
   "abstract": "<p>Concurrent Kleene Algebra (CKA) was introduced by Hoare, Moeller, Struth and Wehrman in 2009 as a framework to reason about concurrent programs. We prove that the semantics proposed in the original paper is the free model of CKA with bounded parallel iteration, meaning the completeness of these axioms. This result settles a conjecture of Hoare and collaborators. Moreover, it allows us to establish a Kleene Theorem for CKA, extending an earlier Kleene Theorem for a fragment of CKA.</p>"
+  },
+  {
+  "year": 2018,
+  "id": "Silva18",
+  "authors": ["Alexandra Silva"],
+  "title": "Proceedings of the 33rd conference on Mathematical Foundations of Programming Semantics.",
+  "edited": {
+  "publisher": "Elsevier",
+  "series": "Electronic Notes in Theoretical Computer Science",
+  "volume": 336,
+  "pages": "1-3",
+  "url": "https://doi.org/10.1016/j.entcs.2018.03.012"
+  }
   },
   {
   "year":2017,
@@ -158,12 +283,14 @@
  "abstract": "<p>Concurrent Kleene Algebra (CKA) is a mathematical formalism to study programs that exhibit concurrent behaviour. As with previous extensions of Kleene Algebra, characterizing the free model is crucial in order to develop the foundations of the theory and potential applications. For CKA, this has been an open question for a few years and this talk will overview why the problem is so difficult. We will then pave the way towards a solution, by presenting a new automaton model and a Kleene-like theorem for CKA. More precisely, we connect a relaxed version of CKA to series-parallel pomset languages, which are a natural candidate for the free model. There are two substantial differences with previous work: from expressions to automata, we use Brzozowski derivatives, which enable a direct construction of the automaton; from automata to expressions, we provide a syntactic characterization of the automata that denote valid CKA behaviours. We also survey how the present work can be used to to extend the network specification language  NetKAT with primitives for concurrency so as to model and reason about concurrency within networks. This is joint work with Tobias Kappe, Paul Brunet, Bas Luttik, and Fabio Zanasi.</p>"
  },
  {
- "year": 2017,
- "id": "EHHPS17",
+ "year": 2018,
+ "id": "EHHPS18",
  "authors": ["Joerg Endrullis", "Helle Hansen", "Dimitri Hendriks", "Andrew Polonsky", "Alexandra Silva"],
  "title": "Coinductive Foundations of Infinitary Rewriting and Infinitary Equational Logic",
  "journal": {
  "name": "Logical Methods in Computer Science",
+  "volume":14,
+  "issue": 1,
  "note": "Special issue RTA 2015"
  },
  "download": "https://arxiv.org/abs/1706.00677",
