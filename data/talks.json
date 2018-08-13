@@ -1,4 +1,29 @@
-[ { "title": "Automata Learning -- Infinite Alphabets and Applications to Verification",
+ [  { "title": "Decidability and Expressiveness results for Nondeterministic Probabilistic Automata",
+  "pres": [{ "date": "August 2018", "event": "CiE 2018 (Invited talk)", "url": "http://cie2018.uni-kiel.de", "location": "Kiel, Germany" }],
+  "download": [{ "text": "PDF", "url": "/files/talks/CiE2018.pdf" }]
+  },
+  { "title": "Almost Surely productivity",
+ "pres": [{ "date": "June 2018", "event": "IFIP WG 2.8", "url": "https://wg28.mpi-sws.org", "location": "Asilomar, CA, USA" }],
+ "download": [{ "text": "PDF", "url": "/files/talks/IFIP-asilomar.pdf" }]
+ },{ "title": "Probabilistic Program Equivalence for NetKAT",
+  "pres": [{ "date": "March 2018", "event": "Workshop on Logical Foundations for Data Science", "url": "https://www.cs.mcgill.ca/~prakash/Bellairs/18/wshop18.html", "location": "Bellairs research institute, Holetown,Barbados (blackboard talk)" },
+           { "date": "March 2018", "event": " British Colloquium for Theoretical Computer Science 2018", "url": "http://bctcs18.cs.rhul.ac.uk", "location": "London, UK" },
+   { "date": "May 2018", "event": "MPI-SWS colloquium", "url": "https://www.mpi-sws.org/events/2018/", "location": "Saarbrucken, Germany" }],
+  "download": [{ "text": "PDF BCTCS", "url": "/files/talks/BCTCS18.pdf" }]
+  },
+    { "title": "  Brzozowski Goes Concurrent — A Kleene Theorem for Pomset Languages (Invited talk)",
+ "pres": [{ "date": "September 2017", "event": "FSCD 2017", "url": "http://www.cs.ox.ac.uk/conferences/fscd2017/", "location": "Oxford, UK" },{ "date": "February 2018", "event": "Theoretical Computer Science seminar", "url": "http://talks.bham.ac.uk/talk/index/3122", "location": "Birmingham, UK" } ],
+  "download": [{ "text": "PDF FSCD", "url": "/files/talks/fscd.pdf" }]
+  },
+ { "title": "CALF - Categorical Automata Learning Framework (Invited talk)",
+ "pres": [{ "date": "June 2017", "event": "TACL 2017", "url": "http://www.cs.cas.cz/tacl2017/", "location": "Prague, CZ" }, { "date": "June 2017", "event": "LearnAut 2017", "url": "https://learnaut.wordpress.com", "location": "Reykjavik, Iceland" }, { "date": "August 2017", "event": "Cornell CS colloquium", "url": "https://www.cs.cornell.edu/content/fall-2017-colloquium", "location": "Ithaca, NY, USA" }, { "date": "December 2017", "event": "MGS Christmas seminar", "url": "http://www.cs.nott.ac.uk/~pszgmh/mgs-xmas17.html", "location": "Nottingham, UK" }, { "date": "February 2018", "event": "RiSE seminar", "url": "https://arise.or.at/seminar/", "location": "Vienna, Austria"}, { "date": "May 2018", "event": "University of Leeds Algebra, Logic, and Algorithms Seminar", "url": "https://physicalsciences.leeds.ac.uk/events?query=&mmyyyy=002018&categoryID=6&sub_categoryID=&types=135&sub_type=137", "location": "Leeds, UK"}],
+ "download": [{ "text": "PDF TACL", "url": "/files/talks/TACL2017.pdf" }]
+ },
+{ "title": "A (co)algebraic theory of succinct acceptors (invited talk)",
+  "pres": [{ "date": "May 2017", "event": "RAMICS 2017", "url": "http://www.ens-lyon.fr/LIP/PLUME/RAMiCS17/index.html", "location": "Lyon, France" }],
+  "download": [{ "text": "PDF", "url": "/files/talks/RAMICS17.pdf" }]
+  },
+{ "title": "Automata Learning -- Infinite Alphabets and Applications to Verification",
  "pres": [{ "date": "December 2016", "event": "INFOSEC seminar", "url": "http://sec.cs.ucl.ac.uk/ace_csr/ace_seminars/", "location": "London, United Kingdom" }, { "date": "December 2016", "event": "Compositionality workshop @ Simons Institute", "url": "https://simons.berkeley.edu/workshops/logic2016-3", "location": "Berkeley, CA, USA" }],
  "download": [{ "text": "PDF Berkeley", "url": "/files/talks/berkeley16.pdf" }]
  },
