@@ -1,4 +1,11 @@
-[
+[  {"date": "12 August 2018", "note": "I am very excited to announce that I will receive the <a href='http://www.cs.ucl.ac.uk/news/article/alexandra_silva_receives_bcs_roger_needham_award_2018/'>BCS Roger Needham Award 2018</a>."},
+ {"date": "1 Aug 2018", "note": "I am giving an invited talk at <a href='http://cie2018.uni-kiel.de'>CiE 2018</a>, in Oxford."},
+ {"date": "24 June 2018", "note": "<a href='https://www.floc2018.org'>FLOC 2018</a> is about to start! I am co-organising the summer school <a href='https://easychair.org/smart-program/FLoC2018/FoPSS-program.html'>FoPSS 2018</a> and participating in a variety of conferences and workshops - 3 weeks in Oxford!"},
+ {"date": "1 May 2018", "note": "I am visiting the amazing <a href='http://www.mpi-sws.org/~dreyer'>Derek Dreyer</a>  and his group at MPI-SWS this week!"},
+  {"date": "26 March 2018", "note": "I am giving an invited talk at <a href='http://bctcs18.cs.rhul.ac.uk'>BCTCS 2018</a> at RHUL."},
+   {"date": "10 March 2018", "note": "Prakash Panangaden and I are organizing a workshop on Logical Foundations for Data Science at <a href='https://www.cs.mcgill.ca/~prakash/Bellairs/18/wshop18.html'>Bellairs</a>."},
+ {"date": "25 Feb 2018", "note": "I am visiting <a href='http://www.cs.uni-salzburg.at/~anas/'>Ana Sokolova</a> this week and giving a talk at the <a href='https://arise.or.at/seminar/'>Rise seminar</a> in Vienna."},
+  {"date": "13 Dec 2017", "note": "I am giving an invited talk at <a href='http://www.cs.nott.ac.uk/~pszgmh/mgs-xmas17.html'>Midlands Graduate School Christmas Seminars 2017</a>, in Nottingham."},
  {"date": "4 Sep 2017", "note": "I am giving an invited talk at <a href='https://www.cs.ox.ac.uk/conferences/fscd2017/'>FSCD 2017</a>, in Oxford."},
   {"date": "12 July 2017", "note": "I was awarded the <a href='http://eatcs.org/index.php/presburger'>Presburger award</a> 2017."},
   {"date": "24 June 2017", "note": "I was just <a href='https://www.ucl.ac.uk/hr/docs/successful_sp_2017.php'>promoted</a> to Professor of Algebra, Semantics, and Computation (effective from Oct 1st)."},
