@@ -1,4 +1,16 @@
- [  { "title": "Decidability and Expressiveness results for Nondeterministic Probabilistic Automata",
+ [  { "title": "CLAM: Coalgebraic Learning for Automated Modelling",
+  "pres": [{ "date": "December 2018", "event": "Inaugural lecture", "url": "https://www.eventbrite.co.uk/e/clam-coalgebraic-learning-for-automated-modelling-tickets-52393610700#", "location": "Faber Creative Spaces, London, United Kingdom" }],
+  "download": [{ "text": "PDF", "url": "/files/talks/inaugural.pdf" }]
+  },
+  { "title": "Layer by Layer: Combining Monads",
+ "pres": [{ "date": "October 2018", "event": "ICTAC 2018", "url": "https://www.ictac.org.za/", "location": "Stellenbosch, South Africa" }],
+ "download": [{ "text": "PDF", "url": "/files/talks/ictac2018.pdf" }]
+ },
+ { "title": "Decidability and Expressiveness results for Nondeterministic Probabilistic Automata",
+ "pres": [{ "date": "October 2018", "event": "CiE 2018 (Invited talk)", "url": "http://cie2018.uni-kiel.de", "location": "Kiel, Germany" }],
+ "download": [{ "text": "PDF", "url": "/files/talks/CiE2018.pdf" }]
+ },
+ { "title": "Decidability and Expressiveness results for Nondeterministic Probabilistic Automata",
   "pres": [{ "date": "August 2018", "event": "CiE 2018 (Invited talk)", "url": "http://cie2018.uni-kiel.de", "location": "Kiel, Germany" }],
   "download": [{ "text": "PDF", "url": "/files/talks/CiE2018.pdf" }]
   },
