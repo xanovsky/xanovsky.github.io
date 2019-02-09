@@ -9,7 +9,7 @@
   "volume": "103",
   "pages": "130-153"
   },
-  "download": "https://arxiv.org/pdf/1807.02102",
+  "download": "https://arxiv.org/pdf/1812.03058.pdf",
   "abstract": "<p>Concurrent Kleene Algebra (CKA) is a formalism to study concurrent programs. Like previous Kleene Algebra extensions, developing a correspondence between denotational and operational perspectives is important, both for foundations and for applications. This paper takes an important step towards such a correspondence, by precisely relating bi-Kleene Algebra (BKA), a fragment of CKA, to a novel type of automata called pomset automata (PAs). We show that PAs can implement the BKA semantics of series-parallel rational expressions, and that a class of PAs can be translated back to these expressions. We also characterise the behaviour of general PAs in terms of context-free pomset grammars; consequently, universality, equivalence and series-parallel rationality of general PAs are undecidable.</p>"
   },
   {
