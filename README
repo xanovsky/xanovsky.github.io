@@ -1,0 +1,4 @@
+To test local 
+
+terminal: python -m SimpleHTTPServer 8000
+on browser: http://localhost:8000/#/main.html 
