@@ -149,6 +149,9 @@ angular.module('homepage', ['ngRoute', 'ngAnimate', 'ngSanitize'])
           .when('/calendar.html', {
           templateUrl: 'calendar.html'
         })
+           .when('/projects.html', {
+             templateUrl: 'projects.html'
+           })
         .when('/thesis.html', {
           templateUrl: 'thesis.html'
         })
@@ -164,7 +167,7 @@ angular.module('homepage', ['ngRoute', 'ngAnimate', 'ngSanitize'])
       { href: '#/talks.html', icon: 'comment', text: 'Talks' },
       { href: '#/news.html', icon: 'bullhorn', text: 'News' },
       { href: '#/activities.html', icon: 'tasks', text: 'Activities' },
-      { href: '#/group.html', icon: 'time', text: 'Group' },
+      { href: '#/group.html', icon: 'move', text: 'Group' },
       { href: '#/calendar.html', icon: 'calendar', text: 'Calendar' },
       { href: 'files/cv.pdf', icon: 'download-alt', text: 'Download CV' }
     ];

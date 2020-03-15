@@ -98,9 +98,9 @@
                 </span>
               </div>
               <div class="pubcite">
-                <span ng-if="paper.note"><span ng-bind="paper.note"></span>,</span>
                 <span ng-if="paper.conference">
                   <span class="label label-warning">Conference Paper</span>
+                  <span ng-if="paper.note"><b><span ng-bind="paper.note"></b>,</span>               
                   In <emph ng-bind="paper.conference.name"></emph>,
                   <span ng-bind="paper.conference.location"></span>,
                   </span>

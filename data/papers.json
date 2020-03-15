@@ -1,4 +1,167 @@
- [
+ [{
+ "year":2020,
+ "id": "KS20",
+ "authors": ["Dexter Kozen", "Alexandra Silva"],
+ "title": "Left-handed completeness.",
+ "journal": {
+ "name": "TCS",
+ "volume": "807",
+ "pages": "220-233",
+ "note": "This is a revised and extended version of our Ramics'12 paper, see below."
+ },
+ "download": "https://www.sciencedirect.com/science/article/pii/S0304397519306838",
+ "abstract": "<p>We give a new proof of the completeness of the left-handed star rule of Kleene algebra. The proof is significantly shorter than previous proofs and exposes the rich interaction of algebra and coalgebra in the theory of Kleene algebra.</p>"
+ },{
+ "year":2020,
+ "id": "HKRS20",
+ "authors": ["Tobias Kappe", "Paul Brunet", "Jana Wagemaker", "Alexandra Silva","Fabio Zanasi"],
+ "title": "Concurrent Kleene Algebra with Observations: from Hypotheses to Completeness.",
+ "conference": {
+ "name": "FoSSACS 2020",
+ "location": "Dublin, Ireland",
+ "url": "https://www.etaps.org/2020/fossacs"
+ },
+ "download": "https://arxiv.org/pdf/2002.09682",
+ "abstract": "<p>Concurrent Kleene Algebra (CKA) extends basic Kleene algebra with a parallel composition operator, which enables reasoning about concurrent programs. However, CKA fundamentally misses tests, which are needed to model standard programming constructs such as conditionals and while-loops. It turns out that integrating tests in CKA is subtle, due to their interaction with parallelism. In this paper we provide a solution in the form of Concurrent Kleene Algebra with Observations (CKAO). Our main contribution is a completeness theorem for CKAO. Our result resorts on a more general study of CKA with hypotheses, of which CKAO turns out to be an instance: this analysis is of independent interest, as it can be applied to extensions of CKA other than CKAO.</p>"
+ },{
+ "year":2020,
+ "id": "HKRS20",
+ "authors": ["Gerco van Heerdt", "Clemens Kupke", "Jurriaan Rot", "Alexandra Silva"],
+ "title": "Learning Weighted Automata over Principal Ideal Domains.",
+ "conference": {
+ "name": "FoSSACS 2020",
+ "location": "Dublin, Ireland",
+ "url": "https://www.etaps.org/2020/fossacs"
+ },
+ "download": "https://arxiv.org/pdf/1911.04404",
+ "abstract": "<p>In this paper, we study active learning algorithms for weighted automata over a semiring. We show that a variant of Angluin's seminal L* algorithm works when the semiring is a principal ideal domain, but not for general semirings such as the natural numbers.</p>"
+ },
+ { "year":2020,
+     "id": "SFHKKS20",
+     "authors": ["Steffen Smolka", "Nate Foster", "Justin Hsu", "Tobias Kappe", "Dexter Kozen", "Alexandra Silva"],
+     "title": "Guarded Kleene algebra with tests: verification of uninterpreted programs in nearly linear time. ",
+     "conference": {
+     "name": "POPL 2020",
+     "location": "New Orleans, LA, USA",
+     "url": "https://popl20.sigplan.org"
+     },
+     "note": "Distinguished paper award",
+     "download": "https://dl.acm.org/doi/pdf/10.1145/3371129",
+     "abstract": "<p>Guarded Kleene Algebra with Tests (GKAT) is a variation on Kleene Algebra with Tests (KAT) that arises by restricting the union (+) and iteration (*) operations from KAT to predicate-guarded versions. We develop the (co)algebraic theory of GKAT and show how it can be efficiently used to reason about imperative programs. In contrast to KAT, whose equational theory is PSPACE-complete, we show that the equational theory of GKAT is (almost) linear time. We also provide a full Kleene theorem and prove completeness for an analogue of Salomaa’s axiomatization of Kleene Algebra.</p>"
+     },{
+     "year":2019,
+     "id": "AFSS19",
+     "authors": ["Jana Wagemaker", "Marcello Bonsangue", "Tobias Kappe", "Jurriaan Rot", "Alexandra Silva"],
+     "title": "Completeness and Incompleteness of Synchronous Kleene Algebra.",
+     "conference": {
+     "name": "MPC 2019",
+     "location": "Porto, Portugal",
+     "url": "https://www.cs.nott.ac.uk/~pszgmh/mpc19.html"
+     },
+     "download": "https://arxiv.org/abs/1905.08554",
+     "abstract": "<p>Synchronous Kleene algebra (SKA), an extension of Kleene algebra (KA), was proposed by Prisacariu as a tool for reasoning about programs that may execute synchronously, ie, in lock-step. We provide a countermodel witnessing that the axioms of SKA are incomplete wrt its language semantics, by exploiting a lack of interaction between the synchronous product operator and the Kleene star. We then propose an alternative set of axioms for SKA, based on Salomaa’s axiomatisation of regular languages, and show that these provide a sound and complete characterisation wrt the original language semantics.</p>"
+ },
+ {
+ "year":2019,
+ "id": "AFSS19",
+ "authors": ["Loris D'Antoni", "Tiago Ferreira", "Matteo Sammartino", "Alexandra Silva"],
+ "title": "Symbolic Register Automata.",
+ "conference": {
+ "name": "CAV 2019",
+ "location": "New York, NY, USA",
+ "url": "http://i-cav.org/2019/"
+ },
+ "download": "https://arxiv.org/abs/1811.06968",
+ "abstract": "<p>Symbolic Finite Automata and Register Automata are two orthogonal extensions of finite automata motivated by real-world problems where data may have unbounded domains. These automata address a demand for a model over large or infinite alphabets, respectively. Both automata models have interesting applications and have been successful in their own right. In this paper, we introduce Symbolic Register Automata, a new model that combines features from both symbolic and register automata, with a view on applications that were previously out of reach. We study their properties and provide algorithms for emptiness, inclusion and equivalence checking, together with experimental results.</p>"
+ },{
+ "year": 2019,
+ "id": "SSSU19",
+ "authors": ["Alexandra Silva","Sam Staton", "Peter Sutton", "Carla Umbach"],
+ "title": "Language, Logic, and Computation: 12th International Tbilisi Symposium, TbiLLC 2017, Lagodekhi, Georgia, September 18-22, 2017, Revised Selected Papers",
+ "edited": {
+ "publisher": "Springer",
+ "series": "Lecture Notes in Computer Science",
+ "volume": 11456,
+ "pages": "iii-ix",
+ "url": "https://doi.org/10.1007/978-3-662-59565-7"
+ }
+ },
+     {
+     "year":2019,
+     "id": "SKKFHKS19",
+     "authors": ["Steffen Smolka", "Praveen Kumar", "David Kahn", "Nate Foster", "Justin Hsu", "Dexter Kozen", "Alexandra Silva"],
+     "title": "Scalable verification of probabilistic networks.",
+     "conference": {
+     "name": "PLDI 2019",
+     "location": "Phoenix, AZ, USA",
+     "url": "https://pldi19.sigplan.org"
+     },
+     "download": "https://arxiv.org/pdf/1904.08096",
+     "abstract": "<p>This paper presents McNetKAT, a scalable tool for verifying probabilistic network programs. McNetKAT is based on a new semantics for the guarded and history-free fragment of Probabilistic NetKAT in terms of finite-state, absorbing Markov chains. This view allows the semantics of all programs to be computed exactly, enabling construction of an automatic verification tool. Domain-specific optimizations and a parallelizing backend enable McNetKAT to analyze networks with thousands of nodes, automatically reasoning about general properties such as probabilistic program equivalence and refinement, as well as networking properties such as resilience to failures. We evaluate McNetKAT's scalability using real-world topologies, compare its performance against state-of-the-art tools, and develop an extended case study on a recently proposed data center network design.</p>"
+     },
+     {
+     "year":2019,
+     "id": "BS19",
+     "authors": ["Paul Brunet", "Alexandra Silva"],
+     "title": "A Kleene Theorem for Nominal Automata.",
+     "conference": {
+     "name": "ICALP 2019",
+     "location": "Patras, Greece",
+     "url": "https://icalp2019.upatras.gr"
+     },
+     "download": "http://drops.dagstuhl.de/opus/volltexte/2019/10683/pdf/LIPIcs-ICALP-2019-107.pdf",
+     "abstract": "<p>Nominal automata are a widely studied class of automata designed to recognise languages over infinite alphabets. In this paper, we present a Kleene theorem for nominal automata by providing a syntax to denote regular nominal languages. We use regular expressions with explicit binders for creation and destruction of names and pinpoint an exact property of these expressions - namely memory-finiteness - identifying a subclass of expressions denoting exactly regular nominal languages.</p>"
+     },
+{
+"year":2019,
+"id": "HKRSS19",
+"authors": ["Gerco van Heerdt","Tobias Kappe", "Jurriaan Rot", "Matteo Sammartino", "Alexandra Silva"],
+"title": "Tree Automata as Algebras: Minimisation and Determinisation.",
+"conference": {
+"name": "CALCO 2019",
+"location": "London, UK",
+"url": "https://www.coalg.org/calco-mfps-2019/"
+},
+"download": "https://repository.ubn.ru.nl/bitstream/handle/2066/214645/214645.pdf?sequence=1",
+"abstract": "<p>We study a categorical generalisation of tree automata, as Σ-algebras for a fixed endofunctor Σ endowed with initial and final states. Under mild assumptions about the base category, we present a general minimisation algorithm for these automata. We then build upon and extend an existing generalisation of the Nerode equivalence to a categorical setting and relate it to the existence of minimal automata. Finally, we show that generalised types of side-effects, such as non-determinism, can be captured by this categorical framework, leading to a general determinisation procedure.</p>"
+},
+{"year":2019,
+ "id": "AS19a",
+ "authors": ["Alexandra Silva"],
+ "title": "An Algebraic Framework to Reason About Concurrency (Invited Talk)",
+ "conference": {
+ "name": "39th IARCS Annual Conference on Foundations of Software Technology and Theoretical Computer Science (FSTTCS 2019)",
+ "location": "Mumbai, India",
+ "url": "https://www.fsttcs.org.in/archives/2019/"
+ },
+ "download": "https://drops.dagstuhl.de/opus/volltexte/2019/11568/pdf/LIPIcs-FSTTCS-2019-6.pdf",
+ "abstract": "<p>Kleene algebra with tests (KAT) is an algebraic framework for reasoning about the control flow of sequential programs. Hoare, Struth, and collaborators proposed a concurrent extension of Kleene Algebra (CKA) as a first step towards developing algebraic reasoning for concurrent programs. Completing their research program and extending KAT to encompass concurrent behaviour has however proven to be more challenging than initially expected. The core problem appears because when generalising KAT to reason about concurrent programs, axioms native to KAT in conjunction with expected axioms for reasoning about concurrency lead to an unexpected equation about programs. In this talk, we will revise the literature on CKA (T) and explain the challenges and solutions in the development of an algebraic framework for concurrency. The talk is based on a series of papers joint with Tobias Kappé, Paul Brunet, Bas Luttik, Jurriaan Rot, Jana Wagemaker, and Fabio Zanasi [Tobias Kappé et al., 2017; Tobias Kappé et al., 2019; Kappé et al., 2018]. Additional references can be found on the CoNeCo project website: https://coneco-project.org/.</p>"
+ },
+ { "year":2019,
+ "id": "AS19b",
+ "authors": ["Alexandra Silva"],
+ "title": "Guarded Kleene Algebra with Tests: Verification of Uninterpreted Programs in Nearly Linear Time  (Invited Talk)",
+ "conference": {
+ "name": "44th International Symposium on Mathematical Foundations of Computer Science (MFCS 2019)",
+ "location": "Aachen, Germany",
+ "url": "https://tcs.rwth-aachen.de/mfcs2019/"
+ },
+ "download": "https://drops.dagstuhl.de/opus/volltexte/2019/10946/pdf/LIPIcs-MFCS-2019-2.pdf",
+ "abstract": "<p>Guarded Kleene Algebra with Tests (GKAT) is a variation on Kleene Algebra with Tests (KAT) that arises by restricting the union (+) and iteration (*) operations from KAT to predicate-guarded versions. We develop the (co)algebraic theory of GKAT and show how it can be efficiently used to reason about imperative programs. In contrast to KAT, whose equational theory is PSPACE-complete, we show that the equational theory of GKAT is (almost) linear time. We also provide a full Kleene theorem and prove completeness for an analogue of Salomaa's axiomatization of Kleene Algebra. We will also discuss how this result has practical implications in the verification of programs, with examples from network and probabilistic programming. This is joint work with Nate Foster, Justin Hsu, Tobias Kappe, Dexter Kozen, and Steffen Smolka.</p>"
+ },
+ {
+  "year":2019,
+  "id": "HSSM1919",
+  "authors": ["Gerco van Heerdt","Joshua Moerman", "Matteo Sammartino", "Alexandra Silva"],
+  "title": "A (co) algebraic theory of succinct automata.",
+  "journal": {
+  "name": "JLAMP",
+  "volume": "105",
+  "pages": "112-125"
+  },
+  "download": "https://repository.ubn.ru.nl/bitstream/handle/2066/203984/203984.pdf?sequence=1",
+  "abstract": "<p>The classical subset construction for non-deterministic automata can be generalized to other side-effects captured by a monad. The key insight is that both the state space of the determinized automaton and its semantics—languages over an alphabet—have a common algebraic structure: they are Eilenberg-Moore algebras for the powerset monad. In this paper we study the reverse question to determinization. We will present a construction to associate succinct automata to languages based on different algebraic structures. For instance, for classical regular languages the construction will transform a deterministic automaton into a non-deterministic one, where the states represent the join-irreducibles of the language accepted by a (potentially) larger deterministic automaton. Other examples will yield alternating automata, automata with symmetries, CABA-structured automata, and weighted automata.</p>"
+  },
   {
   "year":2019,
   "id": "KBLSZ19",
@@ -500,9 +663,9 @@
   "conference": {
   "name": "RTA 2015, 26th International Conference on Rewriting Techniques and Applications",
   "location": "Warsaw, Poland",
-   "note": "Best paper award",
    "url": "http://rdp15.mimuw.edu.pl/index.php?site=rta"
   },
+  "note": "Best paper award",
   "download": "http://arxiv.org/abs/1505.01128",
   "abstract": "<p>We present a coinductive framework for defining infinitary analogues of equational reasoning and rewriting in a uniform way. We define the relation =^infty, notion of infinitary equational reasoning, and ->^infty, the standard notion of infinitary rewriting as follows: =^infty := nu R. ( <-_root + ->_root + lift(R) )^* ->^infty := mu R. nu S. ( ->_root + lift(R) )^* ; lift(S) where lift(R) := { (f(s_1,...,s_n), f(t_1,...,t_n)) | s_1 R t_1,...,s_n R t_n } + id , and where mu is the least fixed point operator and nu is the greatest fixed point operator. The setup captures rewrite sequences of arbitrary ordinal length, but it has neither the need for ordinals nor for metric convergence. This makes the framework especially suitable for formalizations in theorem provers.</p>"
   },
