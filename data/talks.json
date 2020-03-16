@@ -1,6 +1,25 @@
- [{ "title": "Language principles applied to networks",
- "pres": [{ "date": "April 2019", "event": "Daghstul Seminar on Programmable Network Data Planes", "url": "https://www.dagstuhl.de/en/program/calendar/semhp/?semnr=19141", "location": "Daghstul, Germany" }],
- "download": [{ "text": "PDF", "url": "/files/talks/Daghstul19.pdf" }]
+ [{ "title": "Programming and Reasoning with Kleene Algebra with Tests (Tutorial)",
+ "pres": [{ "date": "January 2020", "event": "POPL 2020", "url": "https://popl20.sigplan.org/track/POPL-2020-tutorialfest#program", "location": "joint with Nate Foster, New Orleans, LA, USA" }, { "date": "February 2020", "event": "MadPL seminar", "url": "https://www.facebook.com/uwmadpl/", "location": "Madison, Wi, USA" }],
+ "download": [{ "text": "PDF", "url": "/files/talks/kat-tutorial.pdf" }]
+ },{ "title": "An algebraic framework to reason about concurrency (Invited Talk)",
+ "pres": [{ "date": "December 2019", "event": "FSTTCS 2019", "url": "https://www.fsttcs.org.in/archives/2019/#about", "location": "Mumbai, India" }],
+ "download": [{ "text": "PDF", "url": "/files/talks/fsttcs19.pdf" }]
+ },{ "title": "Guarded Kleene Algebra with Tests: Verification of Uninterpreted Programs in Nearly Linear Time (Invited Talk)",
+ "pres": [{ "date": "August 2019", "event": "MFCS 2019", "url": "https://tcs.rwth-aachen.de/mfcs2019/", "location": "Aachen, Germany" },
+ { "date": "October 2019", "event": "LSV Seminar", "url": "http://www.lsv.fr/Seminaires/", "location": "Cachan, France" }],
+ "download": [{ "text": "PDF", "url": "/files/talks/mfcs19.pdf" }]
+ },{ "title": "Modelling and Verification using Automata Learning",
+ "pres": [{ "date": "June 2019", "event": "BCS Needham Lecture", "url": "https://www.bcs.org/events/2019/june/bcs-needham-lecture-2019/", "location": "London, UK" }],
+ "download": [{ "text": "PDF", "url": "/files/talks/Needham.pdf" }]
+ },{ "title": "Guarded Kleene Algebra with Tests",
+ "pres": [{ "date": "May 2019", "event": "IFIP WG 2.8", "url": "https://wg28-2019.mpi-sws.org", "location": "Bordeaux, France" }],
+ "download": [{ "text": "PDF", "url": "https://wg28-2019.mpi-sws.org/technical-presentations/files/cfdb7_uploads/1558537824-2019-05-gkat-wg28.pdf" }]
+ },{ "title": "CoNeCo: Concurrency, Networks and Coinduction",
+ "pres": [{ "date": "May 2019", "event": "Jacques Morgenstern Colloquium", "url": "https://iww.inria.fr/colloquium/", "location": "Sophia-Antipolis, France" }],
+ "download": [{ "text": "PDF", "url": "/files/talks/coneco.pdf" }]
+ },{ "title": "Language principles applied to networks",
+ "pres": [{ "date": "April 2019", "event": "Dagstuhl Seminar on Programmable Network Data Planes", "url": "https://www.dagstuhl.de/en/program/calendar/semhp/?semnr=19141", "location": "Dagstuhl, Germany" }],
+ "download": [{ "text": "PDF", "url": "/files/talks/Dagstuhl19.pdf" }]
  },
      { "title": "Scalable Verification of Probabilistic Networks",
   "pres": [{ "date": "March 2019", "event": "Departmental Seminar University of Leicester", "url": "https://www2.le.ac.uk/departments/informatics/news/researchevents/external/external-seminars-201819", "location": "Leicester, UK" }],
