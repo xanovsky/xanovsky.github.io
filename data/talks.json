@@ -1,14 +1,22 @@
- [  { "title": "CLAM: Coalgebraic Learning for Automated Modelling",
-  "pres": [{ "date": "December 2018", "event": "Inaugural lecture", "url": "https://www.eventbrite.co.uk/e/clam-coalgebraic-learning-for-automated-modelling-tickets-52393610700#", "location": "Faber Creative Spaces, London, United Kingdom" }],
+ [{ "title": "Language principles applied to networks",
+ "pres": [{ "date": "April 2019", "event": "Daghstul Seminar on Programmable Network Data Planes", "url": "https://www.dagstuhl.de/en/program/calendar/semhp/?semnr=19141", "location": "Daghstul, Germany" }],
+ "download": [{ "text": "PDF", "url": "/files/talks/Daghstul19.pdf" }]
+ },
+     { "title": "Scalable Verification of Probabilistic Networks",
+  "pres": [{ "date": "March 2019", "event": "Departmental Seminar University of Leicester", "url": "https://www2.le.ac.uk/departments/informatics/news/researchevents/external/external-seminars-201819", "location": "Leicester, UK" }],
+  "download": [{ "text": "PDF", "url": "/files/talks/leicester2019.pdf" }]
+  },
+ { "title": "CLAM: Coalgebraic Learning for Automated Modelling",
+  "pres": [{ "date": "December 2018", "event": "Inaugural lecture", "url": "https://www.eventbrite.co.uk/e/clam-coalgebraic-learning-for-automated-modelling-tickets-52393610700#", "location": "Faber Creative Spaces, London, United Kingdom" },{ "date": "February 2019", "event": "Lasige Workshop", "url": "https://workshop2019.lasige.di.fc.ul.pt", "location": "Lisboa, Portugal" }],
   "download": [{ "text": "PDF", "url": "/files/talks/inaugural.pdf" }]
   },
   { "title": "Layer by Layer: Combining Monads",
  "pres": [{ "date": "October 2018", "event": "ICTAC 2018", "url": "https://www.ictac.org.za/", "location": "Stellenbosch, South Africa" }],
  "download": [{ "text": "PDF", "url": "/files/talks/ictac2018.pdf" }]
  },
- { "title": "Decidability and Expressiveness results for Nondeterministic Probabilistic Automata",
- "pres": [{ "date": "October 2018", "event": "CiE 2018 (Invited talk)", "url": "http://cie2018.uni-kiel.de", "location": "Kiel, Germany" }],
- "download": [{ "text": "PDF", "url": "/files/talks/CiE2018.pdf" }]
+ { "title": "Automated Black-box Verification of Networking Systems",
+ "pres": [{ "date": "September 2018", "event": "CiE 2018 (Invited talk)", "url": "https://vecos.ensta-paristech.fr/2018/", "location": "Kiel, Germany" }],
+ "download": [{ "text": "PDF", "url": "https://vecos.ensta-paris.fr/2018/data/files/vecos18-ASilva.pdf" }]
  },
  { "title": "Decidability and Expressiveness results for Nondeterministic Probabilistic Automata",
   "pres": [{ "date": "August 2018", "event": "CiE 2018 (Invited talk)", "url": "http://cie2018.uni-kiel.de", "location": "Kiel, Germany" }],
