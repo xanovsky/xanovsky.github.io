@@ -1,4 +1,18 @@
  [{
+   "year": 2020,
+   "id": "GMS20",
+   "authors": ["Sergey Goncharov", "Stefan Milius", "Alexandra Silva"],
+   "title": "Toward a Uniform Theory of Effectful State Machines",
+   "journal": {
+     "name": "ACM Transactions on Computational Logic (TOCL)",
+     "volume": 21,
+     "number": 3
+   },
+   "download": "https://dl.acm.org/doi/abs/10.1145/3372880",
+   "abstract": "<p>Using recent developments in coalgebraic and monad-based semantics, we present a uniform study of various notions of machines, e.g., finite state machines, multi-stack machines, Turing machines, valence automata, and weighted automata. They are instances of Jacobs’s notion of a T-automaton, where T is a monad. We show that the generic language semantics for T-automata correctly instantiates the usual language semantics for a number of known classes of machines/languages, including regular, context-free, recursively-enumerable, and various subclasses of context free languages (e.g., deterministic and real-time ones). Moreover, our approach provides new generic techniques for studying the expressivity power of various machine-based models.</p>"
+
+ },
+ {
  "year":2020,
  "id": "KS20",
  "authors": ["Dexter Kozen", "Alexandra Silva"],
