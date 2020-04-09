@@ -1,4 +1,7 @@
- [{ "title": "Programming and Reasoning with Kleene Algebra with Tests (Tutorial)",
+ [{ "title": "An algebraic framework to reason about concurrency",
+ "pres": [{ "date": "March 2020", "event": "PLDG Cornell", "url": "https://pl.cs.cornell.edu/pldg/2020sp/", "location": "Ithaca, NY, Cornell (via Zoom)" }],
+ "download": [{ "text": "PDF", "url": "/files/talks/PLDG.pdf" }]
+ },{ "title": "Programming and Reasoning with Kleene Algebra with Tests (Tutorial)",
  "pres": [{ "date": "January 2020", "event": "POPL 2020", "url": "https://popl20.sigplan.org/track/POPL-2020-tutorialfest#program", "location": "joint with Nate Foster, New Orleans, LA, USA" }, { "date": "February 2020", "event": "MadPL seminar", "url": "https://www.facebook.com/uwmadpl/", "location": "Madison, Wi, USA" }],
  "download": [{ "text": "PDF", "url": "/files/talks/kat-tutorial.pdf" }]
  },{ "title": "An algebraic framework to reason about concurrency (Invited Talk)",
