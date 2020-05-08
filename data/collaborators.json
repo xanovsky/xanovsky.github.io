@@ -27,6 +27,7 @@
   { "name": "Ilias Garnier", "img": "igarnier.jpg", "link": " http://ilias-garnier.org"},
   { "name": "Sergey Goncharov", "img": "sgoncharov.jpg", "link": "https://www8.cs.fau.de/sergey" },
   { "name": "Eugen Goriac", "img": "egoriac.jpg", "link": "http://eugen.goriac.info/" },
+    { "name": "Tao Gu", "img": "nophoto.png", "link": "http://www0.cs.ucl.ac.uk/people/T.Gu.html" },
   { "name": "Helle Hansen", "img": "hhansen.jpg", "link": "http://www.cs.ru.nl/~helle/" },
  { "name": "Gerco van Heerdt", "img": "gerco.jpg", "link": "http://www.gerco.me" },
   { "name": "Dimitri Hendriks", "img": "dhendriks.jpg", "link": "http://www.cs.vu.nl/~diem/" },
