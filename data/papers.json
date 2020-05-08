@@ -1,4 +1,19 @@
  [{
+     "year":2020,
+     "id": "GSZ20",
+     "authors": ["Tao Gu", "Fabio Zanasi", "Alexandra Silva"],
+     "title": "Hennessy-Milner Results for Probabilistic PDL.",
+     "conference": {
+     "name": "36th International Conference on the Mathematical Foundations of Programming Semantics (MFPS XXXVI)",
+     "location": "Paris, France (virtual)",
+     "series": "ENTCS",
+     "volume": 0,
+     "pages": "",
+     "url": "https://www.monoidal.net/paris2020/mfps/"
+     },
+     "download": "/files/mfps20.pdf",
+     "abstract": "<p>Kozen introduced probabilistic propositional dynamic logic (PPDL) in 1985 as a compositional framework to reason about probabilis- tic programs. In this paper we study expressiveness for PPDL and provide a series of results analogue to the classical Hennessy-Milner theorem for modal logic. First, we show that PPDL charaterises probabilistic trace equivalence of probabilistic automata (with outputs). Second, we show that PPDL can be mildly extended to yield a characterisation of probabilistic state bisimulation for PPDL models. Third, we provide a different extension of PPDL, this time characterising probabilistic event bisimulation.</p>"
+     },{
  "year":2020,
  "id": "HSS20",
  "authors": ["Gerco van Heerdt","Matteo Sammartino", "Alexandra Silva"],
@@ -660,7 +675,7 @@
   "volume": 0,
   "url": "http://ramics2015.di.uminho.pt"
   },
-  "download": "http://alexandrasilva.org/files/NKA-RAMiCS-Final.pdf",
+  "download": "/files/NKA-RAMiCS-Final.pdf",
   "abstract": "<p>Gabbay and Ciancia (2011) presented a nominal extension of Kleene algebra as a framework for trace semantics with dynamic allocation of resources, along with a semantics consisting of nominal languages. They also provided an axiomatization that captures the behavior of the scoping operator and its interaction with the Kleene algebra operators and proved soundness over nominal languages. In this paper we show that the axioms are complete and describe the free language models.</p>"
   
   },
