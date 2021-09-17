@@ -742,7 +742,7 @@
  {
   "year": 2015,
   "id": "FKMST14",
-  "authors": ["Nate Foster", "Dexter Kozen", "Matthew Milano", "Alexandra Silva", "Laure Thompson"],
+  "authors": ["Nate Foster", "Dexter Kozen", "Mae Milano", "Alexandra Silva", "Laure Thompson"],
   "title": "A coalgebraic decision procedure for NetKAT.",
   "conference": {
     "name": "POPL 2015: 42nd ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages",
@@ -901,7 +901,7 @@
 }, {
   "year": 2014,
   "id": "FKMST14-tr",
-  "authors": ["Nate Foster", "Dexter Kozen", "Matthew Milano", "Alexandra Silva", "Laure Thompson"],
+  "authors": ["Nate Foster", "Dexter Kozen", "Mae Milano", "Alexandra Silva", "Laure Thompson"],
   "title": " A coalgebraic decision procedure for NetKAT.",
   "techreport": {
     "number": "1813/36255",
