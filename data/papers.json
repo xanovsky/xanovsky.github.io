@@ -1,4 +1,185 @@
- [{
+ [  {
+     "year": 2022,
+     "id": "BKS22",
+     "authors": ["Mark Bickford", "Dexter Kozen", "Alexandra Silva"],
+     "title": "Formalizing Moessner's theorem and generalizations in Nuprl.",
+     "journal": {
+     "name": "J. Logical and Algebraic Methods in Programming",
+     "volume": "124"
+     },
+     "download": "https://doi.org/10.1016/j.jlamp.2021.100713",
+     "abstract": "<p>Moessner's theorem describes a procedure for generating a sequence of n integer sequences that lead unexpectedly to the sequence of nth powers. Several generalizations of Moessner's theorem exist. Recently, Kozen and Silva gave an algebraic proof of a general theorem that subsumes Moessner's original theorem and its known generalizations. In this note, we describe the formalization of this theorem that the first author did in Nuprl. On the one hand, the formalization remains remarkably close to the original proof. On the other hand, it leads to new insights in the proof, pointing to small gaps and ambiguities that would never raise any objections in pen and pencil proofs, but which must be resolved in machine formalization.</p>"
+     },{
+     "year":2021,
+     "id": "GSW21",
+     "authors": ["Nick Giannarakis", "Alexandra Silva","David Walker"],
+     "title": "ProbNV: probabilistic verification of network control planes",
+     "conference": {
+     "name": "26th ACM SIGPLAN International Conference on Functional Programming (ICFP 2021)",
+     "location": "Seoul, South Korea (virtual)",
+     "series": "PACMPL",
+     "volume": 5,
+     "number": "ICFP",
+     "url": "https://icfp21.sigplan.org"
+     },
+     "download": "https://dl.acm.org/doi/10.1145/3473595",
+     "abstract": "<p>ProbNV is a new framework for probabilistic network control plane verification that strikes a balance between generality and scalability. ProbNV is general enough to encode a wide range of features from the most common protocols (eBGP and OSPF) and yet scalable enough to handle challenging properties, such as probabilistic all-failures analysis of medium-sized networks with 100-200 devices. When there are a small, bounded number of failures, networks with up to 500 devices may be verified in seconds. ProbNV operates by translating raw CISCO configurations into a probabilistic and functional programming language designed for network verification. This language comes equipped with a novel type system that characterizes the sort of representation to be used for each data structure: concrete for the usual representation of values; symbolic for a BDD-based representation of sets of values; and multi-value for an MTBDD-based representation of values that depend upon symbolics. Careful use of these varying representations speeds execution of symbolic simulation of network models. The MTBDD-based representations are also used to calculate probabilistic properties of network models once symbolic simulation is complete. We implement the language and evaluate its performance on benchmarks constructed from real network topologies and synthesized routing policies.</p>"
+     },{
+         "year":2021,
+         "id": "vHKRS21",
+         "authors": ["Gerco van Heerdt", "Tobias Kappé", "Jurriaan Rot", "Alexandra Silva"],
+         "title": "Learning Pomset Automata",
+         "conference": {
+         "name": "FoSSACS 2021",
+         "location": "Luxembourg City, Luxembourg (virtual)",
+         "series": "Lecture Notes in Computer Science",
+         "volume": 12650,
+         "pages": "510-530",
+         "url": "https://etaps.org/2021/fossacs"
+         },
+         "download": "https://doi.org/10.1007/978-3-030-71995-1_26",
+         "abstract": "<p>We extend the L* algorithm to learn bimonoids recognising pomset languages. We then identify a class of pomset automata that accepts precisely the class of pomset languages recognised by bimonoids and show how to convert between bimonoids and automata.</p>"
+         },{
+             "year":2021,
+             "id": "SKKS21",
+             "authors": ["Todd Schmid","Tobias Kappé", "Dexter Kozen", "Alexandra Silva"],
+             "title": "Guarded Kleene Algebra with Tests: Coequations, Coinduction, and Completeness.",
+             "conference": {
+             "name": "ICALP 2021",
+             "location": "Glasgow, Scotland (virtual)",
+             "series": "LIPIcs",
+             "volume": 198,
+             "url": "http://easyconferences.eu/icalp2021/"
+             },
+             "download": "https://doi.org/10.4230/LIPIcs.ICALP.2021.142",
+             "abstract": "<p>Guarded Kleene Algebra with Tests (GKAT) is an efficient fragment of KAT, as it allows for almost linear decidability of equivalence. In this paper, we study the (co)algebraic properties of GKAT. Our initial focus is on the fragment that can distinguish between unsuccessful programs performing different actions, by omitting the so-called early termination axiom. We develop an operational (coalgebraic) and denotational (algebraic) semantics and show that they coincide. We then characterize the behaviors of GKAT expressions in this semantics, leading to a coequation that captures the covariety of automata corresponding to these behaviors. Finally, we prove that the axioms of the reduced fragment are sound and complete w.r.t. the semantics, and then build on this result to recover a semantics that is sound and complete w.r.t. the full set of axioms.</p>"
+             },{
+                 "year":2021,
+                 "id": "BDHS21",
+                 "authors": ["Jialu Bao", "Simon Docherty", "Justin Hsu", "Alexandra Silva"],
+                 "title": "A Bunched Logic for Conditional Independence",
+                 "conference": {
+                 "name": "36th Annual Symposium on Logic in Computer Science (LICS 2021)",
+                 "location": "Rome, Italy (virtual)",
+                 "series": "IEEE LICS",
+                 "volume": 170,
+                 "url": "http://easyconferences.eu/lics2021/"
+                 },
+                 "download": "https://doi.org/10.1109/LICS52264.2021.9470712",
+                 "abstract": "<p>Independence and conditional independence are fundamental concepts for reasoning about groups of random variables in probabilistic programs. Verification methods for independence are still nascent, and existing methods cannot handle conditional independence. We extend the logic of bunched implications (BI) with a non-commutative conjunction and provide a model based on Markov kernels; conditional independence can be directly captured as a logical formula in this model. Noting that Markov kernels are Kleisli arrows for the distribution monad, we then introduce a second model based on the powerset monad and show how it can capture join dependency, a non-probabilistic analogue of conditional independence from database theory. Finally, we develop a program logic for verifying conditional independence in probabilistic programs.</p>"
+                 },{
+                     "year":2021,
+                     "id": "FBDS21",
+                     "authors": ["Tiago Ferreira", "Harrison Brewton", "Loris D'Antoni", "Alexandra Silva"],
+                     "title": "Prognosis: closed-box analysis of network protocol implementations.",
+                     "conference": {
+                     "name": "35th Annual Conference of the ACM Special Interest Group on Data Communication (SIGCOMM 2021)",
+                     "location": "Virtual",
+                     "series": "ACM",
+                     "pages": "762-774",
+                     "url": "https://conferences.sigcomm.org/sigcomm/2021/"
+                     },
+                     "download": "https://doi.org/10.1145/3452296.3472938",
+                     "abstract": "<p>We present Prognosis, a framework offering automated closed-box learning and analysis of models of network protocol implementations. Prognosis can learn models that vary in abstraction level from simple deterministic automata to models containing data operations, such as register updates, and can be used to unlock a variety of analysis techniques -- model checking temporal properties, computing differences between models of two implementations of the same protocol, or improving testing via model-based test generation. Prognosis is modular and easily adaptable to different protocols (e.g. TCP and QUIC) and their implementations. We use Prognosis to learn models of (parts of) three QUIC implementations -- Quiche (Cloudflare), Google QUIC, and Facebook mvfst -- and use these models to analyse the differences between the various implementations. Our analysis provides insights into different design choices and uncovers potential bugs. Concretely, we have found critical bugs in multiple QUIC implementations, which have been acknowledged by the developers.</p>"
+                     },{
+     "year": 2021,
+     "id": "AGIRSS21",
+     "authors": ["Elvira Albert", "Miguel Gomez-Zamalloa", "Miguel Isabel", "Albert Rubio", "Matteo Sammartino", "Alexandra Silva"],
+     "title": "Actor-based model checking for Software-Defined Networks",
+     "journal": {
+     "name": "J. Logical and Algebraic Methods in Programming",
+     "volume": "118"
+     },
+     "download": "https://www.sciencedirect.com/science/article/abs/pii/S2352220820301024?via%3Dihub",
+     "abstract": "<p>Software-Defined Networking (SDN) is a networking paradigm that has become increasingly popular in the last decade. The unprecedented control over the global behaviour of the network it provides opens a range of new opportunities for formal methods and much work has appeared in the last few years on providing bridges between SDN and verification. This article advances this research line and provides a link between SDN and traditional work on formal methods for verification of concurrent and distributed software—actor-based modelling. We show how SDN programs can be seamlessly modelled using actors, and thus existing advanced model checking techniques developed for actors can be directly applied to verify a range of properties of SDNs, including consistency of flow tables, violation of safety policies, and forwarding loops. Our model checker for SDNs is available through an online web interface, that also provides the SDN actor-models for a number of well-known SDN benchmarks.</p>"
+     
+     },{
+     "year": 2021,
+     "id": "GS21",
+     "authors": ["Fabio Gadducci","Alexandra Silva"],
+     "title": "9th Conference on Algebra and Coalgebra in Computer Science, CALCO 2021, August 31 to September 3, 2021, Salzburg, Austria",
+     "edited": {
+     "publisher": "Schloss Dagstuhl",
+     "series": "LIPIcs",
+     "volume": 211,
+     "url": "https://www.dagstuhl.de/dagpub/978-3-95977-212-9"
+     }
+     },{
+         "year": 2021,
+         "id": "SL21a",
+         "authors": ["Alexandra Silva","Rustan Leino"],
+         "title": "Computer Aided Verification - 33rd International Conference, CAV 2021, Virtual Event, July 20-23, 2021, Proceedings, Part I",
+         "edited": {
+         "publisher": "Springer",
+         "series": "Lecture Notes in Computer Science",
+         "volume": 12759,
+         "url": "https://doi.org/10.1007/978-3-030-81685-8"
+         }
+         },{
+             "year": 2021,
+             "id": "SL21b",
+             "authors": ["Alexandra Silva","Rustan Leino"],
+             "title": "Computer Aided Verification - 33rd International Conference, CAV 2021, Virtual Event, July 20-23, 2021, Proceedings, Part II",
+             "edited": {
+             "publisher": "Springer",
+             "series": "Lecture Notes in Computer Science",
+             "volume": 12760,
+             "url": "https://doi.org/10.1007/978-3-030-81688-9"
+             }
+             },{
+                 "year": 2021,
+                 "id": "SWQ21",
+                 "authors": ["Alexandra Silva","Renata Wassermann", "Ruy de Queiroz"],
+                 "title": "Logic, Language, Information, and Computation - 27th International Workshop, WoLLIC 2021, Virtual Event, October 5-8, 2021, Proceedings",
+                 "edited": {
+                 "publisher": "Springer",
+                 "series": "Lecture Notes in Computer Science",
+                 "volume": 13038,
+                 "url": "https://doi.org/10.1007/978-3-030-88853-4"
+                 }
+                 },{
+     "year": 2020,
+     "id": "BKKS20",
+     "authors": ["Harsh Beohar", "Barbara König", "Sebastian Küper", "Alexandra Silva"],
+     "title": "Conditional transition systems with upgrades",
+     "journal": {
+       "name": "Science of Computer Programming",
+       "volume": 186,
+       "number": 1
+     },
+     "download": "https://doi.org/10.1016/j.scico.2019.102320",
+     "abstract": "<p>We introduce a variant of transition systems, where activation of transitions depends on conditions of the environment and upgrades during runtime potentially create additional transitions. Using a cornerstone result in lattice theory, we show that such transition systems can be modelled in two ways: as conditional transition systems (CTS) with a partial order on conditions, or as lattice transition systems (LaTS), where transitions are labelled with the elements from a distributive lattice. We define equivalent notions of bisimilarity for both variants and characterise them via a bisimulation game.</p><p> We explain how conditional transition systems are related to featured transition systems for the modelling of software product lines. Furthermore, we show how to compute bisimilarity symbolically via BDDs by defining an operation on BDDs that approximates an element of a Boolean algebra into a lattice. We have implemented our procedure and provide runtime results.</p><p>This is an extended version of the TASE 2017 paper [1], including all proofs, additional examples, an extension of the formalism to account for deactivation of updates and detailed runtime results.</p>"
+   },{
+     "year":2020,
+     "id": "PRSW20",
+     "authors": ["Louis Parlant", "Jurriaan Rot", "Alexandra Silva","Bas Westerbaan"],
+     "title": "Preservation of Equations by Monoidal Monads",
+     "conference": {
+     "name": "45th International Symposium on Mathematical Foundations of Computer Science (MFCS 2020)",
+     "location": "Prague, Czech Republic (virtual)",
+     "series": "LIPIcs",
+     "volume": 170,
+     "pages": "",
+     "url": "http://mfcs.mff.cuni.cz/2020/"
+     },
+     "download": "https://doi.org/10.4230/LIPIcs.MFCS.2020.77",
+     "abstract": "<p>If a monad T is monoidal, then operations on a set X can be lifted canonically to operations on TX. In this paper we study structural properties under which T preserves equations between those operations. It has already been shown that any monoidal monad preserves linear equations; affine monads preserve drop equations (where some variable appears only on one side, such as x⋅ y = y) and relevant monads preserve dup equations (where some variable is duplicated, such as x ⋅ x = x). We start the paper by showing a converse: if the monad at hand preserves a drop equation, then it must be affine. From this, we show that the problem whether a given (drop) equation is preserved is undecidable. A converse for relevance turns out to be more subtle: preservation of certain dup equations implies a weaker notion which we call n-relevance. Finally, we identify a subclass of equations such that their preservation is equivalent to relevance.</p>"
+     },{
+     "year":2020,
+     "id": "WBDKRS20",
+     "authors": ["Jana Wagemaker","Paul Brunet", "Simon Docherty","Tobias Kappé", "Jurriaan Rot", "Alexandra Silva"],
+     "title": "Partially Observable Concurrent Kleene Algebra",
+     "conference": {
+     "name": "31st International Conference on Concurrency Theory, (CONCUR 2020)",
+     "location": "Vienna, Austria (virtual)",
+     "series": "LIPIcs",
+     "volume": 171,
+     "pages": "",
+     "url": "http://concur2020.forsyte.at"
+     },
+     "download": "https://doi.org/10.4230/LIPIcs.CONCUR.2020.20",
+     "abstract": "<p>We introduce partially observable concurrent Kleene algebra (POCKA), an algebraic framework to reason about concurrent programs with variables as well as control structures, such as conditionals and loops, that depend on those variables. We illustrate the use of POCKA through concrete examples. We prove that POCKA is a sound and complete axiomatisation of a model of partial observations, and show the semantics passes an important check for sequential consistency.</p>"
+     },{
      "year":2020,
      "id": "GSZ20",
      "authors": ["Tao Gu", "Fabio Zanasi", "Alexandra Silva"],
@@ -55,7 +236,7 @@
  },{
  "year":2020,
  "id": "HKRS20",
- "authors": ["Tobias Kappe", "Paul Brunet", "Jana Wagemaker", "Alexandra Silva","Fabio Zanasi"],
+ "authors": ["Tobias Kappé", "Paul Brunet", "Jana Wagemaker", "Alexandra Silva","Fabio Zanasi"],
  "title": "Concurrent Kleene Algebra with Observations: from Hypotheses to Completeness.",
  "conference": {
  "name": "FoSSACS 2020",
@@ -79,7 +260,7 @@
  },
  { "year":2020,
      "id": "SFHKKS20",
-     "authors": ["Steffen Smolka", "Nate Foster", "Justin Hsu", "Tobias Kappe", "Dexter Kozen", "Alexandra Silva"],
+     "authors": ["Steffen Smolka", "Nate Foster", "Justin Hsu", "Tobias Kappé", "Dexter Kozen", "Alexandra Silva"],
      "title": "Guarded Kleene algebra with tests: verification of uninterpreted programs in nearly linear time. ",
      "conference": {
      "name": "POPL 2020",
@@ -92,7 +273,7 @@
      },{
      "year":2019,
      "id": "AFSS19",
-     "authors": ["Jana Wagemaker", "Marcello Bonsangue", "Tobias Kappe", "Jurriaan Rot", "Alexandra Silva"],
+     "authors": ["Jana Wagemaker", "Marcello Bonsangue", "Tobias Kappé", "Jurriaan Rot", "Alexandra Silva"],
      "title": "Completeness and Incompleteness of Synchronous Kleene Algebra.",
      "conference": {
      "name": "MPC 2019",
@@ -156,7 +337,7 @@
 {
 "year":2019,
 "id": "HKRSS19",
-"authors": ["Gerco van Heerdt","Tobias Kappe", "Jurriaan Rot", "Matteo Sammartino", "Alexandra Silva"],
+"authors": ["Gerco van Heerdt","Tobias Kappé", "Jurriaan Rot", "Matteo Sammartino", "Alexandra Silva"],
 "title": "Tree Automata as Algebras: Minimisation and Determinisation.",
 "conference": {
 "name": "CALCO 2019",
@@ -188,7 +369,7 @@
  "url": "https://tcs.rwth-aachen.de/mfcs2019/"
  },
  "download": "https://drops.dagstuhl.de/opus/volltexte/2019/10946/pdf/LIPIcs-MFCS-2019-2.pdf",
- "abstract": "<p>Guarded Kleene Algebra with Tests (GKAT) is a variation on Kleene Algebra with Tests (KAT) that arises by restricting the union (+) and iteration (*) operations from KAT to predicate-guarded versions. We develop the (co)algebraic theory of GKAT and show how it can be efficiently used to reason about imperative programs. In contrast to KAT, whose equational theory is PSPACE-complete, we show that the equational theory of GKAT is (almost) linear time. We also provide a full Kleene theorem and prove completeness for an analogue of Salomaa's axiomatization of Kleene Algebra. We will also discuss how this result has practical implications in the verification of programs, with examples from network and probabilistic programming. This is joint work with Nate Foster, Justin Hsu, Tobias Kappe, Dexter Kozen, and Steffen Smolka.</p>"
+ "abstract": "<p>Guarded Kleene Algebra with Tests (GKAT) is a variation on Kleene Algebra with Tests (KAT) that arises by restricting the union (+) and iteration (*) operations from KAT to predicate-guarded versions. We develop the (co)algebraic theory of GKAT and show how it can be efficiently used to reason about imperative programs. In contrast to KAT, whose equational theory is PSPACE-complete, we show that the equational theory of GKAT is (almost) linear time. We also provide a full Kleene theorem and prove completeness for an analogue of Salomaa's axiomatization of Kleene Algebra. We will also discuss how this result has practical implications in the verification of programs, with examples from network and probabilistic programming. This is joint work with Nate Foster, Justin Hsu, Tobias Kappé, Dexter Kozen, and Steffen Smolka.</p>"
  },
  {
   "year":2019,
@@ -206,7 +387,7 @@
   {
   "year":2019,
   "id": "KBLSZ19",
-  "authors": ["Tobias Kappe","Paul Brunet", "Bas Luttik", "Alexandra Silva", "Fabio Zanasi"],
+  "authors": ["Tobias Kappé","Paul Brunet", "Bas Luttik", "Alexandra Silva", "Fabio Zanasi"],
   "title": "On series-parallel pomset languages: Rationality, context-freeness and automata.",
   "journal": {
   "name": "JLAMP",
@@ -265,7 +446,7 @@
   {
   "year":2018,
   "id": "HJKS18",
-  "authors": ["Gerco van Heerdt", "Bart Jacobs", "Tobias Kappe","Alexandra Silva"],
+  "authors": ["Gerco van Heerdt", "Bart Jacobs", "Tobias Kappé","Alexandra Silva"],
   "title": "Learning to Coordinate",
   "conference": {
   "name": "It's All About Coordination",
@@ -339,7 +520,7 @@
   {
   "year":2018,
   "id": "KBLSZ18",
-  "authors": ["Tobias Kappe","Paul Brunet", "Bas Luttik", "Alexandra Silva", "Fabio Zanasi"],
+  "authors": ["Tobias Kappé","Paul Brunet", "Bas Luttik", "Alexandra Silva", "Fabio Zanasi"],
   "title": "Equivalence checking for weak bi-Kleene algebra.",
   "journal": {
   "name": "CoRR",
@@ -352,7 +533,7 @@
   {
   "year":2018,
   "id": "KBSZ18",
-  "authors": ["Tobias Kappe","Paul Brunet", "Alexandra Silva", "Fabio Zanasi"],
+  "authors": ["Tobias Kappé","Paul Brunet", "Alexandra Silva", "Fabio Zanasi"],
   "title": "Concurrent Kleene Algebra: Free Model and Completeness.",
   "conference": {
   "name": "27th European Symposium on Programming, ESOP 2018",
@@ -461,7 +642,7 @@
   {
   "year":2017,
   "id": "KBLSZ17",
-  "authors": ["Tobias Kappe","Paul Brunet", "Bas Luttik", "Alexandra Silva", "Fabio Zanasi"],
+  "authors": ["Tobias Kappé","Paul Brunet", "Bas Luttik", "Alexandra Silva", "Fabio Zanasi"],
   "title": "Brzozowski Goes Concurrent-A Kleene Theorem for Pomset Languages.",
   "conference": {
   "name": "28th International Conference on Concurrency Theory (CONCUR 2017)",
@@ -495,7 +676,7 @@
  "url": "https://www.cs.ox.ac.uk/conferences/fscd2017/"
  },
  "download": "http://drops.dagstuhl.de/opus/volltexte/2017/7744/pdf/LIPIcs-FSCD-2017-3.pdf",
- "abstract": "<p>Concurrent Kleene Algebra (CKA) is a mathematical formalism to study programs that exhibit concurrent behaviour. As with previous extensions of Kleene Algebra, characterizing the free model is crucial in order to develop the foundations of the theory and potential applications. For CKA, this has been an open question for a few years and this talk will overview why the problem is so difficult. We will then pave the way towards a solution, by presenting a new automaton model and a Kleene-like theorem for CKA. More precisely, we connect a relaxed version of CKA to series-parallel pomset languages, which are a natural candidate for the free model. There are two substantial differences with previous work: from expressions to automata, we use Brzozowski derivatives, which enable a direct construction of the automaton; from automata to expressions, we provide a syntactic characterization of the automata that denote valid CKA behaviours. We also survey how the present work can be used to to extend the network specification language  NetKAT with primitives for concurrency so as to model and reason about concurrency within networks. This is joint work with Tobias Kappe, Paul Brunet, Bas Luttik, and Fabio Zanasi.</p>"
+ "abstract": "<p>Concurrent Kleene Algebra (CKA) is a mathematical formalism to study programs that exhibit concurrent behaviour. As with previous extensions of Kleene Algebra, characterizing the free model is crucial in order to develop the foundations of the theory and potential applications. For CKA, this has been an open question for a few years and this talk will overview why the problem is so difficult. We will then pave the way towards a solution, by presenting a new automaton model and a Kleene-like theorem for CKA. More precisely, we connect a relaxed version of CKA to series-parallel pomset languages, which are a natural candidate for the free model. There are two substantial differences with previous work: from expressions to automata, we use Brzozowski derivatives, which enable a direct construction of the automaton; from automata to expressions, we provide a syntactic characterization of the automata that denote valid CKA behaviours. We also survey how the present work can be used to to extend the network specification language  NetKAT with primitives for concurrency so as to model and reason about concurrency within networks. This is joint work with Tobias Kappé, Paul Brunet, Bas Luttik, and Fabio Zanasi.</p>"
  },
  {
  "year": 2017,
