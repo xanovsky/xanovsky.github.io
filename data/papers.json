@@ -9,7 +9,63 @@
      },
      "download": "https://doi.org/10.1016/j.jlamp.2021.100713",
      "abstract": "<p>Moessner's theorem describes a procedure for generating a sequence of n integer sequences that lead unexpectedly to the sequence of nth powers. Several generalizations of Moessner's theorem exist. Recently, Kozen and Silva gave an algebraic proof of a general theorem that subsumes Moessner's original theorem and its known generalizations. In this note, we describe the formalization of this theorem that the first author did in Nuprl. On the one hand, the formalization remains remarkably close to the original proof. On the other hand, it leads to new insights in the proof, pointing to small gaps and ambiguities that would never raise any objections in pen and pencil proofs, but which must be resolved in machine formalization.</p>"
-     },{
+     },
+     {
+        "year": 2021,
+        "id": "SRS21",
+        "authors": ["Todd Schmid", "Jurriaan Rot", "Alexandra Silva"],
+        "title": "On Star Expressions and Coalgebraic Completeness Theorems",
+        "conference": {
+          "name": "37th Conference on Mathematical Foundations of Programming Semantics",
+          "location": "Salzburg, Austria",
+          "url": "https://www.coalg.org/calco-mfps2021/",
+          "series": "EPTCS",
+          "volume": 351,
+          "pages": "242-260"
+        },
+        "download": "http://dx.doi.org/10.4204/EPTCS.351.15",
+        "abstract": "<p>An open problem posed by Milner asks for a proof that a certain axiomatisation, which Milner showed is sound with respect to bisimilarity for regular expressions, is also complete. One of the main difficulties of the problem is the lack of a full Kleene theorem, since there are automata that can not be specified, up to bisimilarity, by an expression. Grabmayer and Fokkink (2020) characterise those automata that can be expressed by regular expressions without the constant 1, and use this characterisation to give a positive answer to Milner's question for this subset of expressions. In this paper, we analyse Grabmayer and Fokkink's proof of completeness from the perspective of universal coalgebra, and thereby give an abstract account of their proof method. We then compare this proof method to another approach to completeness proofs from coalgebraic language theory. This culminates in two abstract proof methods for completeness, what we call the local and global approaches, and a description of when one method can be used in place of the other.</p>"
+      },
+     {
+          "year": 2021,
+          "id": "ZvHSS21",
+          "authors": ["Stefan Zetzsche", "Gerco van Heerdt", "Matteo Sammartino", "Alexandra Silva"],
+          "title": "Canonical Automata via Distributive Law Homomorphisms",
+          "conference": {
+            "name": "37th Conference on Mathematical Foundations of Programming Semantics",
+            "location": "Salzburg, Austria",
+            "url": "https://www.coalg.org/calco-mfps2021/",
+            "series": "EPTCS",
+            "volume": 351,
+            "pages": "296-316"
+          },
+          "download": "http://dx.doi.org/10.4204/EPTCS.351.18",
+          "abstract": "<p>The classical powerset construction is a standard method converting a nondeterministic automaton into a deterministic one recognising the same language. Recently, the powerset construction has been lifted to a more general framework that converts an automaton with side-effects, given by a monad, into a deterministic automaton accepting the same language. The resulting automaton has additional algebraic properties, both in the state space and transition structure, inherited from the monad. In this paper, we study the reverse construction and present a framework in which a deterministic automaton with additional algebraic structure over a given monad can be converted into an equivalent succinct automaton with side-effects. Apart from recovering examples from the literature, such as the canonical residual finite-state automaton and the atomaton, we discover a new canonical automaton for a regular language by relating the free vector space monad over the two element field to the neighbourhood monad. Finally, we show that every regular language satisfying a suitable property parametric in two monads admits a size-minimal succinct acceptor.</p>"
+        },{
+         "year":2021,
+         "id": "BSS21",
+         "authors": ["Filippo Bonchi","Alexandra Silva","Ana Sokolova"],
+         "title": "Distribution Bisimilarity via the Power of Convex Algebras.",
+         "journal": {
+         "name": "Logical Methods in Computer Science",
+         "volume":17,
+         "issue": 3
+         },
+         "download": "https://lmcs.episciences.org/7697/pdf",
+         "abstract": "<p>Probabilistic automata (PA), also known as probabilistic nondeterministic labelled transition systems, combine probability and nondeterminism. They can be given different semantics, like strong bisimilarity, convex bisimilarity, or (more recently) distribution bisimilarity. The latter is based on the view of PA as transformers of probability distributions, also called belief states, and promotes distributions to first-class citizens. We give a coalgebraic account of distribution bisimilarity, and explain the genesis of the belief-state transformer from a PA. To do so, we make explicit the convex algebraic structure present in PA and identify belief-state transformers as transition systems with state space that carries a convex algebra. As a consequence of our abstract approach, we can give a sound proof technique which we call bisimulation up-to convex hull.</p>"
+         },{
+             "year":2021,
+             "id": "KBLSZ21",
+             "authors": ["Tobias Kappé","Paul Brunet", "Bas Luttik", "Alexandra Silva", "Fabio Zanasi"],
+             "title": "Equivalence checking for weak bi-Kleene algebra.",
+             "journal": {
+             "name": "Logical Methods in Computer Science",
+             "volume":17,
+             "issue": 3
+             },
+             "download": "https://arxiv.org/abs/1807.02102",
+             "abstract": "<p>Pomset automata are an operational model of weak bi-Kleene algebra, which describes programs that can fork an execution into parallel threads, upon completion of which execution can join to resume as a single thread. We characterize a fragment of pomset automata that admits a decision procedure for language equivalence. Furthermore, we prove that this fragment corresponds precisely to series-rational expressions, i.e., rational expressions with an additional operator for bounded parallelism. As a consequence, we obtain a new proof that equivalence of series-rational expressions is decidable.</p>"
+             },{
      "year":2021,
      "id": "GSW21",
      "authors": ["Nick Giannarakis", "Alexandra Silva","David Walker"],
@@ -39,7 +95,8 @@
          },
          "download": "https://doi.org/10.1007/978-3-030-71995-1_26",
          "abstract": "<p>We extend the L* algorithm to learn bimonoids recognising pomset languages. We then identify a class of pomset automata that accepts precisely the class of pomset languages recognised by bimonoids and show how to convert between bimonoids and automata.</p>"
-         },{
+         },
+     {
              "year":2021,
              "id": "SKKS21",
              "authors": ["Todd Schmid","Tobias Kappé", "Dexter Kozen", "Alexandra Silva"],
@@ -137,7 +194,28 @@
                  "volume": 13038,
                  "url": "https://doi.org/10.1007/978-3-030-88853-4"
                  }
-                 },{
+                 },
+             {
+                 "year":2020,
+                 "id": "DKS20",
+                 "authors": ["Fredrik Dahlqvist","Dexter Kozen", "Alexandra Silva"],
+                 "title": "Semantics of probabilistic programming: A gentle introduction.",
+                 "journal": {
+                 "name": "Foundations of Probabilistic Programming"
+                 },
+                 "download": "https://www.cambridge.org/core/books/foundations-of-probabilistic-programming/semantics-of-probabilistic-programming-a-gentle-introduction/A7964205E44B5234A78C661192E294E1",
+                 "abstract": "<p>Reasoning about probabilistic programs is hard because it compounds the difficulty of classic program analysis with sometimes subtle questions of probability theory. Having precise mathematical models, or semantics, describing their behaviour is therefore particularly important. In this chapter, we review two probabilistic semantics. First an operational semantics which models the local, stepby-step, behaviour of programs, then a denotational semantics describing global behaviour as an operator transforming probability distributions over memory states.</p>"
+                 },
+             {
+             "year": 2020,
+             "id": "BKS21",
+             "authors": ["Gilles Barthe", "Joost-Pieter Katoen", "Alexandra Silva"],
+             "title": "Foundations of Probabilistic Programming. (open access book)",
+             "edited": {
+             "publisher": "Cambridge University Press"
+             },
+             "download": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/819623B1B5B33836476618AC0621F0EE/9781108488518AR.pdf/Foundations_of_Probabilistic_Programming.pdf?event-type=FTLA"
+             },{
      "year": 2020,
      "id": "BKKS20",
      "authors": ["Harsh Beohar", "Barbara König", "Sebastian Küper", "Alexandra Silva"],

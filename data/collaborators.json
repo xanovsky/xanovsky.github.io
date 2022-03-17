@@ -14,7 +14,7 @@
   { "name": "Marcello Bonsangue", "img": "mbonsangue.jpg", "link": "http://www.liacs.nl/~marcello" },
   { "name": "Michele Boreale", "img": "mboreale.jpg", "link": "http://rap.dsi.unifi.it/~boreale/" },
  { "name": "Ahmed Bouajjani", "img": "abou.jpg", "link": "https://www.irif.fr/~abou/" },
- { "name": "Harrison Brewton", "img": "nophoto.jpg", "link": "https://livingbridge.unh.edu/harrison-brewton/"},
+ { "name": "Harrison Brewton", "img": "nophoto.png", "link": "https://livingbridge.unh.edu/harrison-brewton/"},
  { "name": "Paul Brunet", "img": "pbrunet.jpg", "link": "http://paul.brunet-zamansky.fr/" },
   { "name": "Roberto Bruni", "img": "nophoto.png", "link": "http://www.di.unipi.it/~bruni/" },
   { "name": "Georgiana Caltais", "img": "gcaltais.png", "link": "http://se.inf.ethz.ch/people/caltais" },
@@ -44,6 +44,7 @@
   { "name": "Jean-Baptiste Jeannin", "img": "jbjeannin.jpg", "link": "http://www.cs.cmu.edu/~jeannin/" },
  { "name": "David Kahn", "img": "nophoto.png", "link": "" },
  { "name": "Tobias Kappé", "img": "tkappe.jpg", "link": "https://tobias.kap.pe" },
+ { "name": "Joost-Pieter Katoen", "img": "jpk.jpg", "link": "https://www-i2.informatik.rwth-aachen.de/~katoen/" },
  { "name": "Bartek Klin", "img": "bklin.jpg", "link": "https://www.mimuw.edu.pl/~klin/" },
   { "name": "Barbara König", "img": "bkonig.jpg", "link": "http://www.ti.inf.uni-due.de/people/koenig/" },
   { "name": "Dexter Kozen", "img": "dkozen.jpg", "link": "http://www.cs.cornell.edu/~kozen/" },
@@ -96,5 +97,6 @@
   { "name": "Bram Westerbaan", "img": "bwesterbaan.png", "link": "http://bram.westerbaan.name/home/" },
  { "name": "Thorsten Wissmann", "img": "twissmann.png", "link": "https://www8.cs.fau.de/thorsten" },
  { "name": "Miguel Gomez-Zamalloa", "img": "mzamalloa.jpg", "link": "http://costa.ls.fi.upm.es/~mzamalloa/" },
-  { "name": "Fabio Zanasi", "img": "fzanasi.jpg", "link": "http://www.zanasi.com/fabio/" }
+  { "name": "Fabio Zanasi", "img": "fzanasi.jpg", "link": "http://www.zanasi.com/fabio/" },
+  { "name": "Stefan Zetzsche", "img": "szetzsche.jpg", "link": "https://zetzsche.st" }
 ]
