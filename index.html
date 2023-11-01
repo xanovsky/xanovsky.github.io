@@ -1,49 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Homepage of Alexandra Silva</title>
 
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="author" content="owwwlab.com">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<head>
+  <title>Homepage of Alexandra Silva</title>
 
-    <link rel="shortcut icon" href="../favicon.ico">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="author" content="owwwlab.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <!--CSS styles-->
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/perfect-scrollbar-0.4.5.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link id="theme-style" rel="stylesheet" href="css/styles/default.css">
-    <!--/CSS styles-->
+  <link rel="shortcut icon" href="../favicon.ico">
 
-    <!--Javascript files-->
-    <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
-    <script type="text/javascript" src="js/TweenMax.min.js"></script>
-    <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
-    <script type="text/javascript" src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
-    <script type="text/javascript" src="js/modernizr.custom.63321.js"></script>
-    <script type="text/javascript" src="js/jquery.dropdownit.js"></script>
-    <script type="text/javascript" src="js/jquery.stellar.min.js"></script>
-    <script type="text/javascript" src="js/ScrollToPlugin.min.js"></script>
-    <script type="text/javascript" src="js/masonry.min.js"></script>
-    <script type="text/javascript" src="js/perfect-scrollbar-0.4.5.with-mousewheel.min.js"></script>
-    <script type="text/javascript" src="js/magnific-popup.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular-animate.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular-route.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular-sanitize.min.js"></script>
-    <script type="text/javascript" src="js/angular.js"></script>
-    <script type="text/javascript" src="js/custom.js"></script>
-    <script type="text/javascript" src="js/slide.js"></script>
-    <!--/Javascript files-->
-  </head>
-  <body ng-app="homepage">
-    <div id="wrapper">
-      <a href="#sidebar" class="mobilemenu"><i class="icon-reorder"></i></a>
+  <!--CSS styles-->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/perfect-scrollbar-0.4.5.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link id="theme-style" rel="stylesheet" href="css/styles/default.css">
+  <!--/CSS styles-->
+
+  <!--Javascript files-->
+  <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+  <script type="text/javascript" src="js/TweenMax.min.js"></script>
+  <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+  <script type="text/javascript" src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
+  <script type="text/javascript" src="js/modernizr.custom.63321.js"></script>
+  <script type="text/javascript" src="js/jquery.dropdownit.js"></script>
+  <script type="text/javascript" src="js/jquery.stellar.min.js"></script>
+  <script type="text/javascript" src="js/ScrollToPlugin.min.js"></script>
+  <script type="text/javascript" src="js/masonry.min.js"></script>
+  <script type="text/javascript" src="js/perfect-scrollbar-0.4.5.with-mousewheel.min.js"></script>
+  <script type="text/javascript" src="js/magnific-popup.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular-animate.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular-route.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular-sanitize.min.js"></script>
+  <script type="text/javascript" src="js/angular.js"></script>
+  <script type="text/javascript" src="js/custom.js"></script>
+  <script type="text/javascript" src="js/slide.js"></script>
+  <!--/Javascript files-->
+</head>
+
+<body ng-app="homepage">
+  <div id="wrapper">
+    <div class="masthead">
+      <div class="masthead__inner-wrap">
+        <div class="masthead__menu">
+          <nav id="site-nav" class="greedy-nav">
+            <button class="hidden" count="0">
+              <div class="navicon"></div>
+            </button>
+            <ul id="navigation" ng-controller="NavCtrl" class="visible-links">
+              <li ng-repeat="item in menuItems" ng-class="{ 'currentmenu': isCurrent(item) } masthead__menu-item"
+                class="masthead__menu-item">
+                <a ng-href="{{item.href}}">
+                  <div class="icon icon-{{item.icon}}"></div>
+                  <div class="text">{{item.text}}</div>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-content">
+      <a class="mobilemenu"><i class="icon-reorder"></i></a>
+      <div id="headermenu">
+        <ul ng-controller="NavCtrl" class="visible-links">
+          <li ng-repeat="item in menuItems" ng-class="{ 'currentmenu': isCurrent(item) }" class="headermenu-item">
+            <a ng-href="{{item.href}}">
+              <!-- <div class="icon icon-{{item.icon}}"></div> -->
+              <div class="text">{{item.text}}</div>
+            </a>
+          </li>
+        </ul>
+      </div>
       <div id="sidebar">
         <div id="main-nav">
           <div id="nav-container">
@@ -55,23 +89,27 @@
               </div>
             </div>
             <ul id="navigation" ng-controller="NavCtrl">
-              <li ng-repeat="item in menuItems" ng-class="{ 'currentmenu': isCurrent(item) }">
-                <a ng-href="{{item.href}}">
-                  <div class="icon icon-{{item.icon}}"></div>
-                  <div class="text">{{item.text}}</div>
-                </a>
-              </li>
-              <li>
-                <a href="https://kiva.org/lender/xana" target="_blank">
-                  <img src="img/kiva.jpg" alt="kiva" class="img-rounded center-block" />
-                </a>
+              <!-- <li ng-repeat="item in menuItems" ng-class="{ 'currentmenu': isCurrent(item) }">
+              <a ng-href="{{item.href}}">
+                <div class="icon icon-{{item.icon}}"></div>
+                <div class="text">{{item.text}}</div>
+              </a>
+            </li>
+            <li> -->
+              <a href="https://kiva.org/lender/xana" target="_blank">
+                <img src="img/kiva.jpg" alt="kiva" class="img-rounded center-block" />
+              </a>
               </li>
             </ul>
           </div>
         </div>
       </div>
+      <div id="main" class="at-view-fade-in at-view-fade-out" ng-view ></div>
     </div>
 
-    <div id="main" class="at-view-fade-in at-view-fade-out" ng-view />
-  </body>
+  </div>
+
+  
+</body>
+
 </html>

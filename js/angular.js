@@ -161,7 +161,8 @@ angular.module('homepage', ['ngRoute', 'ngAnimate', 'ngSanitize'])
 
   .controller('NavCtrl', ['$scope', '$location', function($scope, $location) {
     $scope.menuItems = [
-      { href: '#/main.html', icon: 'home', text: 'Main page' },
+      // { href: '#/main.html', icon: 'home', text: 'Main page' },
+      { href: '#/main.html', icon: '', text: 'Alexandra Silva' },
       { href: '#/aboutme.html', icon: 'user', text: 'About me' },
       { href: '#/publications.html', icon: 'edit', text: 'Publications' },
       { href: '#/talks.html', icon: 'comment', text: 'Talks' },
