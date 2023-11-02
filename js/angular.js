@@ -170,7 +170,7 @@ angular.module('homepage', ['ngRoute', 'ngAnimate', 'ngSanitize'])
       { href: '#/activities.html', icon: 'tasks', text: 'Activities' },
       { href: '#/group.html', icon: 'group', text: 'Group' },
       { href: '#/calendar.html', icon: 'calendar', text: 'Calendar' },
-      { href: 'files/cv.pdf', icon: 'download-alt', text: 'Download CV' }
+      // { href: 'files/cv.pdf', icon: 'download-alt', text: 'Download CV' }
     ];
     $scope.isCurrent = function(menuItem) {
       return $location.absUrl().indexOf(menuItem.href) !== -1;
