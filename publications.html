@@ -77,9 +77,9 @@
           <div ng-repeat-end ng-repeat="paper in getPapersToDisplay(yearPapers)" class="item" ng-class="{'has-details': paper.abstract}">
             <div class="pubmain">
               <div class="pubassets">
-                <a class="pubcollapse" ng-if="paper.abstract" href="">
+                <!-- <a class="pubcollapse" ng-if="paper.abstract" href="">
                   <i class="icon-expand-alt"></i>
-                </a>
+                </a> -->
                 <a ng-if="paper.conference.url" ng-href="{{paper.conference.url}}" class="toooltips" title="Conference page" target="_blank">
                   <i class="icon-external-link"></i>
                   </a>
@@ -87,7 +87,8 @@
                     <i class="icon-external-link"></i>
                 </a>
                 <a ng-if="paper.download" ng-href="{{paper.download}}" class="tooltips" title="Download PDF" target="_blank">
-                  <i class="icon-cloud-download"></i>
+                  <!-- <i class="icon-cloud-download"></i> -->
+                  <span>PDF</span>
                 </a>
               </div>
               <!-- <a class="pubtitle" ng-bind="paper.title" ng-if="paper.download" ng-href="{{paper.download}}"></a> -->
