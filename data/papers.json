@@ -919,7 +919,7 @@
       "location": "New Orleans, LA, USA",
       "url": "https://popl20.sigplan.org"
     },
-    "note": "Distinguished paper award",
+    "note": "🏆 Distinguished paper award",
     "download": "https://dl.acm.org/doi/pdf/10.1145/3371129",
     "abstract": "<p>Guarded Kleene Algebra with Tests (GKAT) is a variation on Kleene Algebra with Tests (KAT) that arises by restricting the union (+) and iteration (*) operations from KAT to predicate-guarded versions. We develop the (co)algebraic theory of GKAT and show how it can be efficiently used to reason about imperative programs. In contrast to KAT, whose equational theory is PSPACE-complete, we show that the equational theory of GKAT is (almost) linear time. We also provide a full Kleene theorem and prove completeness for an analogue of Salomaa’s axiomatization of Kleene Algebra.</p>"
   },
@@ -1744,7 +1744,7 @@
       "location": "Warsaw, Poland",
       "url": "http://rdp15.mimuw.edu.pl/index.php?site=rta"
     },
-    "note": "Best paper award",
+    "note": "🏆 Best paper award",
     "download": "http://arxiv.org/abs/1505.01128",
     "abstract": "<p>We present a coinductive framework for defining infinitary analogues of equational reasoning and rewriting in a uniform way. We define the relation =^infty, notion of infinitary equational reasoning, and ->^infty, the standard notion of infinitary rewriting as follows: =^infty := nu R. ( <-_root + ->_root + lift(R) )^* ->^infty := mu R. nu S. ( ->_root + lift(R) )^* ; lift(S) where lift(R) := { (f(s_1,...,s_n), f(t_1,...,t_n)) | s_1 R t_1,...,s_n R t_n } + id , and where mu is the least fixed point operator and nu is the greatest fixed point operator. The setup captures rewrite sequences of arbitrary ordinal length, but it has neither the need for ordinals nor for metric convergence. This makes the framework especially suitable for formalizations in theorem provers.</p>"
   },

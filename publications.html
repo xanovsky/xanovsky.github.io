@@ -15,7 +15,7 @@
       </div>
     </div>
 
-    <div class="section color-1" id="filters">
+    <div class="section color-1" id="filters"  style="display:none;">
       <div class="section-container">
         <div class="row">
           <div class="col-md-2">
@@ -30,7 +30,7 @@
               <option class="filter" value="techreport">Technical Reports</option>
               <option class="filter" value="unpublished">Unpublished</option>
             </select>
-          </div>
+          </div> 
           <form class="form-inline col-md-6" role="search" id="pub-search">
             <div class="form-group pull-right">
               <div class="input-group">
@@ -57,7 +57,7 @@
     </div>
 
     <div id="pub-year-nav" class="navbar navbar-default">
-      <div class="container">
+      <div class="my-container">
         <a class="navbar-brand">By year:</a>
         <ul class="nav navbar-nav">
           <li ng-repeat="yearPapers in papersByYear | orderBy:'year':true" role="presentation">
@@ -90,40 +90,44 @@
                   <i class="icon-cloud-download"></i>
                 </a>
               </div>
-              <h4 class="pubtitle" ng-bind="paper.title"></h4>
+              <!-- <a class="pubtitle" ng-bind="paper.title" ng-if="paper.download" ng-href="{{paper.download}}"></a> -->
+              <a class="pubtitle" ng-bind="paper.title" ng-if="paper.download" ng-href="{{paper.download}}"></a>
+              <a class="pubtitle" ng-bind="paper.title" ng-if="!paper.download" ng-href=""></a>
+              
               <div class="pubauthor">
                 <span ng-repeat="author in paper.authors">
-                  <span ng-bind="author" ng-class="{'emph': selectedCollaborator({name: author}), 'clickable': author != 'Alexandra Silva'}" ng-click="author != 'Alexandra Silva' ? searchFor(author) : null"></span>
+                  <!-- <span ng-bind="author" ng-class="{'emph': selectedCollaborator({name: author}), 'clickable': author != 'Alexandra Silva'}" ng-click="author != 'Alexandra Silva' ? searchFor(author) : null"></span> -->
+                  <span ng-bind="author" ng-class="{'emph': selectedCollaborator({name: author}), 'clickable': false}"></span>
                   <span ng-hide="$last">,</span>
                 </span>
               </div>
               <div class="pubcite">
                 <span ng-if="paper.conference">
-                  <span class="label label-warning">Conference Paper</span>
+                  <!-- <span class="label label-warning">Conference Paper</span> -->
                   <span ng-if="paper.note"><b><span ng-bind="paper.note"></b>,</span>               
                   In <emph ng-bind="paper.conference.name"></emph>,
                   <span ng-bind="paper.conference.location"></span>,
                   </span>
                 <span ng-if="paper.edited">
-                  <span class="label label-info">Edited</span>
+                  <!-- <span class="label label-info">Edited</span> -->
                   <emph ng-bind="paper.edited.series"></emph>,
                   <span ng-if="paper.edited.volume">vol. <emph ng-bind="paper.edited.volume"></emph>,</span>
                   <span ng-if="paper.edited.pages">pp. <emph ng-bind="paper.edited.pages"></emph>,</span>
                   <span ng-if="paper.edited.note"><span ng-bind="paper.edited.note"></span>,</span>
                 </span>
                 <span ng-if="paper.journal">
-                  <span class="label label-danger">Journal Paper</span>
+                  <!-- <span class="label label-danger">Journal Paper</span> -->
                   <emph ng-bind="paper.journal.name"></emph>,
                   <span ng-if="paper.journal.note"><span ng-bind="paper.journal.note"></span>, </span>
                 </span>
                 <span ng-if="paper.techreport">
-                  <span class="label label-default">Technical Report</span>
-                  Technical Report
+                  <!-- <span class="label label-default">Technical Report</span> -->
+                  <!-- Technical Report -->
                   <span ng-if="paper.techreport.number"><emph ng-bind="paper.techreport.number"></emph>,</span>
                   <span ng-if="paper.techreport.institution"><span ng-bind="paper.techreport.institution"></span>,</span>
                 </span>
                 <span ng-if="paper.unpublished">
-                  <span class="label label-default">Unpublished</span>
+                  <!-- <span class="label label-default">Unpublished</span> -->
                   <span ng-if="paper.unpublished"><emph ng-bind="paper.unpublished"></emph>,</span>
                 </span>
                 <span ng-bind="paper.year"></span>

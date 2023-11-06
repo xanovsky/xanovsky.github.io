@@ -8,7 +8,7 @@
   <meta name="author" content="owwwlab.com">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <link rel="shortcut icon" href="../favicon.ico">
+  <link rel="shortcut icon" href="favicon.png">
 
   <!--CSS styles-->
   <link rel="stylesheet" href="css/bootstrap.css">
@@ -41,6 +41,9 @@
   <script type="text/javascript" src="js/angular.js"></script>
   <script type="text/javascript" src="js/custom.js"></script>
   <script type="text/javascript" src="js/slide.js"></script>
+  <script type="text/javascript" src="js/flag.js"></script>
+
+
   <!--/Javascript files-->
 </head>
 
@@ -54,7 +57,7 @@
               <div class="navicon"></div>
             </button>
             <ul id="navigation" ng-controller="NavCtrl" class="visible-links">
-              <li ng-repeat="item in menuItems" ng-class="{ 'currentmenu': isCurrent(item) } masthead__menu-item"
+              <li ng-repeat="item in menuItems" ng-class="{ 'currentmenu': isCurrent(item) }"
                 class="masthead__menu-item">
                 <a ng-href="{{item.href}}">
                   <div class="icon icon-{{item.icon}}"></div>
@@ -78,17 +81,90 @@
           </li>
         </ul>
       </div>
-      <!--<div id="sidebar">
-         <div id="main-nav">
+      <div id="sidebar">
+        <div id="main-nav">
           <div id="nav-container">
-            <div id="profile" class="clearfix">
-              <div class="portrate hidden-xs"></div>
-              <div class="title">
-                <h2>Alexandra Silva</h2>
-                <h3>University College London</h3>
+
+            <div class="slideshow-container" style="padding-top: 70px;">
+              <div class="mySlides_main">
+                <div class="biothumb">
+                  <div class="numbertext">1 / 5</div>
+                  <img alt="image" src="img/personal/personal-big.jpg" class="img-responsive"
+                    style="margin-top: auto;margin-bottom: auto;height: 250px;width: auto;">
+                  <div class="overlay">
+                    <h4>Alexandra @ Bellairs 2014</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="mySlides_main">
+                <div class="biothumb">
+                  <div class="numbertext">2 / 5</div>
+                  <img alt="image" src="img/personal/personal-big-2018.jpg" class="img-responsive"
+                    style="margin-top: auto;margin-bottom: auto;height: 250px;width: auto;">
+                  <div class="overlay">
+                    <h4>Alexandra @ inaugural 2018</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="mySlides_main">
+                <div class="biothumb">
+                  <div class="numbertext">3 / 5</div>
+                  <img alt="image" src="img/personal/alexandra2022.jpg" class="img-responsive"
+                    style="margin-left: auto;margin-right: auto;height: 250px;width: auto;">
+                  <div class="overlay">
+                    <h4>Alexandra @ 2022</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="mySlides_main">
+                <div class="biothumb">
+                  <div class="numbertext">4 / 5</div>
+                  <img alt="image" src="img/personal/alexandra22b.jpg" class="img-responsive"
+                    style="margin-left: auto;margin-right: auto;height: 250px;width: auto;">
+                  <div class="overlay">
+                    <h4>Alexandra @ 2022</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="mySlides_main">
+                <div class="biothumb">
+                  <div class="numbertext">5 / 5</div>
+                  <img alt="image" src="img/personal/alexandra2023.jpg" class="img-responsive"
+                    style="margin-top: auto;margin-bottom: auto;height: 250px;width: auto;">
+                  <div class="overlay">
+                    <h4>Alexandra @ 2023</h4>
+                  </div>
+                </div>
+              </div> <!---->
+              <!-- Next and previous buttons
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>-->
+              <!-- The dots/circles -->
+              <div style="text-align:center">
+                <span class="dot_main" onclick="currentSlide(1)"></span>
+                <span class="dot_main" onclick="currentSlide(2)"></span>
+                <span class="dot_main" onclick="currentSlide(3)"></span>
+                <span class="dot_main" onclick="currentSlide(4)"></span>
+                <span class="dot_main" onclick="currentSlide(5)"></span>
               </div>
             </div>
-            <ul id="navigation" ng-controller="NavCtrl">
+            <div class="title text-center" >
+              <h2> <strong>Alexandra Silva</strong></h2>
+              <h3>University College London</h3>
+            </div>
+
+            <ul class="list-unstyled" style="padding-top: 20px;">
+              <li><i class="icon-envelope"></i>&nbsp; alexandra.silva@ cornell.edu (work)
+              <li><i class="icon-envelope"></i>&nbsp; alexandra.silva@gmail. com (private)
+              <li><i class="icon-phone"></i>&nbsp;+1 (607) 255-1363 (internal: 51363)
+              <li><br /><i class="icon-globe"></i>&nbsp;Address:<br />
+                Department of Computer Science<br />
+                434 Gates Hall<br />
+                Cornell University<br />
+                Ithaca, New York 14853-7501<br />
+                USA<br />
+            </ul>
+            <!-- <ul id="navigation" ng-controller="NavCtrl">
                <li ng-repeat="item in menuItems" ng-class="{ 'currentmenu': isCurrent(item) }">
               <a ng-href="{{item.href}}">
                 <div class="icon icon-{{item.icon}}"></div>
@@ -100,16 +176,25 @@
                 <img src="img/kiva.jpg" alt="kiva" class="img-rounded center-block" />
               </a>
               </li>
-            </ul>
+            </ul> -->
           </div>
-        </div> 
-      </div>-->
-      <div id="main" class="at-view-fade-in at-view-fade-out" ng-view ></div>
+        </div>
+      </div>
+      <div id="main" class="at-view-fade-in at-view-fade-out" ng-view></div>
     </div>
 
   </div>
 
-  
+
 </body>
 
+<script>
+
+  var slideIndex_main = 0;
+
+  if (flag_main) {
+    showSlides_main();
+    flag_main = false
+  }
+</script>
 </html>
