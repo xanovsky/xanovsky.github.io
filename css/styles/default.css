@@ -27,6 +27,7 @@ ul.timeline li .data {
 }
 .pitems .pubmain .pubassets {
 	border-top-color:#b01c2e;
+	
 }
 .pitems .pubmain .pubassets a:hover,.pitems .pubmain .pubassets a:focus,.pitems .pubmain .pubassets a.pubcollapse {
 	background: #b01c2e;

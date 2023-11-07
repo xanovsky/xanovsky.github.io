@@ -80,14 +80,14 @@
                 <!-- <a class="pubcollapse" ng-if="paper.abstract" href="">
                   <i class="icon-expand-alt"></i>
                 </a> -->
-                <a ng-if="paper.conference.url" ng-href="{{paper.conference.url}}" class="toooltips" title="Conference page" target="_blank">
+                <!-- <a ng-if="paper.conference.url" ng-href="{{paper.conference.url}}" class="toooltips" title="Conference page" target="_blank">
                   <i class="icon-external-link"></i>
                   </a>
                 <a ng-if="paper.edited.url" ng-href="{{paper.edited.url}}" class="toooltips" title="Journal page" target="_blank">
                     <i class="icon-external-link"></i>
-                </a>
+                </a> -->
                 <a ng-if="paper.download" ng-href="{{paper.download}}" class="tooltips" title="Download PDF" target="_blank">
-                  <!-- <i class="icon-cloud-download"></i> -->
+                  <span class="bi bi-file-pdf"></span>
                   <span>PDF</span>
                 </a>
               </div>
@@ -107,7 +107,8 @@
                   <!-- <span class="label label-warning">Conference Paper</span> -->
                   <span ng-if="paper.note"><b><span ng-bind="paper.note"></b>,</span>               
                   In <emph ng-bind="paper.conference.name"></emph>,
-                  <span ng-bind="paper.conference.location"></span>,
+                  <span ng-bind="paper.conference.location"></span>
+                  <span ng-if="paper.conference.location">,</span>               
                   </span>
                 <span ng-if="paper.edited">
                   <!-- <span class="label label-info">Edited</span> -->
