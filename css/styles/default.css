@@ -30,7 +30,8 @@ ul.timeline li .data {
 	
 }
 .pitems .pubmain .pubassets a:hover,.pitems .pubmain .pubassets a:focus,.pitems .pubmain .pubassets a.pubcollapse {
-	background: #b01c2e;
+	/* background: #b01c2e; */
+	color: rgb(242, 130, 143);
 }
 .contact-office .icon-huge, .contact-lab .icon-huge {
 	color: #b01c2e;
