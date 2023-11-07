@@ -15,50 +15,9 @@
       </div>
     </div>
 
-    <div class="section color-1" id="filters"  style="display:none;">
-      <div class="section-container">
-        <div class="row">
-          <div class="col-md-2">
-            <h3 class="pull-right">Filter by type:</h3>
-          </div>
-          <div class="col-md-4 pull-left">
-            <select pub-type-dropdown="true" id="cd-dropdown" name="cd-dropdown" class="cd-select pull-left">
-              <option class="filter" value="all" selected>All types</option>
-              <option class="filter" value="journal">Jounal Papers</option>
-              <option class="filter" value="conference">Conference Papers</option>
-              <option class="filter" value="edited">Edited</option>
-              <option class="filter" value="techreport">Technical Reports</option>
-              <option class="filter" value="unpublished">Unpublished</option>
-            </select>
-          </div> 
-          <form class="form-inline col-md-6" role="search" id="pub-search">
-            <div class="form-group pull-right">
-              <div class="input-group">
-                <label class="sr-only" for="searchInput">Search</label>
-                <input type="text" ng-model="search" class="form-control input-lg" id="searchInput" placeholder="Search">
-                <span class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true"></span>
-              </div>
-            </div>
-          </form>
-        </div>
-        <div class="row">
-          <div class="col-sm-2 col-sm-offset-5"
-               ng-repeat="author in matchingCollaborators" ng-if="matchingCollaborators.length == 1">
-            <div class="thumbnail">
-              <img ng-src="img/collaborators/{{author.img}}" alt="{{autor.name}}">
-              <div class="caption">
-                <h4 class="text-center" ng-bind="author.name"></h4>
-                <p class="text-center"><a ng-href="{{author.link}}" target="_blank"><i class="icon-home"></i> Homepage</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <div id="pub-year-nav" class="navbar navbar-default">
       <div class="my-container">
-        <a class="navbar-brand">By year:</a>
         <ul class="nav navbar-nav">
           <li ng-repeat="yearPapers in papersByYear | orderBy:'year':true" role="presentation">
             <a ng-href="#pubs-in-{{yearPapers.year}}" prevent-default ng-click="gotoYear(yearPapers.year)" ng-bind="yearPapers.year"></a>
