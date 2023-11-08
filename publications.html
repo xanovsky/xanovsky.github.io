@@ -3,7 +3,7 @@
     <div class="pageheader">
       <div class="headercontent">
         <div class="section-container">
-          <h2 class="title">My Publications</h2>
+          <h2 class="title">Publications</h2>
           <div class="row">
             <div class="col-md-12">
               <p>You may also want to check my
@@ -58,7 +58,6 @@
 
     <div id="pub-year-nav" class="navbar navbar-default">
       <div class="my-container">
-        <a class="navbar-brand">By year:</a>
         <ul class="nav navbar-nav">
           <li ng-repeat="yearPapers in papersByYear | orderBy:'year':true" role="presentation">
             <a ng-href="#pubs-in-{{yearPapers.year}}" prevent-default ng-click="gotoYear(yearPapers.year)" ng-bind="yearPapers.year"></a>
