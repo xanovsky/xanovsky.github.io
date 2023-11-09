@@ -1,20 +1,19 @@
 [
-  {
-    "year": 2023,
-    "id": "RLGRSR23",
-    "authors": [ "Emily Ruppel", "Sihang Liu", "Elba Garza", "Sukyoung Ryu", "Alexandra Silva", "Talia Ringer" ],
-    "title": "Long-Term Mentoring for Computer Science Researchers.",
-    "journal": {
-      "name": "Communications of the ACM",
-      "volume": "66",
-      "issue": "5",
-      "pages": "33-35",
-      "publisher": "ACM",
-      "url": "https://dl.acm.org/doi/fullHtml/10.1145/3564287"
+    {
+        "year": 2023,
+        "id": "RLGRSR23",
+        "authors": [ "Emily Ruppel", "Sihang Liu", "Elba Garza", "Sukyoung Ryu", "Alexandra Silva", "Talia Ringer" ],
+        "title": "Long-Term Mentoring for Computer Science Researchers.",
+        "journal": {
+            "name": "Communications of the ACM",
+            "volume": "66",
+            "issue": "5",
+            "pages": "33-35",
+            "publisher": "ACM",
+            "url": "https://dl.acm.org/doi/fullHtml/10.1145/3564287"
+        },
+        "download": "https://arxiv.org/pdf/2208.04738"
     },
-    "download": "https://arxiv.org/pdf/2208.04738",
-    "abstract": "<p>Reaching out across computer science research communities.</p>"
-  },
 
   
   {

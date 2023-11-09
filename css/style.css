@@ -618,7 +618,7 @@ ul#navigation li .icon {
 
 h1.year {
 	display: block;
-	font-size: 300%;
+	font-size: 200%;
 	margin-left: 0%;
 	font-variant: small-caps;
 	font-family: Impact, Charcoal, sans-serif;
@@ -1208,7 +1208,7 @@ div#sort {
 .pitems .pubtitle {
 	margin: 0;
 	padding: 0 0 15px 0;
-	font-size: 24px;
+	font-size: 20px;
 	font-weight: 300;
 }
 
@@ -1679,8 +1679,8 @@ nav li {
 }
 
 .my-container {
-	padding-left: 10%;
-	padding-right: 10%;
+	padding-left: 0;
+	padding-right: 0;
 }
 
 a.file_link.paper::before {
