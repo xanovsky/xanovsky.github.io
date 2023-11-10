@@ -227,7 +227,7 @@
   {
     "year": 2023,
     "id": "VJSSW23",
-    "authors": [ "Erik Voogd", "Einar Broch Johnsen", "Alexandra Silva", "Zachary J Susag", "Andrzej Wąsowski" ],
+    "authors": [ "Erik Voogd", "Einar Broch Johnsen", "Alexandra Silva", "Zachary J. Susag", "Andrzej Wasowski" ],
     "title": "Symbolic Semantics for Probabilistic Programs (extended version).",
     "journal": {
       "name": "arXiv preprint arXiv:2307.09951",
@@ -279,7 +279,7 @@
   {
     "year": 2023,
     "id": "WS23",
-    "authors": [ "Wojciech Różowski", "Alexandra Silva" ],
+    "authors": [ "Wojciech Rozowski", "Alexandra Silva" ],
     "title": "A Completeness Theorem for Probabilistic Regular Expressions",
     "journal": {
       "name": "arXiv preprint arXiv:2310.08779",
